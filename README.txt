@@ -1,0 +1,1 @@
+This is a Raw Template for creating Themes, Plugins and etc
