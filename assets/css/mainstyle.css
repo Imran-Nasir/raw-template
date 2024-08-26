@@ -7,6 +7,104 @@
   --primary-color: #3c7bf6;
   --secondry-color: #020428;
   --accent-color: #e58924;
+  --white-color: #fff;
+  --bg-off-white: #f5f5f5;
+  --red-color: #db4444;
   --primary-font: "League Spartan", sans-serif;
   --secondary-font: "Rubik", sans-serif;
+}
+.hero-slide-item {
+  background-color: var(--secondry-color);
+  border-radius: 28px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.hero-slide-item h2 {
+  font-size: 48px;
+  font-family: var(--secondary-font);
+  color: var(--white-color);
+}
+.font-secondry {
+  font-family: var(--secondary-font);
+}
+.font-primary {
+  font-family: var(--primary-font);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.left-primary-border {
+  border-left: 5px solid var(--primary-color);
+  border-radius: 5px;
+}
+.cat-image-container {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background-color: #fafaff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.p-image-container {
+  position: relative;
+  background-color: var(--bg-off-white);
+  border-radius: 14px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dicount-badge {
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  background-color: var(--red-color);
+  padding: 3px 12px;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  color: var(--white-color);
+  border-radius: 4px;
+}
+.wishlist-corner {
+  position: absolute;
+  top: 10px;
+  right: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  visibility: hidden;
+}
+.wishlist-corner img {
+  cursor: pointer;
+}
+.add-to-cart {
+  background-color: var(--primary-color);
+  margin-top: -48px;
+  z-index: 1;
+  cursor: pointer;
+  visibility: hidden;
+}
+.product-meta {
+  padding: 20px 0px;
+}
+.product-card:hover .product-meta {
+  background-color: var(--white-color);
+  border-radius: 0 0px 14px 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 0px;
+}
+.product-card:hover .add-to-cart {
+  visibility: visible;
+}
+.product-card:hover .wishlist-corner {
+  visibility: visible;
+}
+.sale-price {
+  color: var(--red-color);
+  font-weight: 700;
+  font-size: 25px;
+}
+.regular-price {
+  text-decoration: line-through;
+  color: gray;
 }
