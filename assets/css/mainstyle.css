@@ -14,15 +14,17 @@
 
 .rsth1--top-bar .row{
   height: 55px;
-  background-color: #3C7BF6 !important;
+  background-color: var(--primary-color);
   padding:8px 100px 8px 100px;
 }
+
 .rsth1--top-bar .navbar-text{
   font-family: "League Spartan", sans-serif;
   color: white;
   font-size:15px;
 }
 .rsth1--top-bar .navbar-text a{
+  font-family: "League Spartan", sans-serif;
   color: white;
   font-size:16px;
   text-decoration: underline;
@@ -44,12 +46,15 @@
 }
 
 .top-nav-items .dropdown-center button, a{
+  font-family: "League Spartan", sans-serif;
   font-size: 15px;
 }
 
 .top-nav-items i{
   font-size: 15px;
 }
+
+
 
 .rsth1--top-bar .divider{
   border-left: 2px solid white;
@@ -61,32 +66,103 @@
   border-bottom:1px solid #C0C0C0; 
 }
 
-@media (min-width: 678px) and (max-width: 992px) {
-  .rsth1--top-bar .navbar-text {
-      font-size: 12px; 
-  }
-
-  .rsth1--top-bar .navbar-text a {
-      font-size: 14px; 
-  }
-
-  .top-nav-items .dropdown-center button, a{
-      font-size: 11px;
-  }
-  
-  .top-nav-items i{
-      font-size: 10px  !important;
-  }
-
-  .rsth1--top-bar .top-nav-items{
-      padding:0px 0px;
-  }
-  .top-nav-items .dropdown-center button, a{
-      padding: 0px;
-      align-items: center;
-  }
-  
+.rsth1--primary-bar .navbar-nav .nav-link{
+  font-family: "League Spartan", sans-serif;
+  color:#020428;
+  padding:0px;
 }
+
+.rsth1--primary-bar .navbar-nav .border-bottom-custom{
+  font-family: "League Spartan", sans-serif;
+  padding:0px;
+  border-bottom: 2px solid #DC2B2A;
+}
+
+
+.rsth1--primary-bar .primary-col-right{
+  padding-left:100px;
+}
+
+.rsth1--primary-bar .primary-col-right form{
+  width:100%;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  border: none;
+}
+
+.rsth1--primary-bar .primary-col-right .form-control{
+  width:100%;
+  background-color: #F5F5F5;
+  border:none;
+}
+
+.rsth1--primary-bar .primary-col-right .form-control:focus{
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, 0);
+}
+
+
+.rsth1-mob-menu{
+  padding: 30px 20px 40px;
+}
+
+.rsth1-mob-menu .overlay-top{
+  padding: 48px 20px;
+}
+.rsth1-mob-menu form{
+  background-color: #F5F5F5;
+  border:none;
+  width: 100%;
+  border-radius: 10px;
+}
+.rsth1-mob-menu .form-control{
+  background-color: #F5F5F5;
+  border:none;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #020428;
+}
+
+
+
+.overlay a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .dropdown-menu{
+  text-align: center;
+  background: transparent;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+
+.overlay .closebtn {
+  font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
 
 /* /////////////////////////////////////////////////////////header ended\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -130,6 +206,15 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
+}
+
+.rsth1-get-in-touch{
+  padding:50px 100px 100px 100px;
+}
+
+.rsth1-get-in-touch .content .get-in-touch{
+  width:43%;
+  border-radius: 14px;
 }
 
 .rsth1-get-in-touch .content .contact-us-from{
@@ -179,6 +264,8 @@
 .rsth1--footer .footer-col-one .desc{
   font-size:20px;
   color:rgb(238, 238, 238 , 0.78) ;
+  font-family: "league spartan", sans-serif;
+  font-weight: 300;
 }
 .rsth1--footer .pay-methods{
   gap:10px;
@@ -197,21 +284,32 @@
   padding-left: 100px;
   row-gap: 16px;
 }
+
 .rsth1--footer .col-title{
+  font-family: "Rubik", sans-serif;
   font-size:22px;
   color:#D6D6D6 ;
   font-weight: 500;
   text-decoration: none;
 }
 .rsth1--footer .footer-links{
+  font-family: "league spartan", sans-serif;
   font-size:20px;
   font-weight: 400;
   color:#bfc0c7 ;
   text-decoration: none;
 }
-.rsth1--footer .my-account-col{
-  padding-left: 100px;
+.rsth1--footer .info-head{
+  font-family: "league spartan", sans-serif;
+  font-size:20px;
+  font-weight: 300;
+  color:#bfc0c7 ;
+  text-decoration: none;
 }
+.rsth1--footer .my-account-col{
+  padding-left: 80px;
+}
+
 .rsth1--footer .contact-info-col{
  row-gap: 16px;
 }
@@ -221,6 +319,7 @@
   color:#BDBDBD;
 }
 .rsth1--footer .contact-info-col .info span{
+  font-family: "Rubik", sans-serif;
   font-size:20px;
   color:#D6D6D6 ;
   font-weight: 400;
@@ -232,12 +331,16 @@
 }
 .rsth1--copyright .copy-right{
   font-size:20px;
+  font-family: "league spartan", sans-serif;
   font-weight: 400;
   color:#a8a8b3 ;
   text-decoration: none;
 }
 .rsth1--copyright .copy-right a{
-  font-weight: 500;
+  font-size:20px;
+  font-family: "league spartan", sans-serif;
+  font-weight: 600;
+
   color:#a8a8b3 ;
   text-decoration: none;
 }
@@ -260,8 +363,84 @@
   .rsth1--top-bar .top-nav-items{
       padding:0px 12px;
   }
+
+  .rsth1--footer .quick-links-col{
+    padding-left: 50px;
+  }
+
+  .rsth1--footer .my-account-col{
+    padding-left:50px;
+  }
 }
 
+@media (min-width: 678px) and (max-width: 992px) {
+  .rsth1--top-bar .navbar-text {
+      font-size: 12px; 
+  }
+
+  .rsth1--top-bar .navbar-text a {
+      font-size: 14px; 
+  }
+
+  .top-nav-items .dropdown-center button, a{
+      font-size: 11px;
+  }
+  
+  .top-nav-items i{
+      font-size: 10px  !important;
+  }
+
+  .rsth1--top-bar .top-nav-items{
+      padding:0px 0px 0px 10px;
+  }
+  .top-nav-items .dropdown-center button, a{
+      padding: 0px 10px;
+      align-items: center;
+  }
+  
+}
+
+
+@media (max-width: 992px){
+
+  .rsth1--top-bar .row{
+    padding:8px 60px 8px 60px;
+  }
+
+  .rsth1--primary-bar .row{
+    padding:32px 60px 39px;
+  }
+  
+  .rsth1-hero-section{
+    padding:35px 60px 50px 60px;
+  }
+
+  .rsth1-get-in-touch{
+    padding:50px 60px 100px 60px;
+  }
+
+  .rsth1-get-in-touch .content .get-in-touch{
+    width:100%;
+  }
+  
+  .rsth1-get-in-touch .content .contact-us-from{
+    width:100%;
+  }
+
+  .rsth1--footer{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .rsth1--footer .quick-links-col{
+    padding-left: 20px;
+  }
+
+  .rsth1--footer .my-account-col{
+    padding-left:20px;
+  }
+
+}
 
 @media only screen and (max-width: 992px) and (min-width: 678){
 
