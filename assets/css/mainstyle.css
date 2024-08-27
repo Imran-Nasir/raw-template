@@ -13,6 +13,15 @@
   --primary-font: "League Spartan", sans-serif;
   --secondary-font: "Rubik", sans-serif;
 }
+.f-size-20 {
+  font-size: 20px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.f-size-24 {
+  font-size: 24px;
+}
 .hero-slide-item {
   background-color: var(--secondry-color);
   border-radius: 28px;
@@ -107,4 +116,53 @@
 .regular-price {
   text-decoration: line-through;
   color: gray;
+}
+.white-circle-bg {
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content-box {
+  border-radius: 24px;
+  background-color: var(--secondry-color);
+}
+.banner-content-box h4 {
+  font-size: 30px;
+}
+.full-width-banner {
+  background-color: #edf1ff;
+  border-radius: 18px;
+  padding: 50px 0px;
+}
+.banner-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 350px;
+  border-radius: 12px;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.banner-background-img {
+  background-image: url(../images/banner_image_4.png);
+}
+.banner-background-img-1 {
+  background-image: url(../images/banner_image_3.png);
+}
+.slick-slide .inner {
+  margin: 0 15px;
+}
+.app-icons {
+  width: 300px;
+  background-color: var(--bg-off-white);
+  border-radius: 14px;
 }
