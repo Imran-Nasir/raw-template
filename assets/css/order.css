@@ -85,6 +85,19 @@
   /* hero section ended */
 
   /* tabel section */
+  .rsth1-tabel-section .row {
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+  }
+
+  .rsth1-tabel-section .table-responsive{
+    width: 100%;
+  }
+
+  .cell-padding-2 {
+    padding: 8px 16px; 
+}
+  
   .rsth1-tabel-section .text-center {
     text-align: start;
     display: flex;
@@ -175,6 +188,11 @@
     white-space: nowrap;
 }
 
+.rsth1-tabel-section .back-button {
+  color: #CCCCCC !important;
+  border: 2px solid #CCCCCC !important;
+}
+
 /* Responsive mobile devices */
 @media (max-width: 768px) {
     .rsth1-tabel-section .page-navigation nav {
@@ -198,6 +216,10 @@
         align-items: center;
         justify-content: center;
         width: fit-content;
+    }
+    .rsth1-tabel-section .row {
+      border: 0px solid #808080;
+      padding: 10px;
     }
 }
 
