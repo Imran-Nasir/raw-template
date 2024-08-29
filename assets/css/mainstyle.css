@@ -63,11 +63,32 @@
 .rsth1--top-bar .divider{
   border-left: 2px solid white;
 }
-.rsth1--primary-bar .row{
+.rsth1--primary-bar .primary-bar-row {
   background-color: #ffffff !important;
   padding-top: 32px;
   padding-bottom: 39px;
   border-bottom:1px solid #C0C0C0; 
+}
+
+.primary-bar--mega-menu{
+  width: max-content;
+  left:  -350% !important;
+  padding: 40px 48px;
+}
+
+.primary-bar-row h5{
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondry-color);
+}
+
+.mega-menu--list-items{
+  border:none;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondry-color);
 }
 
 .rsth1--primary-bar .navbar-nav .nav-link{
@@ -101,6 +122,10 @@
 
 .rsth1--primary-bar .primary-col-right .form-control:focus{
   box-shadow: 0 0 0 .25rem rgba(13, 110, 253, 0);
+}
+
+.primary-menu-wishlist, .primary-menu-cart{
+  cursor: pointer;
 }
 
 .rsth1-mob-menu{
@@ -185,7 +210,95 @@
   font-family: var(--primary-font);
   font-size:20px;
 }
+/* 
+.mega-menu {
+  position: absolute; 
+  left: 0; 
+  right: 0;
+  width: 100%; 
+  top: 100%; 
+  z-index: 1000; 
+  background-color: white; 
+  padding: 20px; 
+}
 
+
+.mega-menu .row > div {
+  padding: 15px;
+  border-right: 1px solid #ccc; 
+}
+.mega-menu .row > div:last-child {
+  border-right: none; 
+} */
+
+
+/* Mini Cart Css */
+.rsth1--mini-cart{
+  width: 550px;
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  top:60px;
+  right:0px;
+  display: none;
+  border-radius: 24px;
+}
+
+.mini-cart-content{
+  padding:40px;
+  border-radius: 24px !important;
+}
+
+.mini-cart-title{
+  margin-bottom: 40px!important;
+}
+
+.mini-cart-items-list{
+  margin-top: 32px;
+  margin-bottom:48px;
+}
+
+.mini-cart--item-details{
+  border : 1px solid #bdbdbdb3;
+  padding:12px ;
+  border-radius:14px ;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mini-cart--btns{
+  margin-top: 40px;
+}
+
+.mini-cart-btn-action{
+  font-family:var(--primary-font) ;
+  font-size: 20px;
+  font-weight: 600;
+  padding:23px auto;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius:12px;
+}
+
+.mini-cart-btn-action:hover{
+  color: white;
+  border: 2px solid var(--primary-color);
+  border-radius:12px;
+  background-color: var(--primary-color);
+  transition: ease-in-out 0.5s;
+
+}
+
+
+.rsth1--mini-wishlist{
+  width: 550px;
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  top:60px;
+  right:0px;
+  display: none;
+  border-radius: 24px;
+}
 /* ///////////////////////////////////////////////////////// Contact Page \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .rsth1-hero-section{
