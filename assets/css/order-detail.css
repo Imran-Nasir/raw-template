@@ -17,7 +17,7 @@
     }
         
     .rsth1-hero-section .row{
-        background-image: url('/assets/images/order/hero.png');
+        background-image: url('/assets/images/order-detail/desktop-hero-bg.png');
         background-size: cover;
         background-position: center;    
         background-repeat: no-repeat;
@@ -58,7 +58,7 @@
         }
 
     .rsth1-hero-section .row {
-        background-image: url('/assets/images/order/hero.png');
+        background-image: url('/assets/images/order-detail/mobile-hero-bg.png');
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat;
@@ -70,26 +70,28 @@
     .rsth1-hero-section .hero-section h1 {
         font-size: 24px; 
         line-height: 36px; 
+        display: flex;
+        flex-wrap: wrap; 
     }
     
     .rsth1-hero-section .hero-section .breadcrumbs a {
-        font-size: 14px; 
+        font-size: 12px;
         line-height: 18px; 
     }
     
     .rsth1-hero-section .hero-section .breadcrumbs span {
-        font-size: 14px; 
+        font-size: 12px; 
         line-height: 18px; 
     }
     }  
     /* hero section ended */
 
     /* TABLE SECTION */
-    .rsth1-order-detail-bg {
+    .order-detail-section-backgound{
         background-image: url('/assets/images/order-detail/process-bg.png');
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
-        width: 100%;
+        background-size: contain;
     }
     .rsth1-order-step-icon {
         display: inline-block;
@@ -149,15 +151,28 @@
         
     }
 
+    .rsth1-order-detail-section .td-custom-padding{
+        padding-top: 40px;
+    }
+
     .rsth1-order-detail-section .text-right{
         text-align: end;
         margin-bottom: 20px;
     }
+
+    .rsth1-order-detail-section .custom-spaceing-bg-color{
+        background-color: #F5F5F5;
+        padding: 20px;
+    }
     /* Making it responsive using Bootstrap */
     @media (max-width: 576px) {
         .order-detail-section-backgound {
-            flex-direction: column;
+            flex-direction: row;
         }
+
+        .rsth1-order-step-text{
+            font-size: 12px;
+        } 
         
         .rsth1-order-step {
             margin-bottom: 15px;
@@ -167,4 +182,11 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
     }
+
+    @media (max-width: 1200px) {
+    .btn-custom-width {
+        width: 100%;
+    }
+}
