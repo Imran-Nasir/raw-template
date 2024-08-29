@@ -24,3 +24,25 @@ $("#filter-image").on("click", function () {
     "col-md-9 col-lg-9 col-xl-9 col-md-12 col-lg-12 col-xl-12"
   );
 });
+
+$(document).ready(function () {
+  // Initialize the main image slider
+  $(".product-main-image").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".product-thumbnails",
+  });
+
+  // Initialize the thumbnail slider
+  $(".product-thumbnails").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".product-main-image",
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    vertical: true,
+  });
+});
