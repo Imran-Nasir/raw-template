@@ -9,13 +9,19 @@
   --accent-color: #e58924;
   --primary-font: "League Spartan", sans-serif;
   --secondary-font: "Rubik", sans-serif;
+  --profile-card-bg:#F5F5F5;
+  --profile-card-icon-width:38px;
+  --profile-card-icon-height:38px;
+  --profile-card-icon-padding:26px;
+
 }
 
 
-.rsth1--top-bar .row{
+.rsth1--top-bar{
   height: 55px;
   background-color: var(--primary-color);
   padding:8px 100px 8px 100px;
+  
 }
 
 .rsth1--top-bar .navbar-text{
@@ -54,15 +60,13 @@
   font-size: 15px;
 }
 
-
-
 .rsth1--top-bar .divider{
   border-left: 2px solid white;
 }
 .rsth1--primary-bar .row{
-  /* height: 130px; */
   background-color: #ffffff !important;
-  padding:32px 100px 39px;
+  padding-top: 32px;
+  padding-bottom: 39px;
   border-bottom:1px solid #C0C0C0; 
 }
 
@@ -77,7 +81,6 @@
   padding:0px;
   border-bottom: 2px solid #DC2B2A;
 }
-
 
 .rsth1--primary-bar .primary-col-right{
   padding-left:100px;
@@ -100,9 +103,9 @@
   box-shadow: 0 0 0 .25rem rgba(13, 110, 253, 0);
 }
 
-
 .rsth1-mob-menu{
-  padding: 30px 20px 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .rsth1-mob-menu .overlay-top{
@@ -154,7 +157,6 @@
   font-size: 50px;
 }
 
-/* Positioning the dropdown-submenu correctly */
 .dropdown-submenu {
   position: relative;
 }
@@ -166,8 +168,6 @@
   margin-top: 0;
   margin-left: 0;
 }
-
-/* Show the submenu when the parent item is clicked */
 .dropdown-submenu.show > .dropdown-menu {
   display: block;
 }
@@ -181,18 +181,28 @@
   }
 }
 
+.rsth1-mob-menu .overlay-content .navbar-nav .nav-item{
+  font-family: var(--primary-font);
+  font-size:20px;
+}
 
-/* /////////////////////////////////////////////////////////header ended\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
-
-/* /////////////////////////////////////////////////////////Hero Section\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* ///////////////////////////////////////////////////////// Contact Page \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .rsth1-hero-section{
-  padding:35px 100px 50px 100px;
+  /* padding:35px 0px 50px; */
+  padding-top: 35px;
+  padding-top: 35px;
 }
   
-.rsth1-hero-section .row{
+.rsth1-hero-section .contact-banner{
   background-image: url('../images/contact-us/hero-section-bg.webp');
+}
+
+.rsth1-hero-section .profile-banner{
+  background-image: url('../images/Profile/profile-hero-banner.webp');
+}
+
+.rsth1-hero-section .row{
   background-size: cover;
   background-position: center;    
   background-repeat: no-repeat;
@@ -227,7 +237,8 @@
 }
 
 .rsth1-get-in-touch{
-  padding:50px 100px 100px 100px;
+  padding-top:50px ;
+  padding-bottom:100px ;
 }
 
 .rsth1-get-in-touch .content .get-in-touch{
@@ -273,11 +284,60 @@
   transition: ease-in-out 0.75s;
 }
 
+/*//////////////////////////////////////////////////////////Profile Page started\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.rsth1-profile-cards .card-content{
+  background-color: var(--profile-card-bg);
+  border-radius: 14px;
+  padding:40px 48px ;
+  gap: 40px;
+}
+
+.rsth1-profile-cards .card-content  .card-icon{
+  background-color: var(--primary-color);
+  padding: var(--profile-card-icon-padding);
+  border-radius: 20px;
+}
+.rsth1-profile-cards .card-content  .card-icon img{
+  width: var(--profile-card-icon-width);
+  height: var(--profile-card-icon-height);
+}
+.rsth1-profile-cards .card-content  .card-text .title{
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37px;
+}
+.rsth1-profile-cards .card-content  .card-text .text{
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.rsth1-profile-cards .card-content:hover {
+  background-color: var(--primary-color);
+}
+.rsth1-profile-cards .card-content:hover .card-icon{
+  background-color: white;
+}
+
+.rsth1-profile-cards .card-content:hover  .card-icon img{
+  filter: invert(55%) sepia(90%) saturate(2739%) hue-rotate(207deg) brightness(100%) contrast(94%);
+}
+.rsth1-profile-cards .card-content:hover .card-text .title{
+  color:white;
+}
+.rsth1-profile-cards .card-content:hover .card-text .text{
+  color:white;
+}
+
+
+
 /*//////////////////////////////////////////////////////////footer started\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rsth1--footer{
   padding-top:64px;
-  padding-left: 100px;
-  padding-right: 100px;
+
   background-color: #020428;
 }
 .rsth1--footer .row{
@@ -432,33 +492,12 @@
 
 @media (max-width: 992px){
 
-  .rsth1--top-bar .row{
-    padding:8px 60px 8px 60px;
-  }
-
-  .rsth1--primary-bar .row{
-    padding:32px 60px 39px;
-  }
-  
-  .rsth1-hero-section{
-    padding:35px 60px 50px 60px;
-  }
-
-  .rsth1-get-in-touch{
-    padding:50px 60px 100px 60px;
-  }
-
   .rsth1-get-in-touch .content .get-in-touch{
     width:100%;
   }
   
   .rsth1-get-in-touch .content .contact-us-from{
     width:100%;
-  }
-
-  .rsth1--footer{
-    padding-left: 60px;
-    padding-right: 60px;
   }
 
   .rsth1--footer .quick-links-col{
@@ -469,13 +508,9 @@
     padding-left:20px;
   }
 
-  .rsth1--copyright{
-    padding:10px 60px;
-  }
-
 }
 
-@media (max-width: 767px){
+ @media (max-width: 767px){
 
   .rsth1--top-bar .row{
     padding:8px 20px 8px;
@@ -514,9 +549,40 @@
   .rsth1--copyright{
     padding:10px 20px;
   }
+} 
+
+@media (max-width: 575px){
+
+  .rsth1-hero-section{
+    padding:35px 20px 50px;
+  }
+  
+  .rsth1-hero-section .row{
+    background-position: 80%  50%;
+    height: 390px;
+    padding-left: 0px;
+  }
+
+  .rsth1-get-in-touch{
+    padding:50px 20px 100px;
+  }
+
+  .rsth1--footer{
+    padding: 40px 20px;
+  }
+
+  .rsth1--footer .quick-links-col{
+    padding-left: 0px;
+  }
+
+  .rsth1--footer .my-account-col{
+    padding-left:0px;
+  }
+
+  .rsth1--copyright{
+    padding:10px 20px;
+  }
 }
-
-
 
 @media only screen and (max-width: 992px) and (min-width: 678){
 
