@@ -46,3 +46,23 @@ $(document).ready(function () {
     vertical: true,
   });
 });
+$(document).ready(function () {
+  // Handle increment
+  $(".btn-plus").on("click", function () {
+    var qty = parseInt($(this).siblings(".qty-value").text());
+    $(this)
+      .siblings(".qty-value")
+      .text(qty + 1);
+  });
+
+  // Handle decrement
+  $(".btn-minus").on("click", function () {
+    var qty = parseInt($(this).siblings(".qty-value").text());
+    if (qty > 1) {
+      // Ensure the quantity doesn't go below 1
+      $(this)
+        .siblings(".qty-value")
+        .text(qty - 1);
+    }
+  });
+});
