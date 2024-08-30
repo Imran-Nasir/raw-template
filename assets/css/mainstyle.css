@@ -400,7 +400,7 @@
   border-bottom-right-radius: 8px;
 }
 
-hr {
+.cart-hr {
   border-top: 3px dashed #bdbdbd;
   margin-top: 16px;
   margin-bottom: 16px;
