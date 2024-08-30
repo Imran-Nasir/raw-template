@@ -195,48 +195,54 @@
 
 /* Responsive mobile devices */
 @media (max-width: 768px) {
-    .rsth1-tabel-section .page-navigation nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .rsth1-tabel-section .page-navigation nav {
+      flex-direction: row;
+      align-items: flex-start;
+      width: max-content;
+  }
 
-    .rsth1-tabel-section .form-inline, 
-    .rsth1-tabel-section .btn-continue-shopping {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+  @media (max-width: 768px) {
+      .rsth1-tabel-section .pagination .page-item {
+          display: none; 
+      }
+  
+      .rsth1-tabel-section .pagination .page-item:first-child, 
+      .rsth1-tabel-section .pagination .page-item:nth-child(2), 
+      .rsth1-tabel-section .pagination .page-item:nth-child(3), 
+      .rsth1-tabel-section .pagination .page-item:nth-last-child(3), 
+      .rsth1-tabel-section .pagination .page-item:nth-last-child(2), 
+      .rsth1-tabel-section .pagination .page-item:last-child  {
+          display: block; 
+      }
+  }
 
-    .rsth1-tabel-section .form-inline {
-        justify-content: flex-start;
-        margin-right: 10px;
-    }
+  .rsth1-tabel-section .form-inline {
+      justify-content: flex-start;
+      margin-right: 10px;
+  }
 
-    .rsth1-tabel-section .page-navigation nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: fit-content;
-    }
-    .rsth1-tabel-section .row {
+  .rsth1-tabel-section .row {
       border: 0px solid #808080;
       padding: 10px;
-    }
+  }
+
+  .rsth1-tabel-section .back-button,
+  .rsth1-tabel-section .next-button {
+      display: flex;
+      color: #CCCCCC !important;
+      border: 2px solid #CCCCCC !important;
+  }
 }
 
 /* Responsive tablet devices */
 @media (max-width: 992px) {
-    .rsth1-tabel-section .page-navigation nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .rsth1-tabel-section .page-navigation nav {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
 
-    .rsth1-tabel-section .form-inline {
-        margin-left: 10px;
-        justify-content: center;
-    }
-
-    .rsth1-tabel-section .btn-continue-shopping {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+  .rsth1-tabel-section .form-inline {
+      margin-left: 10px;
+      justify-content: center;
+  }
 }
