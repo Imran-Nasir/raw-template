@@ -66,3 +66,36 @@ $(document).ready(function () {
     }
   });
 });
+$(document).ready(function () {
+  var priceSlider = document.getElementById("priceSlider");
+
+  noUiSlider.create(priceSlider, {
+    start: [50, 1500],
+    connect: true,
+    range: {
+      min: 0,
+      max: 2000,
+    },
+    step: 50,
+    tooltips: [true, true],
+    format: {
+      to: function (value) {
+        return parseInt(value);
+      },
+      from: function (value) {
+        return Number(value);
+      },
+    },
+  });
+
+  var startPriceValue = document.getElementById("startPriceValue");
+  var endPriceValue = document.getElementById("endPriceValue");
+
+  priceSlider.noUiSlider.on("update", function (values, handle) {
+    if (handle === 0) {
+      startPriceValue.innerHTML = values[handle];
+    } else {
+      endPriceValue.innerHTML = values[handle];
+    }
+  });
+});

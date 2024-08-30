@@ -258,6 +258,25 @@
 .rsth1-products-section .pagination {
   background-color: var(--bg-off-white);
 }
+/* Custom styling for the price slider */
+.price-slider {
+  margin-top: 40px !important;
+}
+#priceSlider .noUi-handle {
+  background-color: #007bff;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+#priceSlider .noUi-connect {
+  background: #007bff;
+}
+
+.noUi-target {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /* Shop Page End */
 /* Single Product Page */
 .product-gallery {

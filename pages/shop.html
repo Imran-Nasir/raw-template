@@ -20,6 +20,10 @@
       href="../assets/fontawesome-free-6.6.0-web/css/brands.css"
     />
     <link rel="stylesheet" href="../assets/vendor/slick/slick.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/mainstyle.css" />
     <title>Home |Owner POS Theme Template</title>
   </head>
@@ -227,15 +231,12 @@
                   data-bs-parent="#sidebarAccordion"
                 >
                   <div class="accordion-body">
-                    <input
-                      type="range"
-                      class="form-range"
-                      min="0"
-                      max="2000"
-                      step="50"
-                      id="priceRange"
-                    />
-                    <p>Price: 50 — 1,500</p>
+                    <!-- Slider Container -->
+                    <div id="priceSlider" class="price-slider"></div>
+                    <p>
+                      Price: <span id="startPriceValue">50</span> —
+                      <span id="endPriceValue">1500</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -760,6 +761,7 @@
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/jquery.min.js"></script>
     <script src="../assets/vendor/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
