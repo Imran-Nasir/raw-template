@@ -299,21 +299,31 @@
   display: none;
   border-radius: 24px;
 }
-/* ///////////////////////////////////////////////////////// Contact Page \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
 .rsth1-hero-section{
   /* padding:35px 0px 50px; */
   padding-top: 35px;
   padding-top: 35px;
 }
+
+
+
+/* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
   
 .rsth1-hero-section .contact-banner{
   background-image: url('../images/contact-us/hero-section-bg.webp');
 }
 
 .rsth1-hero-section .profile-banner{
-  background-image: url('../images/Profile/profile-hero-banner.webp');
+  background-image: url('../images/profile/profile-hero-banner.webp');
 }
+.rsth1-hero-section .account-details-banner{
+  background-image: url('../images/account-details/account_details-hero-banner.webp');
+}
+
+.rsth1-hero-section{
+  padding-top: 35px;
+  padding-bottom: 50px;
+}  
 
 .rsth1-hero-section .row{
   background-size: cover;
@@ -348,6 +358,9 @@
   font-size: 18px;
   line-height: 20px;
 }
+
+/* ///////////////////////////////////////////////////////// Contact Page \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
 
 .rsth1-get-in-touch{
   padding-top:50px ;
@@ -445,7 +458,125 @@
   color:white;
 }
 
+/*////////////////////////////////////////////////////////// Account Detail Css \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
+.rsth1--account-details{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.account-details-content-wrapper{
+  background-color: #F5F5F5;
+  padding:0px 100px 64px;
+  border-radius: 14px;
+}
+
+.account-details-content{
+}
+.profile-img-content{
+  top: -80px;
+}
+.profile-img-content .profile-img-edit-wrapper{
+  top: 90px;
+  right: 0px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  cursor:pointer;
+}
+.profile-img-edit{
+  vertical-align:baseline;
+  width: 14px;
+  height: 14px;
+}
+
+.account-details-content h4{
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: auto;
+}
+
+.account-details-content label{
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: auto;
+}
+
+.eye-hide-seek{
+  top:10px;
+  right:20px
+}
+
+.phoneno-by-country{
+  border-radius: 5px;
+}
+
+.country-selection{
+  width: 15%;
+  border: none;
+  border-radius: 0px;
+}
+
+.country-selection:focus{
+  border: none;
+  box-shadow: none;
+}
+
+.country-phoneno{
+  border: none;
+  border-radius: 0px;
+}
+
+.country-phoneno:focus{
+  border: none;
+  box-shadow: none;
+}
+
+
+.btn-update-info{
+  font-family:var(--primary-font) ;
+  font-size: 20px;
+  font-weight: 600;
+  padding:23px auto;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius:12px;
+}
+
+.btn-update-info:hover{
+  color: white;
+  border: 2px solid var(--primary-color);
+  border-radius:12px;
+  background-color: var(--primary-color);
+  transition: ease-in-out 0.5s;
+}
+
+.btn-update-pw{
+  font-family:var(--primary-font) ;
+  font-size: 20px;
+  font-weight: 600;
+  padding:23px auto;
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  border-radius:12px;
+}
+
+.btn-update-pw.disabled {
+  font-family:var(--primary-font) ;
+  font-size: 20px;
+  background-color: #9DBDFA; /* Keep the same background color */
+  color: white; /* Keep the same text color */
+  border: 2px solid #9DBDFA;
+  cursor: not-allowed; /* Indicate that the button is not clickable */
+  opacity: 0.5; /* Slightly dim to show it's disabled */
+}
+
+.intl-tel-input,
+.iti{
+  width: 100%;
+}
 
 /*//////////////////////////////////////////////////////////footer started\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rsth1--footer{
