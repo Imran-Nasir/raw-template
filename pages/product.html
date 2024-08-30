@@ -165,22 +165,27 @@
           <div class="container mt-4">
             <div class="row align-items-center">
               <!-- Quantity Selector -->
-              <div class="col-auto">
-                <div class="d-flex align-items-center bg-light rounded p-2">
-                  <button class="btn text-muted p-0 me-3" type="button">
-                    -
+              <div class="col-md-6">
+                <div
+                  class="d-flex align-items-center justify-content-center bg-white rounded p-2 product-qty-cart"
+                >
+                  <button
+                    class="btn text-muted p-0 me-3 btn-minus"
+                    type="button"
+                  >
+                    <i class="fa-solid fa-minus"></i>
                   </button>
-                  <span class="fw-bold fs-5">5</span>
-                  <button class="btn text-dark p-0 ms-3" type="button">
-                    +
+                  <span class="fw-bold fs-5 qty-value">5</span>
+                  <button class="btn text-dark p-0 ms-3 btn-plus" type="button">
+                    <i class="fa-solid fa-plus"></i>
                   </button>
                 </div>
               </div>
 
               <!-- Add to Cart Button -->
-              <div class="col-auto">
+              <div class="col-md-6">
                 <button
-                  class="btn btn-outline-primary d-flex align-items-center"
+                  class="btn btn-outline-primary d-flex align-items-center w-100 justify-content-center"
                 >
                   <i class="fas fa-shopping-bag me-2"></i>
                   Add To Cart
