@@ -141,6 +141,7 @@ margin: 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #ddd;
+    cursor: pointer;
 }
 
 .rsth1-blog-section .recently-added-title {
@@ -158,6 +159,7 @@ margin: 0;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .rsth1-blog-section .recently-added-image {
@@ -245,6 +247,7 @@ margin: 0;
 /* card section */
 .container .rsth1-card-section {
     padding: 20px;
+    cursor: pointer;
 }
 
 .rsth1-card-section .card {
@@ -272,11 +275,14 @@ margin: 0;
     text-decoration: none;
     border-radius: 5px;
 }
-
+.archivepost-image{
+    position: relative;
+    overflow: hidden;
+}
 .rsth1-card-section .date {
     position: absolute;
-        top: 260px;
-        left: 20px;
+        bottom: 10px;
+        left: 10px;
     font-family: var(--secondary-font);
     font-weight: 600;
     background-color: #FFFFFF;
