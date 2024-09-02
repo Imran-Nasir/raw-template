@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.6.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.6.0-web/css/solid.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.6.0-web/css/brands.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link rel="stylesheet" href="../assets/css/mainstyle.css">
+    <title>Checkout | Owner POS THeme Template</title>
+</head>
+<body>
+
+    <div class="container rsth1-hero-section px-sm-0">
+        <div class="row m-0 checkout-banner">
+            <div class="col-sm-12 d-flex justify-content-md-start justify-content-center just align-items-center">
+                <div class="hero-section">
+                    <h1 class="text-white">Checkout</h1>
+                    <div class="breadcrumbs d-flex align-items-center gap-2">
+                        <a class="text-white d-flex align-items-center gap-2 text-decoration-none" href="#" ><i class="fa-solid fa-house text-white "></i>Home</a><span class="text-white d-flex align-items-center gap-2"><i class="fa-solid fa-chevron-right text-white"></i>Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container py-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Billing Information</h2>
+                <div class="mb-3">
+                    <label for="emailPhone" class="form-label">Email or mobile phone number</label>
+                    <input type="text" class="form-control" id="emailPhone" placeholder="None">
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="newsOffersCheck">
+                    <label class="form-check-label" for="newsOffersCheck">
+                        Email me with news & offers
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="countryRegion" class="form-label">Country/Region</label>
+                    <input type="text" class="form-control" id="countryRegion" placeholder="None">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="None">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="None">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company (Optional)</label>
+                    <input type="text" class="form-control" id="company" placeholder="None">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="None">
+                </div>
+                <div class="mb-3 add-address">
+                    <i class="fas fa-plus"></i> Add apartment, suite, etc.
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="None">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" placeholder="None">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="None">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="saveInfoCheck">
+                    <label class="form-check-label" for="saveInfoCheck">
+                        Save this information for next time
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <h2>Shipping Method</h2>
+                    <select class="form-select" id="shippingMethod">
+                        <option value="standard">Standard Shipping - $5.00</option>
+                        <option value="express">Express Shipping - $10.00</option>
+                        <option value="overnight">Overnight Shipping - $20.00</option>
+                        <option value="pickup">In-Store Pickup - Free</option>
+                    </select>
+                </div>
+                <div class="col-12 mb-2">
+                    <h2>Billing Address</h2>
+                    <div class="form-check border p-3">
+                        <input class="form-check-input" type="radio" name="billingAddress" id="sameAsShipping" value="same" checked>
+                        <label class="form-check-label w-100" for="sameAsShipping">
+                            Same as shipping address
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="col-12">
+                    <div class="form-check border p-3">
+                        <input class="form-check-input" type="radio" name="billingAddress" id="differentBilling" value="different">
+                        <label class="form-check-label w-100" for="differentBilling">
+                            Use a different billing address
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 pt-5">
+                    <button class="btn w-100 theme--btn">Update Info</button>
+                </div>
+                <div class="col-12 pt-3">
+                    <button class="btn w-100 theme--btn">Back</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="container checkout--order-summary" id="mini-cart">
+                    <div class="row">
+                        <div class="col-lg-12 order-summary-content d-flex flex-column">
+                            <h4 class="order-summary--title">Order Summary</h4>
+                            <div class="order-summary-items-list d-flex flex-column gap-3">
+                                <div class="order-summary-items">
+                                    <div class="container order-summary-items-details">
+                                        <div class="row p-3">
+                                            <div class="col-lg-2 cart-item-img d-inline-block">
+                                                <img class="mini-cart-item-image" src="../assets/images/menu-cart-item.webp" alt="">
+                                            </div>
+                                            <div class="col-lg-8 d-flex flex-column justify-content-evenly">
+                                                <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                                <p class="m-0">Electronic accessories</p>
+                                            </div>
+                                            <div class="col-lg-2" >
+                                                <div class="-tem-price-del">
+                                                    <p class="cart-item-price">$70</p>
+                                                    <i class="fa-regular fa-trash-can text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="os-sub-total d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">Sub Total:</p>
+                                <p class="p-0 m-0">$1345.45</p>
+                            </div>
+                            <div class="os-discount-price d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">Discount:</p>
+                                <p class="p-0 m-0">- $35.00</p>
+                            </div>
+                            <div class="os-shipping d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">Shipping</p>
+                                <p class="p-0 m-0">Free</p>
+                            </div>
+                            <hr class="">
+                            <div class="mini-cart-total d-flex justify-content-between">
+                                <h4 class="p-0 m-0">Total</h4>
+                                <h4 class="p-0 m-0">$1357.97</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-md-offset-3">
+                <form id="msform">
+                    <ul id="progressbar">
+                        <li class="active text-center text-secondary">Personal Details</li>
+                        <li class="text-center text-secondary">Social Profiles</li>
+                        <li class="text-center text-secondary">Account Setup</li>
+                    </ul>
+                    <fieldset>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h2>Billing Information</h2>
+                                    <div class="mb-3">
+                                        <label for="emailPhone" class="form-label">Email or mobile phone number</label>
+                                        <input type="text" class="form-control" id="emailPhone" placeholder="None">
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="newsOffersCheck">
+                                        <label class="form-check-label" for="newsOffersCheck">
+                                            Email me with news & offers
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="countryRegion" class="form-label">Country/Region</label>
+                                        <input type="text" class="form-control" id="countryRegion" placeholder="None">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="None">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="None">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="company" class="form-label">Company (Optional)</label>
+                                        <input type="text" class="form-control" id="company" placeholder="None">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="None">
+                                    </div>
+                                    <div class="mb-3 add-address">
+                                        <i class="fas fa-plus"></i> Add apartment, suite, etc.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="city" placeholder="None">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="postalCode" class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control" id="postalCode" placeholder="None">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="None">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="saveInfoCheck">
+                                        <label class="form-check-label" for="saveInfoCheck">
+                                            Save this information for next time
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2>Shipping Method</h2>
+                                        <select class="form-select" id="shippingMethod">
+                                            <option value="standard">Standard Shipping - $5.00</option>
+                                            <option value="express">Express Shipping - $10.00</option>
+                                            <option value="overnight">Overnight Shipping - $20.00</option>
+                                            <option value="pickup">In-Store Pickup - Free</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <h2>Billing Address</h2>
+                                        <div class="form-check border p-3">
+                                            <input class="form-check-input" type="radio" name="billingAddress" id="sameAsShipping" value="same" checked>
+                                            <label class="form-check-label w-100" for="sameAsShipping">
+                                                Same as shipping address
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check border p-3">
+                                            <input class="form-check-input" type="radio" name="billingAddress" id="differentBilling" value="different">
+                                            <label class="form-check-label w-100" for="differentBilling">
+                                                Use a different billing address
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-5">
+                                        <button class="btn w-100 theme--btn">Update Info</button>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <button class="btn w-100 theme--btn">Back</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="container checkout--order-summary" id="mini-cart">
+                                        <div class="row">
+                                            <div class="col-lg-12 order-summary-content d-flex flex-column">
+                                                <h4 class="order-summary--title">Order Summary</h4>
+                                                <div class="order-summary-items-list d-flex flex-column gap-3">
+                                                    <div class="order-summary-items">
+                                                        <div class="container order-summary-items-details">
+                                                            <div class="row p-3">
+                                                                <div class="col-lg-2 cart-item-img d-inline-block">
+                                                                    <img class="mini-cart-item-image" src="../assets/images/menu-cart-item.webp" alt="">
+                                                                </div>
+                                                                <div class="col-lg-8 d-flex flex-column justify-content-evenly">
+                                                                    <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                                                    <p class="m-0">Electronic accessories</p>
+                                                                </div>
+                                                                <div class="col-lg-2" >
+                                                                    <div class="-tem-price-del">
+                                                                        <p class="cart-item-price">$70</p>
+                                                                        <i class="fa-regular fa-trash-can text-danger"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="os-sub-total d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Sub Total:</p>
+                                                    <p class="p-0 m-0">$1345.45</p>
+                                                </div>
+                                                <div class="os-discount-price d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Discount:</p>
+                                                    <p class="p-0 m-0">- $35.00</p>
+                                                </div>
+                                                <div class="os-shipping d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Shipping</p>
+                                                    <p class="p-0 m-0">Free</p>
+                                                </div>
+                                                <hr class="">
+                                                <div class="mini-cart-total d-flex justify-content-between">
+                                                    <h4 class="p-0 m-0">Total</h4>
+                                                    <h4 class="p-0 m-0">$1357.97</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next"/>
+                    </fieldset>
+                    <fieldset>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h2>Billing Information</h2>
+                                    <div class="mb-3">
+                                        <label for="emailPhone" class="form-label">Email or mobile phone number</label>
+                                        <input type="text" class="form-control" id="emailPhone" placeholder="None">
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="newsOffersCheck">
+                                        <label class="form-check-label" for="newsOffersCheck">
+                                            Email me with news & offers
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="countryRegion" class="form-label">Country/Region</label>
+                                        <input type="text" class="form-control" id="countryRegion" placeholder="None">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="None">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="None">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="company" class="form-label">Company (Optional)</label>
+                                        <input type="text" class="form-control" id="company" placeholder="None">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="None">
+                                    </div>
+                                    <div class="mb-3 add-address">
+                                        <i class="fas fa-plus"></i> Add apartment, suite, etc.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="city" placeholder="None">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="postalCode" class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control" id="postalCode" placeholder="None">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="None">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="saveInfoCheck">
+                                        <label class="form-check-label" for="saveInfoCheck">
+                                            Save this information for next time
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2>Shipping Method</h2>
+                                        <select class="form-select" id="shippingMethod">
+                                            <option value="standard">Standard Shipping - $5.00</option>
+                                            <option value="express">Express Shipping - $10.00</option>
+                                            <option value="overnight">Overnight Shipping - $20.00</option>
+                                            <option value="pickup">In-Store Pickup - Free</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <h2>Billing Address</h2>
+                                        <div class="form-check border p-3">
+                                            <input class="form-check-input" type="radio" name="billingAddress" id="sameAsShipping" value="same" checked>
+                                            <label class="form-check-label w-100" for="sameAsShipping">
+                                                Same as shipping address
+                                            </label>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                        <div class="form-check border p-3">
+                                            <input class="form-check-input" type="radio" name="billingAddress" id="differentBilling" value="different">
+                                            <label class="form-check-label w-100" for="differentBilling">
+                                                Use a different billing address
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-5">
+                                        <button class="btn w-100 theme--btn">Update Info</button>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <button class="btn w-100 theme--btn">Back</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="container checkout--order-summary" id="mini-cart">
+                                        <div class="row">
+                                            <div class="col-lg-12 order-summary-content d-flex flex-column">
+                                                <h4 class="order-summary--title">Order Summary</h4>
+                                                <div class="order-summary-items-list d-flex flex-column gap-3">
+                                                    <div class="order-summary-items">
+                                                        <div class="container order-summary-items-details">
+                                                            <div class="row p-3">
+                                                                <div class="col-lg-2 cart-item-img d-inline-block">
+                                                                    <img class="mini-cart-item-image" src="../assets/images/menu-cart-item.webp" alt="">
+                                                                </div>
+                                                                <div class="col-lg-8 d-flex flex-column justify-content-evenly">
+                                                                    <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                                                    <p class="m-0">Electronic accessories</p>
+                                                                </div>
+                                                                <div class="col-lg-2" >
+                                                                    <div class="-tem-price-del">
+                                                                        <p class="cart-item-price">$70</p>
+                                                                        <i class="fa-regular fa-trash-can text-danger"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="os-sub-total d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Sub Total:</p>
+                                                    <p class="p-0 m-0">$1345.45</p>
+                                                </div>
+                                                <div class="os-discount-price d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Discount:</p>
+                                                    <p class="p-0 m-0">- $35.00</p>
+                                                </div>
+                                                <div class="os-shipping d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Shipping</p>
+                                                    <p class="p-0 m-0">Free</p>
+                                                </div>
+                                                <hr class="">
+                                                <div class="mini-cart-total d-flex justify-content-between">
+                                                    <h4 class="p-0 m-0">Total</h4>
+                                                    <h4 class="p-0 m-0">$1357.97</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                        <input type="button" name="next" class="next action-button" value="Next"/>
+                    </fieldset>
+                    <fieldset>
+                        <div class="container py-5">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h2>Billing Information</h2>
+                                    <div class="mb-3">
+                                        <label for="emailPhone" class="form-label">Email or mobile phone number</label>
+                                        <input type="text" class="form-control" id="emailPhone" placeholder="None">
+                                    </div>
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="newsOffersCheck">
+                                        <label class="form-check-label" for="newsOffersCheck">
+                                            Email me with news & offers
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="countryRegion" class="form-label">Country/Region</label>
+                                        <input type="text" class="form-control" id="countryRegion" placeholder="None">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" placeholder="None">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" placeholder="None">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="company" class="form-label">Company (Optional)</label>
+                                        <input type="text" class="form-control" id="company" placeholder="None">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="None">
+                                    </div>
+                                    <div class="mb-3 add-address">
+                                        <i class="fas fa-plus"></i> Add apartment, suite, etc.
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="city" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="city" placeholder="None">
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="postalCode" class="form-label">Postal Code</label>
+                                            <input type="text" class="form-control" id="postalCode" placeholder="None">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="None">
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="saveInfoCheck">
+                                        <label class="form-check-label" for="saveInfoCheck">
+                                            Save this information for next time
+                                        </label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h2>Shipping Method</h2>
+                                        <select class="form-select" id="shippingMethod">
+                                            <option value="standard">Standard Shipping - $5.00</option>
+                                            <option value="express">Express Shipping - $10.00</option>
+                                            <option value="overnight">Overnight Shipping - $20.00</option>
+                                            <option value="pickup">In-Store Pickup - Free</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <h2>Billing Address</h2>
+                                        <div class="form-check border p-3">
+                                            <input class="form-check-input" type="radio" name="billingAddress" id="sameAsShipping" value="same" checked>
+                                            <label class="form-check-label w-100" for="sameAsShipping">
+                                                Same as shipping address
+                                            </label>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="col-12">
+                                        <div class="form-check border p-3">
+                                            <input class="form-check-input" type="radio" name="billingAddress" id="differentBilling" value="different">
+                                            <label class="form-check-label w-100" for="differentBilling">
+                                                Use a different billing address
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 pt-5">
+                                        <button class="btn w-100 theme--btn">Update Info</button>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <button class="btn w-100 theme--btn">Back</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="container checkout--order-summary" id="mini-cart">
+                                        <div class="row">
+                                            <div class="col-lg-12 order-summary-content d-flex flex-column">
+                                                <h4 class="order-summary--title">Order Summary</h4>
+                                                <div class="order-summary-items-list d-flex flex-column gap-3">
+                                                    <div class="order-summary-items">
+                                                        <div class="container order-summary-items-details">
+                                                            <div class="row p-3">
+                                                                <div class="col-lg-2 cart-item-img d-inline-block">
+                                                                    <img class="mini-cart-item-image" src="../assets/images/menu-cart-item.webp" alt="">
+                                                                </div>
+                                                                <div class="col-lg-8 d-flex flex-column justify-content-evenly">
+                                                                    <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                                                    <p class="m-0">Electronic accessories</p>
+                                                                </div>
+                                                                <div class="col-lg-2" >
+                                                                    <div class="-tem-price-del">
+                                                                        <p class="cart-item-price">$70</p>
+                                                                        <i class="fa-regular fa-trash-can text-danger"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="os-sub-total d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Sub Total:</p>
+                                                    <p class="p-0 m-0">$1345.45</p>
+                                                </div>
+                                                <div class="os-discount-price d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Discount:</p>
+                                                    <p class="p-0 m-0">- $35.00</p>
+                                                </div>
+                                                <div class="os-shipping d-flex justify-content-between pb-2">
+                                                    <p class="p-0 m-0">Shipping</p>
+                                                    <p class="p-0 m-0">Free</p>
+                                                </div>
+                                                <hr class="">
+                                                <div class="mini-cart-total d-flex justify-content-between">
+                                                    <h4 class="p-0 m-0">Total</h4>
+                                                    <h4 class="p-0 m-0">$1357.97</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                        <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                    </fieldset>
+                </form>
+                <div class="dme_link">
+                    <p><a href="http://designify.me/code-snippets-js/" target="_blank">More Code Snippets</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Progress bar style */
+        .progress-container {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .progress-step {
+            width: 33.33%;
+            text-align: center;
+            position: relative;
+        }
+
+        .progress-step .dot {
+            height: 30px;
+            width: 30px;
+            background-color: #ddd;
+            border: 2px solid #ddd;
+            border-radius: 3px; /* For square border */
+            display: inline-block;
+            line-height: 26px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .progress-step.active .dot,
+        .progress-step.completed .dot {
+            background-color: #007bff; /* Bootstrap primary color */
+            border-color: #007bff; /* Matching border with background */
+        }
+
+        .progress-step.completed .dot {
+            content: "\2713"; /* Unicode tick symbol */
+            font-family: "FontAwesome", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .progress-step .label {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+
+        .progress-line {
+            position: absolute;
+            height: 2px;
+            background-color: transparent;
+            width: 100%;
+            top: 15px;
+            left: 0;
+            z-index: -1;
+            border-top: 2px dashed #ddd; /* Dashed line */
+        }
+
+        .progress-line-filled {
+            background-color: #007bff; /* Bootstrap primary color */
+            height: 2px;
+            position: absolute;
+            width: 0%;
+            top: -1px;
+            transition: width 0.3s ease;
+            border-top: 2px solid #007bff; /* Solid line to fill over dashed */
+        }
+    </style>
+
+<div class="container mt-5">
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-line">
+            <div class="progress-line-filled"></div>
+        </div>
+
+        <div class="progress-step active" id="step1">
+            <span class="dot">1</span>
+            <div class="label">Shipping</div>
+        </div>
+        <div class="progress-step" id="step2">
+            <span class="dot">2</span>
+            <div class="label">Payment</div>
+        </div>
+        <div class="progress-step" id="step3">
+            <span class="dot">3</span>
+            <div class="label">Confirmation</div>
+        </div>
+    </div>
+
+    <!-- Form Steps -->
+    <div class="form-step" id="form-step-1">
+        <h4>Shipping Information</h4>
+ <div class="container py-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Billing Information</h2>
+                <div class="mb-3">
+                    <label for="emailPhone" class="form-label">Email or mobile phone number</label>
+                    <input type="text" class="form-control" id="emailPhone" placeholder="None">
+                </div>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="newsOffersCheck">
+                    <label class="form-check-label" for="newsOffersCheck">
+                        Email me with news & offers
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="countryRegion" class="form-label">Country/Region</label>
+                    <input type="text" class="form-control" id="countryRegion" placeholder="None">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="None">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="None">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="company" class="form-label">Company (Optional)</label>
+                    <input type="text" class="form-control" id="company" placeholder="None">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="None">
+                </div>
+                <div class="mb-3 add-address">
+                    <i class="fas fa-plus"></i> Add apartment, suite, etc.
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="None">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" placeholder="None">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="None">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="saveInfoCheck">
+                    <label class="form-check-label" for="saveInfoCheck">
+                        Save this information for next time
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <h2>Shipping Method</h2>
+                    <select class="form-select" id="shippingMethod">
+                        <option value="standard">Standard Shipping - $5.00</option>
+                        <option value="express">Express Shipping - $10.00</option>
+                        <option value="overnight">Overnight Shipping - $20.00</option>
+                        <option value="pickup">In-Store Pickup - Free</option>
+                    </select>
+                </div>
+                <div class="col-12 mb-2">
+                    <h2>Billing Address</h2>
+                    <div class="form-check border p-3">
+                        <input class="form-check-input" type="radio" name="billingAddress" id="sameAsShipping" value="same" checked>
+                        <label class="form-check-label w-100" for="sameAsShipping">
+                            Same as shipping address
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="col-12">
+                    <div class="form-check border p-3">
+                        <input class="form-check-input" type="radio" name="billingAddress" id="differentBilling" value="different">
+                        <label class="form-check-label w-100" for="differentBilling">
+                            Use a different billing address
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 pt-5">
+                    <button class="btn w-100 theme--btn">Update Info</button>
+                </div>
+                <div class="col-12 pt-3">
+                    <button class="btn w-100 theme--btn">Back</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="container checkout--order-summary" id="mini-cart">
+                    <div class="row">
+                        <div class="col-lg-12 order-summary-content d-flex flex-column">
+                            <h4 class="order-summary--title">Order Summary</h4>
+                            <div class="order-summary-items-list d-flex flex-column gap-3">
+                                <div class="order-summary-items">
+                                    <div class="container order-summary-items-details">
+                                        <div class="row p-3">
+                                            <div class="col-lg-2 cart-item-img d-inline-block">
+                                                <img class="mini-cart-item-image" src="../assets/images/menu-cart-item.webp" alt="">
+                                            </div>
+                                            <div class="col-lg-8 d-flex flex-column justify-content-evenly">
+                                                <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                                <p class="m-0">Electronic accessories</p>
+                                            </div>
+                                            <div class="col-lg-2" >
+                                                <div class="-tem-price-del">
+                                                    <p class="cart-item-price">$70</p>
+                                                    <i class="fa-regular fa-trash-can text-danger"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="os-sub-total d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">Sub Total:</p>
+                                <p class="p-0 m-0">$1345.45</p>
+                            </div>
+                            <div class="os-discount-price d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">Discount:</p>
+                                <p class="p-0 m-0">- $35.00</p>
+                            </div>
+                            <div class="os-shipping d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">Shipping</p>
+                                <p class="p-0 m-0">Free</p>
+                            </div>
+                            <hr class="">
+                            <div class="mini-cart-total d-flex justify-content-between">
+                                <h4 class="p-0 m-0">Total</h4>
+                                <h4 class="p-0 m-0">$1357.97</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary mt-4" id="next1">Next</button>
+    </div>
+
+    <div class="form-step d-none" id="form-step-2">
+        <h4>Payment Information</h4>
+        <!-- Payment form fields -->
+        <button class="btn btn-secondary mt-4" id="prev2">Previous</button>
+        <button class="btn btn-primary mt-4" id="next2">Next</button>
+    </div>
+
+    <div class="form-step d-none" id="form-step-3">
+        <h4>Confirmation</h4>
+        <!-- Confirmation details -->
+        <button class="btn btn-secondary mt-4" id="prev3">Previous</button>
+        <button class="btn btn-success mt-4">Confirm Order</button>
+    </div>
+</div>
+
+<!-- Bootstrap and jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script  src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            let currentStep = 1;
+    
+            // Update the progress bar
+            function updateProgressBar(step) {
+                $('.progress-step').removeClass('active');
+                $(`#step${step}`).addClass('active');
+    
+                // Mark the previous step as completed and change number to tick
+                for (let i = 1; i < step; i++) {
+                    $(`#step${i}`).addClass('completed').find('.dot').text('✔');
+                }
+    
+                let widthPercentage = (step - 1) * 50;
+                $('.progress-line-filled').css('width', widthPercentage + '%');
+            }
+    
+            // Next Step
+            $('#next1').click(function() {
+                $('#form-step-1').addClass('d-none');
+                $('#form-step-2').removeClass('d-none');
+                currentStep = 2;
+                updateProgressBar(currentStep);
+            });
+    
+            $('#next2').click(function() {
+                $('#form-step-2').addClass('d-none');
+                $('#form-step-3').removeClass('d-none');
+                currentStep = 3;
+                updateProgressBar(currentStep);
+            });
+    
+            // Previous Step
+            $('#prev2').click(function() {
+                $('#form-step-2').addClass('d-none');
+                $('#form-step-1').removeClass('d-none');
+                currentStep = 1;
+                updateProgressBar(currentStep);
+            });
+    
+            $('#prev3').click(function() {
+                $('#form-step-3').addClass('d-none');
+                $('#form-step-2').removeClass('d-none');
+                currentStep = 2;
+                updateProgressBar(currentStep);
+            });
+        });
+    </script>
+</body>
+</html>
