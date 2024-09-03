@@ -16,12 +16,10 @@
 
 }
 
-
 .rsth1--top-bar{
   height: 55px;
   background-color: var(--primary-color);
   padding:8px 100px 8px 100px;
-  
 }
 
 .rsth1--top-bar .navbar-text{
@@ -197,7 +195,6 @@
   display: block;
 }
 
-
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -210,29 +207,7 @@
   font-family: var(--primary-font);
   font-size:20px;
 }
-/* 
-.mega-menu {
-  position: absolute; 
-  left: 0; 
-  right: 0;
-  width: 100%; 
-  top: 100%; 
-  z-index: 1000; 
-  background-color: white; 
-  padding: 20px; 
-}
 
-
-.mega-menu .row > div {
-  padding: 15px;
-  border-right: 1px solid #ccc; 
-}
-.mega-menu .row > div:last-child {
-  border-right: none; 
-} */
-
-
-/* Mini Cart Css */
 .rsth1--mini-cart{
   width: 550px;
   position: absolute;
@@ -288,7 +263,6 @@
 
 }
 
-
 .rsth1--mini-wishlist{
   width: 550px;
   position: absolute;
@@ -304,8 +278,6 @@
   padding-top: 35px;
   padding-top: 35px;
 }
-
-
 
 /* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
   
@@ -382,9 +354,7 @@
   transition: ease-in-out 0.5s;
 }
 
-
 /* ///////////////////////////////////////////////////////// Contact Page \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
 
 .rsth1-get-in-touch{
   padding-top:50px ;
@@ -495,7 +465,6 @@
   border-radius: 14px;
 }
 
-
 .profile-img-content{
   top: -80px;
 }
@@ -584,6 +553,89 @@
 
 /*//////////////////////////////////////////////////////////checkout page\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.progress-step {
+  width: 33.33%;
+  position: relative;
+}
+
+.progress-step .dot {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  border: 2px solid #ddd;
+  border-radius: 3px; /* For square border */
+  display: inline-block;
+  line-height: 26px;
+  color: white;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+.progress-step .dot p{
+  transform: rotate(-45deg);
+}
+
+.progress-step.active .dot,
+.progress-step.completed .dot {
+  background-color: #007bff; /* Bootstrap primary color */
+  border-color: #007bff; /* Matching border with background */
+}
+
+.progress-step.completed .dot {
+  content: "\2713"; /* Unicode tick symbol */
+  transform: rotate(45deg);
+  font-family: "FontAwesome", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.progress-step .label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.progress-line {
+  position: absolute;
+  height: 2px;
+  background-color: transparent;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  z-index: -1;
+  border-top: 2px dashed #ddd; /* Dashed line */
+}
+
+.progress-line-filled {
+  background-color: #007bff; /* Bootstrap primary color */
+  height: 2px;
+  position: absolute;
+  width: 0%;
+  top: -1px;
+  transition: width 0.3s ease;
+  border-top: 2px solid #007bff; /* Solid line to fill over dashed */
+}
+
+.rsth1--checkout-steps h2{
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--secondry-color);
+}
+.rsth1--checkout-steps label{
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--secondry-color);
+}
 
 .checkout--order-summary{
   background-color: #f5f5f5;
@@ -606,132 +658,24 @@
   border-radius:14px ;
 }
 
-
-/*form styles*/
-/* #msform {
-  text-align: center;
+.input-with-icon {
   position: relative;
-  margin-top: 30px;
-} */
-
-
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-  display: none;
 }
 
-#msform .action-button {
-  width: 100px;
-  background: #ee0979;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 5px;
+.input-with-icon img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: auto;
 }
 
-#msform .action-button:hover, #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+.thank-you-content{
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  padding: 88px  64px;
 }
-
-#msform .action-button-previous {
-  width: 100px;
-  background: #C5C5F1;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 5px;
-}
-
-#msform .action-button-previous:hover, #msform .action-button-previous:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
-}
-
-/*progressbar*/
-#progressbar {
-  margin-bottom: 30px;
-  overflow: hidden;
-  /*CSS counters to number the steps*/
-  counter-reset: step;
-}
-
-#progressbar li {
-  list-style-type: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 9px;
-  width: 33.33%;
-  float: left;
-  position: relative;
-  letter-spacing: 1px;
-}
-
-#progressbar li:before {
-  content: counter(step);
-  counter-increment: step;
-  width: 24px;
-  height: 24px;
-  line-height: 26px;
-  display: block;
-  font-size: 12px;
-  color: #333;
-  background: white;
-  border-radius: 25px;
-  margin: 0 auto 10px auto;
-}
-
-/*progressbar connectors*/
-#progressbar li:after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: white;
-  /* position: absolute;
-  left: -50%; */
-  top: 9px;
-  z-index: -1; /*put it behind the numbers*/
-}
-
-#progressbar li:first-child:after {
-  /*connector not needed before the first step*/
-  content: none;
-}
-
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before, #progressbar li.active:after {
-  background: #ee0979;
-  color: white;
-}
-
-
-/* Not relevant to this form */
-.dme_link {
-  margin-top: 30px;
-  text-align: center;
-}
-.dme_link a {
-  background: #FFF;
-  font-weight: bold;
-  color: #ee0979;
-  border: 0 none;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 5px 25px;
-  font-size: 12px;
-}
-
-.dme_link a:hover, .dme_link a:focus {
-  background: #C5C5F1;
-  text-decoration: none;
-}
-
-
 
 /*//////////////////////////////////////////////////////////footer started\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rsth1--footer{
@@ -844,7 +788,6 @@
   height:18px;
   color:#a8a8b3;
 }
-
 
 /* ///////////////////////////////////////////Queries for responsiveness\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
@@ -982,11 +925,3 @@
     padding:10px 20px;
   }
 }
-
-@media only screen and (max-width: 992px) and (min-width: 678){
-
-
-}
-
-
-

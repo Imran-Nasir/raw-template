@@ -77,85 +77,92 @@
 
 
         // -----multi step form code
-        // https://www.linkedin.com/in/atakangk/
-    //jQuery time
-    var current_fs, next_fs, previous_fs; //fieldsets
-    var left, opacity, scale; //fieldset properties which we will animate
-    var animating; //flag to prevent quick multi-click glitches
-
-    $(".next").click(function(){
-        if(animating) return false;
-        animating = true;
-        
-        current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
-        
-        //activate next step on progressbar using the index of next_fs
-        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-        
-        //show the next fieldset
-        next_fs.show(); 
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-            step: function(now, mx) {
-                //as the opacity of current_fs reduces to 0 - stored in "now"
-                //1. scale current_fs down to 80%
-                scale = 1 - (1 - now) * 0.2;
-                //2. bring next_fs from the right(50%)
-                left = (now * 50)+"%";
-                //3. increase opacity of next_fs to 1 as it moves in
-                opacity = 1 - now;
-                current_fs.css({
-            'transform': 'scale('+scale+')',
-            'position': 'absolute'
+        $(document).ready(function(){
+            let currentStep = 1;
+    
+            // Update the progress bar
+            function updateProgressBar(step) {
+                $('.progress-step').removeClass('active');
+                $(`#step${step}`).addClass('active');
+    
+                // Mark the previous step as completed and change number to tick
+                for (let i = 1; i < step; i++) {
+                    $(`#step${i}`).addClass('completed').find('.get-tick').text('✔');
+                }
+    
+                let widthPercentage = (step - 1) * 50;
+                $('.progress-line-filled').css('width', widthPercentage + '%');
+            }
+    
+            // Next Step
+            $('#next1').click(function() {
+                $('#form-step-1').addClass('d-none');
+                $('#form-step-2').removeClass('d-none');
+                currentStep = 2;
+                updateProgressBar(currentStep);
+            });
+    
+            $('#next2').click(function() {
+                $('#form-step-2').addClass('d-none');
+                $('#form-step-3').removeClass('d-none');
+                currentStep = 3;
+                updateProgressBar(currentStep);
+            });
+    
+            // Previous Step
+            $('#prev2').click(function() {
+                $('#form-step-2').addClass('d-none');
+                $('#form-step-1').removeClass('d-none');
+                currentStep = 1;
+                updateProgressBar(currentStep);
+            });
+    
+            $('#prev3').click(function() {
+                $('#form-step-3').addClass('d-none');
+                $('#form-step-2').removeClass('d-none');
+                currentStep = 2;
+                updateProgressBar(currentStep);
+            });
         });
-                next_fs.css({'left': left, 'opacity': opacity});
-            }, 
-            duration: 800, 
-            complete: function(){
-                current_fs.hide();
-                animating = false;
-            }, 
-            //this comes from the custom easing plugin
-            easing: 'easeInOutBack'
+
+
+          //-----------------------------------------------------------------------------\\
+          // detect card type
+          function detectCardType(number) {
+            const regex = {
+                visa: /^4[0-9]{0,}$/,
+                mastercard: /^(5[1-5]|2[2-7])[0-9]{0,}$/,
+                // amex: /^3[47][0-9]{0,}$/,
+                // discover: /^6(?:011|5[0-9]{2})[0-9]{0,}$/,
+                // paypal: /^3(?:0[0-5]|[68][0-9])[0-9]{0,}$/,
+                // amazonpay: /^3(?:0[0-5]|[68][0-9])[0-9]{0,}$/
+            };
+    
+            for (const [key, pattern] of Object.entries(regex)) {
+                if (number.match(pattern)) {
+                    return key;
+                }
+            }
+    
+            return null;
+        }
+    
+        // Event listener for card number input
+        document.getElementById('card-number').addEventListener('input', function() {
+            const cardNumber = this.value.replace(/\s+/g, ''); // Remove spaces
+            const cardType = detectCardType(cardNumber);
+            const cardLogo = document.getElementById('card-logo');
+    
+            if (cardType) {
+                cardLogo.src = `../assets/icons/${cardType}-logo.svg`; // Replace with actual path to logos
+                cardLogo.style.display = 'block';
+            } else {
+                cardLogo.style.display = 'none';
+            }
         });
-    });
-
-    $(".previous").click(function(){
-        if(animating) return false;
-        animating = true;
-        
-        current_fs = $(this).parent();
-        previous_fs = $(this).parent().prev();
-        
-        //de-activate current step on progressbar
-        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-        
-        //show the previous fieldset
-        previous_fs.show(); 
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-            step: function(now, mx) {
-                //as the opacity of current_fs reduces to 0 - stored in "now"
-                //1. scale previous_fs from 80% to 100%
-                scale = 0.8 + (1 - now) * 0.2;
-                //2. take current_fs to the right(50%) - from 0%
-                left = ((1-now) * 50)+"%";
-                //3. increase opacity of previous_fs to 1 as it moves in
-                opacity = 1 - now;
-                current_fs.css({'left': left});
-                previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
-            }, 
-            duration: 800, 
-            complete: function(){
-                current_fs.hide();
-                animating = false;
-            }, 
-            //this comes from the custom easing plugin
-            easing: 'easeInOutBack'
-        });
-    });
-
-
 
     
+const checkoutForm = document.getElementById('checkout-form');
+checkoutForm.addEventListener('submit',(e)=>{
+    e.preventDefault();
+})
