@@ -26,7 +26,7 @@
 }
 
 .rsth1--top-bar .navbar-text {
-  font-family: "League Spartan", sans-serif;
+  font-family: var(--primary-font);
   color: var(--white-color);
   font-size: 15px;
 }
@@ -54,7 +54,7 @@
 
 .rsth1--top-nav-item .dropdown-center button,
 .rsth1--top-nav-item a {
-  font-family: "League Spartan", sans-serif;
+  font-family: var(--primary-font);
   font-size: 15px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .rsth1--primary-bar .navbar-nav .nav-link {
-  font-family: "League Spartan", sans-serif;
+  font-family: var(--primary-font);
   color: #020428;
   padding: 0;
 }
@@ -704,7 +704,7 @@
 .rsth1--footer .footer-col-one .desc {
   font-size: 20px;
   color: rgb(238, 238, 238, 0.78);
-  font-family: "league spartan", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 300;
 }
 .rsth1--footer .pay-methods {
@@ -733,14 +733,14 @@
   text-decoration: none;
 }
 .rsth1--footer .footer-links {
-  font-family: "league spartan", sans-serif;
+  font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 400;
   color: #bfc0c7;
   text-decoration: none;
 }
 .rsth1--footer .info-head {
-  font-family: "league spartan", sans-serif;
+  font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 300;
   color: #bfc0c7;
@@ -771,14 +771,14 @@
 }
 .rsth1--copyright .copy-right {
   font-size: 20px;
-  font-family: "league spartan", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 400;
   color: #a8a8b3;
   text-decoration: none;
 }
 .rsth1--copyright .copy-right a {
   font-size: 20px;
-  font-family: "league spartan", sans-serif;
+  font-family: var(--primary-font);
   font-weight: 600;
 
   color: #a8a8b3;
