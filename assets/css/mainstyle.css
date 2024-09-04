@@ -17,11 +17,12 @@
   --profile-card-icon-height: 38px;
   --profile-card-icon-padding: 26px;
 }
-
+/* **************** Header Section ****************  */
+/* Top Navigation Bar Styles */
 .rsth1--top-bar {
   height: 55px;
   background-color: var(--primary-color);
-  padding: 8px 100px 8px 100px;
+  padding: 8px 100px;
 }
 
 .rsth1--top-bar .navbar-text {
@@ -29,8 +30,8 @@
   color: var(--white-color);
   font-size: 15px;
 }
+
 .rsth1--top-bar .navbar-text a {
-  font-family: "League Spartan", sans-serif;
   color: var(--white-color);
   font-size: 16px;
   text-decoration: underline;
@@ -38,44 +39,82 @@
   font-weight: 600;
 }
 
-.rsth1--top-bar .top-nav-right {
-  padding: 9px 0px;
+.rsth1--top-nav-right {
+  padding: 9px 0;
 }
 
-.rsth1--top-bar .top-nav-items {
-  padding: 0px 24px;
+.rsth1--top-nav-item {
+  padding: 0 24px;
 }
 
-.rsth1--top-bar .top-nav-items-pr0 {
+.rsth1--top-nav-item-pr0 {
   gap: 16px;
-  padding: 0px 0px 0px 24px;
+  padding: 0 0 0 24px;
 }
 
-.top-nav-items .dropdown-center button,
-a {
+.rsth1--top-nav-item .dropdown-center button,
+.rsth1--top-nav-item a {
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
 }
 
-.top-nav-items i {
+.rsth1--top-nav-item i {
   font-size: 15px;
 }
 
-.rsth1--top-bar .divider {
+.rsth1--divider {
   border-left: 2px solid var(--white-color);
 }
-.rsth1--primary-bar .primary-bar-row {
+
+/* Primary Navigation Bar Styles */
+.rsth1--primary-bar .rsth1--primary-bar-row {
   background-color: var(--white-color) !important;
-  padding-top: 32px;
-  padding-bottom: 39px;
+  padding: 32px 0 39px;
   border-bottom: 1px solid #c0c0c0;
 }
 
+.rsth1--main-primary-ul {
+  flex-basis: 45%;
+}
+
+.rsth1--primary-col-right {
+  flex-basis: 40%;
+  padding-left: 100px;
+}
+
+.rsth1--primary-bar .navbar-nav .nav-link {
+  font-family: "League Spartan", sans-serif;
+  color: #020428;
+  padding: 0;
+}
+
+.rsth1--primary-bar .navbar-nav .border-bottom-custom {
+  border-bottom: 2px solid #dc2b2a;
+}
+
+/* Search Form Styles */
+.rsth1--primary-bar .rsth1--primary-col-right form {
+  width: 300px;
+  background-color: var(--bg-off-white);
+  border-radius: 4px;
+  border: none;
+}
+
+.rsth1--primary-bar .rsth1--primary-col-right .form-control {
+  width: 100%;
+  background-color: var(--bg-off-white);
+  border: none;
+}
+
+.rsth1--primary-bar .rsth1--primary-col-right .form-control:focus {
+  box-shadow: none;
+}
+
+/* Mega Menu Styles */
 .navbar .megamenu {
   padding: 1rem;
 }
 
-/* ============ desktop view ============ */
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {
     position: static !important;
@@ -87,20 +126,8 @@ a {
     margin-top: 0;
   }
 }
-/* ============ desktop view .end// ============ */
 
-/* ============ mobile view ============ */
-@media (max-width: 991px) {
-  .navbar.fixed-top .navbar-collapse,
-  .navbar.sticky-top .navbar-collapse {
-    overflow-y: auto;
-    max-height: 90vh;
-    margin-top: 10px;
-  }
-}
-/* ============ mobile view .end// ============ */
-
-.primary-bar-row h5 {
+.rsth1--primary-bar-row h5 {
   font-family: var(--secondary-font);
   font-weight: 500;
   font-size: 16px;
@@ -115,64 +142,28 @@ a {
   color: var(--secondry-color);
 }
 
-.rsth1--primary-bar .navbar-nav .nav-link {
-  font-family: "League Spartan", sans-serif;
-  color: #020428;
-  padding: 0px;
+/* Mobile Menu Styles */
+.rsth1--mob-menu {
+  padding: 30px 0 40px;
 }
 
-.rsth1--primary-bar .navbar-nav .border-bottom-custom {
-  font-family: "League Spartan", sans-serif;
-  padding: 0px;
-  border-bottom: 2px solid #dc2b2a;
-}
-
-.rsth1--primary-bar .primary-col-right {
-  padding-left: 100px;
-}
-
-.rsth1--primary-bar .primary-col-right form {
-  width: 100%;
-  background-color: var(--bg-off-white);
-  border-radius: 4px;
-  border: none;
-}
-
-.rsth1--primary-bar .primary-col-right .form-control {
-  width: 100%;
-  background-color: var(--bg-off-white);
-  border: none;
-}
-
-.rsth1--primary-bar .primary-col-right .form-control:focus {
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0);
-}
-
-.primary-menu-wishlist,
-.primary-menu-cart {
-  cursor: pointer;
-}
-
-.rsth1-mob-menu {
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
-
-.rsth1-mob-menu .overlay-top {
+.rsth1--mob-menu .rsth1--overlay-top {
   padding: 48px 20px;
 }
-.rsth1-mob-menu form {
+
+.rsth1--mob-menu form {
   background-color: var(--bg-off-white);
   border: none;
   width: 100%;
   border-radius: 10px;
 }
-.rsth1-mob-menu .form-control {
+
+.rsth1--mob-menu .form-control {
   background-color: var(--bg-off-white);
   border: none;
 }
 
-.rsth1-mob-menu .overlay {
+.rsth1--mob-menu .rsth1--overlay {
   width: 0%;
   height: 100%;
   position: fixed;
@@ -184,97 +175,77 @@ a {
   transition: 0.5s;
 }
 
-.overlay-content {
+.rsth1--overlay-content {
   position: relative;
   width: 100%;
   text-align: center;
 }
 
-.rsth1-mob-menu .overlay a {
+.rsth1--mob-menu .rsth1--overlay a {
   text-decoration: none;
   color: var(--white-color);
   display: block;
   transition: 0.3s;
 }
-.rsth1-mob-menu .overlay .dropdown-menu {
+
+.rsth1--mob-menu .rsth1--overlay .dropdown-menu {
   text-align: center;
   background: transparent;
 }
-.rsth1-mob-menu .overlay a:hover,
-.overlay a:focus {
+
+.rsth1--mob-menu .rsth1--overlay a:hover,
+.rsth1--mob-menu .rsth1--overlay a:focus {
   color: #f1f1f1;
 }
-.rsth1-mob-menu .overlay .closebtn {
+
+.rsth1--mob-menu .rsth1--overlay .closebtn {
   font-size: 50px;
 }
 
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu > .dropdown-menu {
-  display: none;
-  top: 0;
-  left: 100%;
-  margin-top: 0;
-  margin-left: 0;
-}
-.dropdown-submenu.show > .dropdown-menu {
-  display: block;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    right: 35px;
-  }
-}
-
-.rsth1-mob-menu .overlay-content .navbar-nav .nav-item {
+.rsth1--mob-menu .rsth1--overlay-content .navbar-nav .nav-item {
   font-family: var(--primary-font);
   font-size: 20px;
 }
 
-.rsth1--mini-cart {
+/* Mini Cart and Wishlist Styles */
+.rsth1--mini-cart,
+.rsth1--mini-wishlist {
   width: 550px;
   position: absolute;
   z-index: 10;
   background-color: var(--white-color);
   top: 60px;
-  right: 0px;
+  right: 0;
   display: none;
   border-radius: 24px;
 }
 
-.mini-cart-content {
+.rsth1--mini-cart-content {
   padding: 40px;
   border-radius: 24px !important;
 }
 
-.mini-cart-title {
+.rsth1--mini-cart-title {
   margin-bottom: 40px !important;
 }
 
-.mini-cart-items-list {
+.rsth1--mini-cart-items-list {
   margin-top: 32px;
   margin-bottom: 48px;
 }
 
-.mini-cart--item-details {
+.rsth1--mini-cart-item-details {
   border: 1px solid #bdbdbdb3;
   padding: 12px;
   border-radius: 14px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.mini-cart--btns {
+.rsth1--mini-cart-btns {
   margin-top: 40px;
 }
 
-.mini-cart-btn-action {
+.rsth1--mini-cart-btn-action {
   font-family: var(--primary-font);
   font-size: 20px;
   font-weight: 600;
@@ -282,34 +253,40 @@ a {
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: 12px;
-}
-
-.mini-cart-btn-action:hover {
-  color: white;
-  border: 2px solid var(--primary-color);
-  border-radius: 12px;
-  background-color: var(--primary-color);
   transition: ease-in-out 0.5s;
 }
 
-.rsth1--mini-wishlist {
-  width: 550px;
-  position: absolute;
-  z-index: 10;
-  background-color: #fff;
-  top: 60px;
-  right: 0px;
-  display: none;
-  border-radius: 24px;
+.rsth1--mini-cart-btn-action:hover {
+  color: white;
+  background-color: var(--primary-color);
 }
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .rsth1--overlay a {
+    font-size: 20px;
+  }
+  .rsth1--overlay .closebtn {
+    font-size: 40px;
+    right: 35px;
+  }
+}
+/* **************** Header Section Ends ****************  */
+/* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rsth1-hero-section {
   /* padding:35px 0px 50px; */
   padding-top: 35px;
   padding-top: 35px;
 }
-
-/* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-
 .rsth1-hero-section .contact-banner {
   background-image: url("../images/contact-us/hero-section-bg.webp");
 }
