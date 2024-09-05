@@ -22,7 +22,8 @@
 .rsth1--top-bar {
   height: 55px;
   background-color: var(--primary-color);
-  padding: 8px 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .rsth1--top-bar .navbar-text {
@@ -67,19 +68,33 @@
 }
 
 /* Primary Navigation Bar Styles */
-.rsth1--primary-bar .rsth1--primary-bar-row {
-  background-color: var(--white-color) !important;
-  padding: 32px 0 39px;
+.rsth1--primary-bar-wrapper{
   border-bottom: 1px solid #c0c0c0;
 }
 
+.rsth1--primary-bar .rsth1--primary-bar-row {
+  background-color: var(--white-color) !important;
+  padding: 32px 0 39px;
+}
+
+.main-nav-wrapper{
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-nav-logo{
+  flex-basis: 10%;
+}
 .rsth1--main-primary-ul {
   flex-basis: 45%;
 }
 
 .rsth1--primary-col-right {
-  flex-basis: 40%;
-  padding-left: 100px;
+  flex-basis: 45%;
+  padding-left: 20px;
 }
 
 .rsth1--primary-bar .navbar-nav .nav-link {
@@ -88,8 +103,10 @@
   padding: 0;
 }
 
-.rsth1--primary-bar .navbar-nav .border-bottom-custom {
+.primary-navigation .active .nav-link {
   border-bottom: 2px solid #dc2b2a;
+}
+.rsth1--primary-bar .navbar-nav .border-bottom-custom {
 }
 
 /* Search Form Styles */
@@ -110,10 +127,31 @@
   box-shadow: none;
 }
 
+
 /* Mega Menu Styles */
 .navbar .megamenu {
   padding: 1rem;
 }
+
+.mega-menu-cols h5{
+  font-family: var(--secondary-font);
+  color: var(--secondry-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mega-menu-cols .mega-menu--list-items{
+  font-family: var(--primary-font);
+  color: var(--secondry-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mega-menu-cols .mega-menu--list-items:hover{
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
 
 @media all and (min-width: 992px) {
   .navbar .has-megamenu {
@@ -123,9 +161,26 @@
     left: 0;
     right: 0;
     width: 100%;
-    margin-top: 0;
+    margin-top: -50px;
   }
 }
+
+@media all and (max-width: 991px) {
+  .navbar .megamenu {
+    position: absolute !important;
+  }
+  .navbar .megamenu{
+    left: -394%;
+    top: 150px;
+    width: max-content;
+    margin-top: -50px;
+  }
+
+   .megamenu .mega-menu--row .mega-menu-cols{
+    row-gap: 50px;
+  }
+}
+
 
 .rsth1--primary-bar-row h5 {
   font-family: var(--secondary-font);
@@ -220,28 +275,149 @@
   border-radius: 24px;
 }
 
-.rsth1--mini-cart-content {
+/* Mini Cart Cascading style sheet code */
+.rsth1--mini-wishlist-content{
   padding: 40px;
   border-radius: 24px !important;
 }
 
-.rsth1--mini-cart-title {
+.mini-wishlist-title{
   margin-bottom: 40px !important;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 500;
 }
 
-.rsth1--mini-cart-items-list {
+.mini-wishlist-items-list {
   margin-top: 32px;
   margin-bottom: 48px;
 }
 
-.rsth1--mini-cart-item-details {
+.mini-wishlist--item-details{
+  border: 1px solid #bdbdbdb3;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.wishlist-item-img{
+  width: max-content;
+  padding: 11px 21px;
+  background-color: #f5f5f5;
+  border-radius: 11px;
+}
+
+.mini-wishlist-item-image{
+  width: 50px;
+  height: 60px;
+}
+
+.wishlist-items-info{
+  width:60%;
+}
+
+.item-price-dels{
+  width: max-content;
+}
+
+.wishlist-items-info h6{
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;  
+}
+
+
+.wishlist-item-price p {
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.mini-wishlist-items-no p{
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: auto;
+}
+
+/* Mini Cart Cascading style sheet code */
+.rsth1--mini-cart-content{
+  padding: 40px;
+  border-radius: 24px !important;
+}
+
+.mini-cart-title {
+  margin-bottom: 40px !important;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.mini-cart-items-list {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.mini-cart--item-details{
   border: 1px solid #bdbdbdb3;
   padding: 12px;
   border-radius: 14px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.rsth1--mini-cart-btns {
+.cart-item-img{
+  width: max-content;
+  padding: 11px 21px;
+  background-color: #f5f5f5;
+  border-radius: 11px;
+}
+
+.mini-cart-item-image{
+  width: 50px;
+  height: 60px;
+}
+
+.cart-items-info{
+  width:60%;
+}
+
+.item-price-dels{
+  width: max-content;
+}
+
+.cart-items-info h6{
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;  
+}
+
+
+.cart-item-quantity i ,.item-price-dels i {
+  font-size: 10px;
+  padding: 10px 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 1px solid #9c9c9c33;
+}
+
+.item-price-dels i {
+  font-size: 13px;
+}
+
+.mini-cart-items-no{
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: auto;
+}
+
+.mini-cart-total h4{
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: auto;
+}
+.mini-cart--btns {
   margin-top: 40px;
 }
 
@@ -812,7 +988,15 @@
   }
 }
 
-@media (min-width: 678px) and (max-width: 992px) {
+@media (min-width: 992px)  and (max-width: 1200px) {
+
+  .rsth1--top-nav-item {
+    padding: 0 16px;
+}
+}
+
+
+@media (min-width: 678px) and (max-width: 991px) {
   .rsth1--top-bar .navbar-text {
     font-size: 12px;
   }
@@ -820,6 +1004,10 @@
   .rsth1--top-bar .navbar-text a {
     font-size: 14px;
   }
+
+  .rsth1--top-nav-item {
+    padding: 0 5px;
+}
 
   .top-nav-items .dropdown-center button,
   a {
@@ -840,7 +1028,19 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
+  .main-nav-logo{
+    flex-basis: 20%;
+  }
+  .rsth1--main-primary-ul {
+    flex-basis: 80% !important;
+  }
+  
+  .rsth1--primary-col-right {
+    flex-basis: 100%;
+    padding-top: 10px;
+}
+
   .rsth1-get-in-touch .content .get-in-touch {
     width: 100%;
   }
@@ -929,6 +1129,15 @@
     padding: 10px 20px;
   }
 }
+
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav {
+      flex-direction: row !important;
+  }
+}
+
+/* ---------------------------------------------- Noor Dev -------------------------------------------------- */
+
 .f-size-20 {
   font-size: 20px;
 }

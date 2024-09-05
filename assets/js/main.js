@@ -109,22 +109,33 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($){
   // Toggle mini-cart and hide mini-wishlist if it's open
-  $("#mini-cart-icon").click(function (event) {
-    event.preventDefault(); // Prevent default link behavior
-    $("#mini-wishlist").hide(); // Hide the wishlist if it's open
-    $("#mini-cart").fadeToggle(); // Toggle the mini-cart
+  $("#mini-cart-icon").click(function(event){
+      event.preventDefault(); // Prevent default link behavior
+      event.stopPropagation(); // Stop the click from propagating to the document
+      $("#mini-wishlist").hide(); // Hide the wishlist if it's open
+      $("#mini-cart").fadeToggle(); // Toggle the mini-cart
   });
 
   // Toggle mini-wishlist and hide mini-cart if it's open
-  $("#mini-wishlist-icon").click(function (event) {
-    event.preventDefault(); // Prevent default link behavior
-    $("#mini-cart").hide(); // Hide the mini-cart if it's open
-    $("#mini-wishlist").fadeToggle(); // Toggle the mini-wishlist
+  $("#mini-wishlist-icon").click(function(event){
+      event.preventDefault(); // Prevent default link behavior
+      event.stopPropagation(); // Stop the click from propagating to the document
+      $("#mini-cart").hide(); // Hide the mini-cart if it's open
+      $("#mini-wishlist").fadeToggle(); // Toggle the mini-wishlist
+  });
+
+  // Close both mini-cart and mini-wishlist when clicking anywhere else on the body
+  $(document).click(function(event){
+      if (!$(event.target).closest('#mini-cart, #mini-cart-icon').length) {
+          $("#mini-cart").hide(); // Hide the mini-cart if clicked outside
+      }
+      if (!$(event.target).closest('#mini-wishlist, #mini-wishlist-icon').length) {
+          $("#mini-wishlist").hide(); // Hide the mini-wishlist if clicked outside
+      }
   });
 });
-
 // -----Country Code Selection
 $("#mobile_code").intlTelInput({
   initialCountry: "pk",
