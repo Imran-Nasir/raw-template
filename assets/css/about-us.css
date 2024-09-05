@@ -11,489 +11,479 @@
   --secondary-font: "Rubik", sans-serif;
 }
 
-  /* hero section  */
-.container-fluid {
-    padding:35px 100px 50px 100px !important;
-  }
-    
-  .rsth1-hero-section .row{
-    background-image: url('/assets/images/about-us/hero-imge.png');
-    background-size: cover;
-    background-position: center;    
-    background-repeat: no-repeat;
-    height: 400px;
-    padding-left: 84px;
-    border-radius: 20px;
-  }
-  
-  .rsth1-hero-section .hero-section h1{
-    font-family: "Rubik", sans-serif;
-    font-size: 40px;
-    line-height: 60px;
-    font-weight: 600;
-  }
-  
-  .rsth1-hero-section .hero-section .breadcrumbs a{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  
-  .rsth1-hero-section .hero-section .breadcrumbs a{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
-  }
-  
-  .rsth1-hero-section .hero-section .breadcrumbs span{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-  }
+/* hero section  */
+
+.rsth1-hero-section .row {
+  background-image: url("../images/about-us/hero-imge.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-left: 84px;
+  border-radius: 20px;
+}
+
+.rsth1-hero-section .hero-section h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.rsth1-hero-section .hero-section .breadcrumbs a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.rsth1-hero-section .hero-section .breadcrumbs a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.rsth1-hero-section .hero-section .breadcrumbs span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
 
 /* mobile responsive mobile devices */
 @media only screen and (max-width: 768px) {
-    .container-fluid {
-        padding:55px 35px 55px 35px !important;
-      }
+  .container-fluid {
+    padding: 55px 35px 55px 35px !important;
+  }
 
   .rsth1-hero-section .row {
-    background-image: url('/assets/images/about-us/hero-imge.png');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px; 
-    padding-left: 20px;  
+    height: 400px;
+    padding-left: 20px;
     border-radius: 20px;
   }
-  
-  .rsth1-hero-section .hero-section h1 {
-    font-size: 24px; 
-    line-height: 36px; 
-  }
-  
-  .rsth1-hero-section .hero-section .breadcrumbs a {
-    font-size: 14px; 
-    line-height: 18px; 
-  }
-  
-  .rsth1-hero-section .hero-section .breadcrumbs span {
-    font-size: 14px; 
-    line-height: 18px; 
-  }
-}  
-  /* hero section  */
 
+  .rsth1-hero-section .hero-section h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .rsth1-hero-section .hero-section .breadcrumbs a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .rsth1-hero-section .hero-section .breadcrumbs span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+/* hero section  */
 
 /* about-us section */
 .rsth1-about-us-section .col-md-6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section {
-    padding: 20px;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section h2 {
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section h2 span.text-primary {
-    color: #3C7BF6 !important;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section h2 span.text-secondary {
-    color: #020428 !important;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section .row {
-    margin-top: 40px;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section .row h5 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 5px;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section .row h5 span.text-primary {
-    color: #3C7BF6 !important;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section .row h5 span.text-secondary {
-    color: #020428 !important;
-  }
-  
-  .rsth1-about-us-section .about-us-text-section .row p {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: var(--secondary-font);
-    color: #666;
-    margin-bottom: 10px;
-    width: 90%;
-  }
-  
-  .rsth1-about-us-section .img-fluid {
-    width: 90%;
-    height: auto;
-    margin: 20px 0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* Tablet styles */
+.rsth1-about-us-section .about-us-text-section {
+  padding: 20px;
+}
+
+.rsth1-about-us-section .about-us-text-section h2 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rsth1-about-us-section .about-us-text-section h2 span.text-primary {
+  color: #3c7bf6 !important;
+}
+
+.rsth1-about-us-section .about-us-text-section h2 span.text-secondary {
+  color: #020428 !important;
+}
+
+.rsth1-about-us-section .about-us-text-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.rsth1-about-us-section .about-us-text-section .row {
+  margin-top: 40px;
+}
+
+.rsth1-about-us-section .about-us-text-section .row h5 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.rsth1-about-us-section .about-us-text-section .row h5 span.text-primary {
+  color: #3c7bf6 !important;
+}
+
+.rsth1-about-us-section .about-us-text-section .row h5 span.text-secondary {
+  color: #020428 !important;
+}
+
+.rsth1-about-us-section .about-us-text-section .row p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  color: #666;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.rsth1-about-us-section .img-fluid {
+  width: 90%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Tablet styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .rsth1-about-us-section .col-md-6 {
-      flex-direction: column;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section {
-      padding: 30px;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section h2 {
-      font-size: 36px;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section p {
-      font-size: 13px;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section .row {
-      margin-top: 30px;
-    }
-
-    .rsth1-about-us-section .about-us-text-section .row p{
-        margin-top: 30px;
-        font-size: 13px;
-      }
-    
-    .rsth1-about-us-section .about-us-text-section .row h5 {
-      font-size: 24px;
-    }
-    
-    .rsth1-about-us-section .img-fluid {
-      width: 100%;
-      margin: 15px 0;
-    }
-  }
-
-  /* Mobile styles */
-@media only screen and (max-width: 767px) {
-    .rsth1-about-us-section .about-us-text-section h2 {
-      font-size: 28px;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section p {
-      font-size: 14px;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section .row h5 {
-      font-size: 20px;
-    }
-    
-    .rsth1-about-us-section .about-us-text-section .row p {
-      font-size: 12px;
-    }
-  }  
-      /* about us section end */
-
-      /* our mkission card section */
-  .rsth1-our-mission-card-section .card {
-    display: flex;
+  .rsth1-about-us-section .col-md-6 {
     flex-direction: column;
-    align-items: self-start;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    background-color: #F5F5F5;
   }
-  
+
+  .rsth1-about-us-section .about-us-text-section {
+    padding: 30px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section h2 {
+    font-size: 36px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section p {
+    font-size: 13px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section .row {
+    margin-top: 30px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section .row p {
+    margin-top: 30px;
+    font-size: 13px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section .row h5 {
+    font-size: 24px;
+  }
+
+  .rsth1-about-us-section .img-fluid {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  .rsth1-about-us-section .about-us-text-section h2 {
+    font-size: 28px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section p {
+    font-size: 14px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section .row h5 {
+    font-size: 20px;
+  }
+
+  .rsth1-about-us-section .about-us-text-section .row p {
+    font-size: 12px;
+  }
+}
+/* about us section end */
+
+/* our mkission card section */
+.rsth1-our-mission-card-section .card {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+
+.rsth1-our-mission-card-section .card img {
+  width: auto;
+  height: 10%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 40px;
+}
+
+.rsth1-our-mission-card-section .card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--secondry-color) !important;
+}
+
+.rsth1-our-mission-card-section .card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.rsth1-our-mission-card-section .read-more {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.rsth1-our-mission-card-section .read-more:hover {
+  color: #23527c;
+}
+
+.rsth1-our-mission-card-section .read-more i {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .rsth1-our-mission-card-section .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
   .rsth1-our-mission-card-section .card img {
     width: auto;
     height: 10%;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 40px;
   }
-  
   .rsth1-our-mission-card-section .card h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--secondry-color) !important;
+    font-size: 20px;
   }
-  
   .rsth1-our-mission-card-section .card p {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 14px;
   }
-  
-  .rsth1-our-mission-card-section .read-more {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--primary-color);
-    text-decoration: none;
-    margin-bottom: 40px;
-  }
-  
-  .rsth1-our-mission-card-section .read-more:hover {
-    color: #23527c;
-  }
-  
-  .rsth1-our-mission-card-section .read-more i {
-    font-size: 12px;
-    margin-left: 5px;
-  }
-  
-  /* Tablet styles */
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .rsth1-our-mission-card-section .card {
-      flex-direction: column;
-      align-items: center;
-      padding: 15px;
-    }
-    .rsth1-our-mission-card-section .card img {
-        width: auto;
-        height: 10%;
-        object-fit: cover;
-    }
-    .rsth1-our-mission-card-section .card h2 {
-      font-size: 20px;
-    }
-    .rsth1-our-mission-card-section .card p {
-      font-size: 14px;
-    }
-  }
-  
-  /* Mobile styles */
-  @media only screen and (max-width: 767px) {
-    .rsth1-our-mission-card-section .card {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-    }
-    .rsth1-our-mission-card-section .card img {
-      height: 100px;
-    }
-    .rsth1-our-mission-card-section .card h2 {
-      font-size: 18px;
-    }
-    .card p {
-      font-size: 12px;
-    }
-  }
-      /* our mission section card ended */
-
-      
-      /* Our detail man card section */
-      .rsth1-our-detail-man-card-section {
-        margin: 40px auto;
-        padding: 20px;
-      }
-      
-      .rsth1-our-detail-man-card-section .left-side {
-        padding: 100px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        background-color: #F5F5F5;
-      }
-      
-      .rsth1-our-detail-man-card-section .col-md-7 .left-side {
-        padding: 200px !important;
-      }
-      
-      .rsth1-our-detail-man-card-section .paragraph-p-3 {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.7;
-        margin-bottom: 30px;
-        font-family: var(--secondary-font);
-        color: #9C9C9C;
-        width: -webkit-fill-available;
-        padding-right: 60px;
-      }
-      
-      .rsth1-our-detail-man-card-section .small-heading {
-        font-size: 22px;
-        font-weight: 600;
-        font-family: var(--primary-font);
-        margin-bottom: 10px;
-      }
-      
-      .rsth1-our-detail-man-card-section .two-color-heading {
-        width: 55%;
-        font-size: 40px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        font-family: var(--primary-font);
-      }
-      
-      .rsth1-our-detail-man-card-section .primary-color {
-        color: var(--secondry-color);
-      }
-      
-      .rsth1-our-detail-man-card-section .secondary-color {
-        color: var(--primary-color);
-      }
-      
-      .rsth1-our-detail-man-card-section .right-side {
-        position: relative;
-        border-radius: 10px;
-      }
-      
-      .rsth1-our-detail-man-card-section .right-side img {
-        position: absolute;
-        width: 100%;
-        right: 60px;
-        border-radius: 10px;
-        top: 7px;
-      }
-      
-      /* Mobile responsiveness */
-      @media only screen and (max-width: 767px) {
-        .rsth1-our-detail-man-card-section .left-side {
-          padding: 50px;
-        }
-        .rsth1-our-detail-man-card-section .paragraph-p-3 {
-          font-size: 16px;
-          padding-right: 0px;
-        }
-        .rsth1-our-detail-man-card-section .two-color-heading {
-          font-size: 30px;
-          width: 85%;
-        }
-        .rsth1-our-detail-man-card-section .right-side img {
-          position: static;
-          width: 100%;
-      }    
-        
-      }
-
-      /* Tablet Responive */
-      @media only screen and (min-width: 768px) and (max-width: 1400px) {
-        .rsth1-our-detail-man-card-section .left-side {
-          padding: 100px;
-        }
-        .rsth1-our-detail-man-card-section .paragraph-p-3 {
-          font-size: 18px;
-          padding-right: 30px;
-        }
-        .rsth1-our-detail-man-card-section .two-color-heading {
-          font-size: 40px;
-          width: 85%;
-        }
-         .rsth1-our-detail-man-card-section .right-side img {
-          position: static;
-          width: 100%;
-        } 
-        .rsth1-our-detail-man-card-section .row {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-        }
-        .rsth1-our-detail-man-card-section .col-md-4 {
-             flex: 0 0 auto;
-             width: 60.333333%;
-    }
-    }
-      /* Our detail man card section ended */
-      
-
-      /* carousel section */
- .rsth1-carousel-section {
-    padding: 50px 0;
 }
 
-.rsth1-carousel-section .col-md-3{
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  .rsth1-our-mission-card-section .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .rsth1-our-mission-card-section .card img {
+    height: 100px;
+  }
+  .rsth1-our-mission-card-section .card h2 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+}
+/* our mission section card ended */
+
+/* Our detail man card section */
+.rsth1-our-detail-man-card-section {
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.rsth1-our-detail-man-card-section .left-side {
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.rsth1-our-detail-man-card-section .col-md-7 .left-side {
+  padding: 200px !important;
+}
+
+.rsth1-our-detail-man-card-section .paragraph-p-3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  font-family: var(--secondary-font);
+  color: #9c9c9c;
+  width: -webkit-fill-available;
+  padding-right: 60px;
+}
+
+.rsth1-our-detail-man-card-section .small-heading {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+}
+
+.rsth1-our-detail-man-card-section .two-color-heading {
+  width: 55%;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+}
+
+.rsth1-our-detail-man-card-section .primary-color {
+  color: var(--secondry-color);
+}
+
+.rsth1-our-detail-man-card-section .secondary-color {
+  color: var(--primary-color);
+}
+
+.rsth1-our-detail-man-card-section .right-side {
+  position: relative;
+  border-radius: 10px;
+}
+
+.rsth1-our-detail-man-card-section .right-side img {
+  position: absolute;
+  width: 100%;
+  right: 60px;
+  border-radius: 10px;
+  top: 7px;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 767px) {
+  .rsth1-our-detail-man-card-section .left-side {
+    padding: 50px;
+  }
+  .rsth1-our-detail-man-card-section .paragraph-p-3 {
+    font-size: 16px;
+    padding-right: 0px;
+  }
+  .rsth1-our-detail-man-card-section .two-color-heading {
+    font-size: 30px;
+    width: 85%;
+  }
+  .rsth1-our-detail-man-card-section .right-side img {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* Tablet Responive */
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+  .rsth1-our-detail-man-card-section .left-side {
+    padding: 100px;
+  }
+  .rsth1-our-detail-man-card-section .paragraph-p-3 {
+    font-size: 18px;
+    padding-right: 30px;
+  }
+  .rsth1-our-detail-man-card-section .two-color-heading {
+    font-size: 40px;
+    width: 85%;
+  }
+  .rsth1-our-detail-man-card-section .right-side img {
+    position: static;
+    width: 100%;
+  }
+  .rsth1-our-detail-man-card-section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rsth1-our-detail-man-card-section .col-md-4 {
+    flex: 0 0 auto;
+    width: 60.333333%;
+  }
+}
+/* Our detail man card section ended */
+
+/* carousel section */
+.rsth1-carousel-section {
+  padding: 50px 0;
+}
+
+.rsth1-carousel-section .col-md-3 {
   display: flex;
   justify-content: center;
 }
 
 .rsth1-carousel-section .carousel-heading {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .rsth1-carousel-section .carousel-heading h3 {
-    color: #000000; 
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 10px;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .rsth1-carousel-section .carousel-heading h2 {
-    color: #000000; 
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 10px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .rsth1-carousel-section .carousel-heading p {
-    color: #9C9C9C; 
-    font-size: 22px;
-    font-family: League Spartan;
-    font-weight: 300;
-    margin-bottom: 10px;
+  color: #9c9c9c;
+  font-size: 22px;
+  font-family: League Spartan;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .rsth1-carousel-section .carousel-heading h2 span {
-    color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
-.rsth1-carousel-section .row .col-md-3 .card{
-    width: 70%;
-    margin-bottom: 20px;
+.rsth1-carousel-section .row .col-md-3 .card {
+  width: 70%;
+  margin-bottom: 20px;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  width: 2% !important;  
+.carousel-control-next,
+.carousel-control-prev {
+  width: 2% !important;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%); 
+  filter: invert(100%);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: rgba(255, 255, 255, 0.5); 
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
 
 /* Mobile responsive styles */
 @media only screen and (max-width: 768px) {
-    .rsth1-carousel-section .carousel-heading h2 {
-        font-size: 24px;
-    }
-    .rsth1-carousel-section .carousel-heading p {
-        font-size: 18px;
-    }
-    .rsth1-carousel-section .row .col-md-3 .card{
-        width: 90%;
-        margin-bottom: 10px;
-    }
-    .rsth1-carousel-section .row .col-md-3 .card img {
-        width: 100%;
-        height: 150px; 
-        object-fit: cover;
-        
-    }
-    .rsth1-carousel-section .col-md-3{
-        display: flex;
-        justify-content: center;
-    }
+  .rsth1-carousel-section .carousel-heading h2 {
+    font-size: 24px;
+  }
+  .rsth1-carousel-section .carousel-heading p {
+    font-size: 18px;
+  }
+  .rsth1-carousel-section .row .col-md-3 .card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .rsth1-carousel-section .row .col-md-3 .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .rsth1-carousel-section .col-md-3 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-      /* carousel section ended */
-
-
+/* carousel section ended */
