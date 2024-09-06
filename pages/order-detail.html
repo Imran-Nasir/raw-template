@@ -21,7 +21,8 @@
       rel="stylesheet"
       href="../assets/fontawesome-free-6.6.0-web/css/brands.css"
     />
-    <link rel="stylesheet" href="../assets/css/mainstyle.css" />
+    <link rel="stylesheet" href="../assets/css/mainstyle.css" 
+    />
   </head>
   <body>
     <!-- ///////////////////////// Header Section /////////////////////// -->
@@ -686,7 +687,7 @@
     </header>
     <!-- /////////////////////////Header Section Ends /////////////////////// -->
     <!-- hero section -->
-    <div class="container-fluid rsth1-hero-section">
+    <div class="container rsth1-hero-section">
       <div class="row">
         <div class="col-sm-12 d-flex justify-content-start align-items-center">
           <div class="hero-section">
@@ -750,7 +751,7 @@
       </div>
       <div class="row mt-4 table-border">
         <div class="col-md-12">
-          <h3 class="mb-4 mt-3 border-bottom">Order Details</h3>
+          <h3 class="mb-4 mt-3 border-bottom custom-heading-order">Order Details</h3>
           <div class="row">
             <div class="col-md-8 table-border p-0 custom-spaceing">
               <div class="table-responsive">
@@ -766,11 +767,10 @@
                     <tr>
                       <td>
                         <img
-                          src="/assets/images/order-detail/product-mobile.png"
+                          src="../assets/images/order-detail/product-mobile.png"
                           alt="Product Image"
-                          class="mr-2"
-                        />
-                        IPhone 15 Pro Max
+                          class="mr-2"/>
+                        <b>IPhone 15 Pro Max</b>
                       </td>
                       <td class="td-custom-padding">4 April, 2024</td>
                       <td class="td-custom-padding">(01 Products)</td>
@@ -796,16 +796,16 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Subtotal:</td>
-                      <td>$1200.00</td>
+                      <td class="custom-billing-address-p">Subtotal:</td>
+                      <td><b>$1200.00</b></td>
                     </tr>
                     <tr>
-                      <td>Discount</td>
-                      <td>20%</td>
+                      <td class="custom-billing-address-p">Discount</td>
+                      <td><b>20%</b></td>
                     </tr>
                     <tr>
-                      <td>Shipping</td>
-                      <td>Free</td>
+                      <td class="custom-billing-address-p">Shipping</td>
+                      <td><b>Free</b></td>
                     </tr>
                     <tr class="mb-3">
                       <td class="custom-spaceing-bg-color">
@@ -821,7 +821,7 @@
             </div>
           </div>
         </div>
-        <div class="row mt-4">
+        <div class="row m-0 mt-4">
           <div class="col-md-4 table-border p-0">
             <div class="table-responsive">
               <table class="table">
@@ -834,10 +834,10 @@
                   <tr>
                     <td>
                       <p><strong> Dainne Russell</strong></p>
-                      <p>4077 Ortiz Keys, South</p>
-                      <p>Makenziefurt 09533</p>
-                      <p>EMAIL<br /><strong>Daniel69@gmail.com</strong></p>
-                      <p>PHONE<br /><strong>(051) 555-9786</strong></p>
+                      <p class="custom-billing-address-p">4077 Ortiz Keys, South</p>
+                      <p class="custom-billing-address-p">Makenziefurt 09533</p>
+                      <p><span class="custom-billing-address">EMAIL</span><br /><strong>Daniel69@gmail.com</strong></p>
+                      <p><span class="custom-billing-address">PHONE</span><br /><strong>(051) 555-9786</strong></p>
                     </td>
                   </tr>
                 </tbody>
@@ -856,10 +856,10 @@
                   <tr>
                     <td>
                       <p><strong> Dainne Russell</strong></p>
-                      <p>4077 Ortiz Keys, South</p>
-                      <p>Makenziefurt 09533</p>
-                      <p>EMAIL<br /><strong>Daniel69@gmail.com</strong></p>
-                      <p>PHONE<br /><strong>(051) 555-9786</strong></p>
+                      <p class="custom-billing-address-p">4077 Ortiz Keys, South</p>
+                      <p class="custom-billing-address-p">Makenziefurt 09533</p>
+                      <p><span class="custom-billing-address">EMAIL</span><br /><strong>Daniel69@gmail.com</strong></p>
+                      <p><span class="custom-billing-address">PHONE</span><br /><strong>(051) 555-9786</strong></p>
                     </td>
                   </tr>
                 </tbody>
@@ -1020,6 +1020,10 @@
       </div>
     </footer>
     <!-- ///////////////////////// Footer Section Ends ///////////////////////// -->
+     
+    <!-- Footer Scripts -->
+    <script src="../assets/vendor/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>

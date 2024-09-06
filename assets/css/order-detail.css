@@ -7,17 +7,18 @@
     --primary-color: #3c7bf6;
     --secondry-color: #020428;
     --accent-color: #e58924;
+    --white-color: #fff;
+    --light-white-color: #E6E6E6;
+    --light-white-2-color: #F5F5F5;
+    --dark-silver-color: #808080;
+    --dark-silver-2-color: #999999;
     --primary-font: "League Spartan", sans-serif;
     --secondary-font: "Rubik", sans-serif;
     }
 
-    /* hero section  */
-    .container-fluid {
-        padding:35px 100px 50px 100px !important;
-    }
-        
+    /* hero section  */        
     .rsth1-hero-section .row{
-        background-image: url('/assets/images/order-detail/desktop-hero-bg.png');
+        background-image: url('../images/order-detail/desktop-hero-bg.png');
         background-size: cover;
         background-position: center;    
         background-repeat: no-repeat;
@@ -27,7 +28,7 @@
     }
     
     .rsth1-hero-section .hero-section h1{
-        font-family: "Rubik", sans-serif;
+        font-family: var(--secondary-font);
         font-size: 40px;
         line-height: 60px;
         font-weight: 600;
@@ -37,14 +38,16 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 20px;
-    }
-    
-    .rsth1-hero-section .hero-section .breadcrumbs a{
+        font-family: var(--primary-font);
+      }
+
+      .rsth1-hero-section .hero-section .breadcrumbs a{
         font-weight: 600;
         font-size: 18px;
         line-height: 20px;
-    }
-    
+        font-family: var(--primary-font);
+      }
+      
     .rsth1-hero-section .hero-section .breadcrumbs span{
         font-weight: 500;
         font-size: 18px;
@@ -53,12 +56,8 @@
 
     /* mobile responsive mobile devices */
     @media only screen and (max-width: 768px) {
-        .container-fluid {
-            padding:55px 35px 55px 35px !important;
-        }
-
     .rsth1-hero-section .row {
-        background-image: url('/assets/images/order-detail/mobile-hero-bg.png');
+        background-image: url('../images/order-detail/mobile-hero-bg.png');
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat;
@@ -87,8 +86,13 @@
     /* hero section ended */
 
     /* TABLE SECTION */
+    .rsth1-order-step-text{
+        font-size: 18px;
+        font-family: var(--secondary-font);
+        font-weight: 500;
+    } 
     .order-detail-section-backgound{
-        background-image: url('/assets/images/order-detail/process-bg.png');
+        background-image: url('../images/order-detail/process-bg.png');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -100,42 +104,47 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        color: #fff;
+        color: var(--white-color);
         font-size: 24px;
         line-height: 60px;
         margin: 0 auto;
         padding: 0; 
     }
     .rsth1-order-step-icon.rsth1-order-step-icon-active {
-        background-image: url('/assets/images/order-detail/box-bg.png'); 
+        background-image: url('../images/order-detail/box-bg.png'); 
     }
 
     .rsth1-order-step-icon-2 {
-        background-image: url('/assets/images/order-detail/box-bg.png'); 
-        color: #fff;
+        background-image: url('../images/order-detail/box-bg.png'); 
+        color: var(--white-color);
     }
 
     .rsth1-order-step-icon-3 {
-        background-image: url('/assets/images/order-detail/box-bg-white.png'); 
-        color: #020428;
+        background-image: url('../images/order-detail/box-bg-white.png'); 
+        color: var(--secondry-color);
         background-size: contain;
     }
 
     .rsth1-order-step-icon-4 {
-        background-image: url('/assets/images/order-detail/box-bg-white.png'); 
-        color: #020428;
+        background-image: url('../images/order-detail/box-bg-white.png'); 
+        color: var(--secondry-color);
         background-size: contain;  
     }
-
-        .rsth1-order-detail-section .table-border{
-            border: 1px solid #E6E6E6 !important;
-            border-radius: 10px;
-            padding: 10px;
-        }
-
+    .rsth1-order-detail-section .custom-heading-order{
+        font-size: 24px;
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        margin-bottom: 20px;    
+    }
+    .rsth1-order-detail-section .table-border{
+        border: 1px solid var(--light-white-color) !important;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 15px;
+     }
     .rsth1-order-detail-section .custom-thead th {
-        background-color: #F5F5F5 !important;
-        color: #808080 !important;
+        background-color: var(--light-white-2-color) !important;
+        color: var(--dark-silver-color) !important;
         font-family: var(--secondary-font);
         font-size: 14px;
         font-weight: 500;
@@ -147,22 +156,34 @@
 
     .rsth1-order-detail-section .mb-3 .font-weight-semibold {
         font-weight: 700;
-        color: #3C7BF6 !important; 
+        color: var(--primary-color) !important; 
         
-    }
-
+    } 
     .rsth1-order-detail-section .td-custom-padding{
         padding-top: 40px;
     }
-
+    .rsth1-order-detail-section td{
+        font-family: var(--primary-font);
+        font-size: 18px;
+    }
     .rsth1-order-detail-section .text-right{
         text-align: end;
         margin-bottom: 20px;
     }
-
     .rsth1-order-detail-section .custom-spaceing-bg-color{
-        background-color: #F5F5F5;
+        background-color: var(--light-white-2-color);
         padding: 20px;
+    }
+    .rsth1-order-detail-section .custom-billing-address{
+        font-family: var(--secondary-font);
+        font-size: 16px;
+        color: var(--dark-silver-2-color);
+    }
+    .rsth1-order-detail-section .custom-billing-address-p{
+        font-family: var(--secondary-font);
+        font-size: 16px;
+        color: var(--dark-silver-2-color);
+   
     }
     /* Making it responsive using Bootstrap */
     @media (max-width: 576px) {
@@ -178,7 +199,7 @@
             margin-bottom: 15px;
         }
         .rsth1-order-detail-bg {
-            background-image: url('/assets/images/order-detail/');
+            background-image: url('../images/order-detail/');
             background-position: center;
             background-repeat: no-repeat;
         }

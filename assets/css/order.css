@@ -7,17 +7,20 @@
   --primary-color: #3c7bf6;
   --secondry-color: #020428;
   --accent-color: #e58924;
+  --red-color: red;
+  --green-color: green;
+  --yellow-color: yellow;
+  --silver-color: #CCCCCC;
+  --dark-silver-color: #808080;
+  --light-white-2-color: #ddd;
+  --light-white-1-color: #F5F5F5;	
   --primary-font: "League Spartan", sans-serif;
   --secondary-font: "Rubik", sans-serif;
 }
 
   /* hero section  */
-.container-fluid {
-    padding:35px 100px 50px 100px !important;
-  }
-    
   .rsth1-hero-section .row{
-    background-image: url('/assets/images/order/hero.png');
+    background-image: url('../images/order/hero.png');
     background-size: cover;
     background-position: center;    
     background-repeat: no-repeat;
@@ -27,7 +30,7 @@
   }
   
   .rsth1-hero-section .hero-section h1{
-    font-family: "Rubik", sans-serif;
+    font-family: var(--secondary-font); 
     font-size: 40px;
     line-height: 60px;
     font-weight: 600;
@@ -37,12 +40,14 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
+    font-family: var(--primary-font);
   }
   
   .rsth1-hero-section .hero-section .breadcrumbs a{
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
+    font-family: var(--primary-font);
   }
   
   .rsth1-hero-section .hero-section .breadcrumbs span{
@@ -53,12 +58,8 @@
 
 /* mobile responsive mobile devices */
 @media only screen and (max-width: 768px) {
-    .container-fluid {
-        padding:55px 35px 55px 35px !important;
-      }
-
   .rsth1-hero-section .row {
-    background-image: url('/assets/images/order/hero.png');
+    background-image: url('../images/order/hero.png');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +98,19 @@
   .cell-padding-2 {
     padding: 8px 16px; 
 }
-  
+ .rsth1-tabel-section .custom-font-weight-td{ 
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondry-color);
+ }
+
+ .rsth1-tabel-section .custom-font-weight-td-bt{ 
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
   .rsth1-tabel-section .text-center {
     text-align: start;
     display: flex;
@@ -106,8 +119,8 @@
 }
 
 .rsth1-tabel-section .custom-thead th {
-    background-color: #F5F5F5 !important;
-    color: #808080 !important;
+    background-color: var(--light-white-1-color) !important;
+    color: var(--dark-silver-color) !important;
     font-family: var(--secondary-font);
     font-size: 14px;
     font-weight: 500;
@@ -129,25 +142,25 @@
 .rsth1-tabel-section .orders-history th,
 .rsth1-tabel-section .orders-history td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--light-white-2-color);
     text-align: left;
 }
 
 .rsth1-tabel-section .orders-history th {
-    background-color: #f5f5f5;
+    background-color: var(--light-white-1-color);
     font-weight: bold;
 }
 
 .rsth1-tabel-section .orders-history .status-pending {
-    color: orange;
+    color: var(--yellow-color);
 }
 
 .rsth1-tabel-section .orders-history .status-completed {
-    color: green;
+    color: var(--green-color);
 }
 
 .rsth1-tabel-section .orders-history .status-rejected {
-    color: red;
+    color: var(--red-color);
 }
 
 .rsth1-tabel-section .page-navigation nav {
@@ -158,7 +171,7 @@
     margin-bottom: 100px;
     margin-top: 40px;
     padding: 10px;
-    background-color: #F5F5F5;
+    background-color: var(--light-white-1-color);
 }
 
 .rsth1-tabel-section .pagination {
@@ -188,8 +201,8 @@
 }
 
 .rsth1-tabel-section .back-button {
-  color: #CCCCCC !important;
-  border: 2px solid #CCCCCC !important;
+  color: var(--silver-color) !important;
+  border: 2px solid var(--silver-color) !important;
 }
 
 /* Responsive mobile devices */
@@ -226,8 +239,8 @@
   .rsth1-tabel-section .back-button,
   .rsth1-tabel-section .next-button {
       display: flex;
-      color: #CCCCCC !important;
-      border: 2px solid #CCCCCC !important;
+      color: var(--silver-color) !important;
+      border: 2px solid var(--silver-color) !important;
       font-size: 12px;
   }
 }

@@ -7,6 +7,12 @@
   --primary-color: #3c7bf6;
   --secondry-color: #020428;
   --accent-color: #e58924;
+  --silver-color: ;
+  --light-silver-color: #9c9c9c;
+  --dark-blue-color: #23527c;
+  --light-white-3-color: #ddd;
+  --light-white-2-color: #F5F5F5;		
+  --dark-silver-2-color: #666;
   --primary-font: "League Spartan", sans-serif;
   --secondary-font: "Rubik", sans-serif;
 }
@@ -24,22 +30,24 @@
 }
 
 .rsth1-hero-section .hero-section h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--primary-font);
   font-size: 40px;
   line-height: 60px;
   font-weight: 600;
 }
 
-.rsth1-hero-section .hero-section .breadcrumbs a {
+.rsth1-hero-section .hero-section .breadcrumbs a{
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
+  font-family: var(--primary-font);
 }
 
-.rsth1-hero-section .hero-section .breadcrumbs a {
+.rsth1-hero-section .hero-section .breadcrumbs a{
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
+  font-family: var(--primary-font);
 }
 
 .rsth1-hero-section .hero-section .breadcrumbs span {
@@ -50,10 +58,6 @@
 
 /* mobile responsive mobile devices */
 @media only screen and (max-width: 768px) {
-  .container-fluid {
-    padding: 55px 35px 55px 35px !important;
-  }
-
   .rsth1-hero-section .row {
     background-size: cover;
     background-position: center;
@@ -89,6 +93,8 @@
 
 .rsth1-about-us-section .about-us-text-section {
   padding: 20px;
+  font-family: var(--primary-font);
+  font-size: 44px;
 }
 
 .rsth1-about-us-section .about-us-text-section h2 {
@@ -98,11 +104,12 @@
 }
 
 .rsth1-about-us-section .about-us-text-section h2 span.text-primary {
-  color: #3c7bf6 !important;
+  color: var(--primary-color) !important;
 }
 
 .rsth1-about-us-section .about-us-text-section h2 span.text-secondary {
-  color: #020428 !important;
+  color: var(--secondry-color) !important;
+  font-family: var(--secondary-font);
 }
 
 .rsth1-about-us-section .about-us-text-section p {
@@ -122,18 +129,19 @@
 }
 
 .rsth1-about-us-section .about-us-text-section .row h5 span.text-primary {
-  color: #3c7bf6 !important;
+  color: var(--primary-color) !important;
 }
 
 .rsth1-about-us-section .about-us-text-section .row h5 span.text-secondary {
-  color: #020428 !important;
+  color: var(--secondry-color) !important;
+  font-family: var(--secondary-font);
 }
 
 .rsth1-about-us-section .about-us-text-section .row p {
   font-size: 18px;
   font-weight: 400;
   font-family: var(--secondary-font);
-  color: #666;
+  color: var(--dark-silver-2-color);
   margin-bottom: 10px;
   width: 90%;
 }
@@ -208,9 +216,9 @@
   align-items: self-start;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-white-3-color);
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: var(--light-white-2-color);
 }
 
 .rsth1-our-mission-card-section .card img {
@@ -231,18 +239,19 @@
 .rsth1-our-mission-card-section .card p {
   font-size: 16px;
   margin-bottom: 20px;
+  font-family: var(--primary-font);
 }
 
 .rsth1-our-mission-card-section .read-more {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--primary-color);
   text-decoration: none;
   margin-bottom: 40px;
 }
 
 .rsth1-our-mission-card-section .read-more:hover {
-  color: #23527c;
+  color: var(--dark-blue-color);
 }
 
 .rsth1-our-mission-card-section .read-more i {
@@ -274,11 +283,11 @@
 @media only screen and (max-width: 767px) {
   .rsth1-our-mission-card-section .card {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 10px;
   }
   .rsth1-our-mission-card-section .card img {
-    height: 100px;
+    height: 70px;
   }
   .rsth1-our-mission-card-section .card h2 {
     font-size: 18px;
@@ -299,7 +308,7 @@
   padding: 100px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f5f5f5;
+  background-color: var(--light-white-2-color);
 }
 
 .rsth1-our-detail-man-card-section .col-md-7 .left-side {
@@ -311,8 +320,8 @@
   font-weight: 400;
   line-height: 1.7;
   margin-bottom: 30px;
-  font-family: var(--secondary-font);
-  color: #9c9c9c;
+  font-family: var(--primary-font);
+  color: var(--light-silver-color);
   width: -webkit-fill-available;
   padding-right: 60px;
 }
@@ -325,11 +334,11 @@
 }
 
 .rsth1-our-detail-man-card-section .two-color-heading {
-  width: 55%;
+  width: 57%;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 20px;
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
 }
 
 .rsth1-our-detail-man-card-section .primary-color {
@@ -414,26 +423,30 @@
 .rsth1-carousel-section .carousel-heading {
   text-align: center;
   margin-bottom: 30px;
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .rsth1-carousel-section .carousel-heading h3 {
-  color: #000000;
+  color: var(--secondry-color);
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .rsth1-carousel-section .carousel-heading h2 {
-  color: #000000;
+  color: var(--secondry-color);
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 10px;
+  font-family: var(--secondary-font);
 }
 
 .rsth1-carousel-section .carousel-heading p {
-  color: #9c9c9c;
+  color: var(--light-silver-color);
   font-size: 22px;
-  font-family: League Spartan;
+  font-family: var(--primary-font);
   font-weight: 300;
   margin-bottom: 10px;
 }
