@@ -445,8 +445,8 @@
       <form action="" id="checkout-form">
         <div class="form-step" id="form-step-1">
           <div class="container py-5">
-            <div class="row">
-              <div class="col-md-7">
+            <div class="row ">
+              <div class="col-lg-7 col-md-12">
                 <h2 class="mb-4">Billing Information</h2>
                 <div class="mb-3">
                   <label for="emailPhone" class="form-label">Email or mobile phone number</label>
@@ -545,7 +545,7 @@
                   <button class="btn w-100 theme--btn">Back</button>
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-lg-5 col-md-12">
                 <!-- order summary -->
                 <div class="container rsth1--order-sum">
                   <div class="row">
@@ -628,28 +628,28 @@
                   <h2 class="mb-4">Payment Method</h2>
                   <!-- Debit/Credit Card -->
                   <div class="col-md-3 payment-method d-flex flex-column justify-content-between align-items-center">
-                    <img src="../assets/icons/debit-credit-card.svg" alt="Card Icon" />
+                    <img src="../assets/icons/debit-credit-card.svg" alt="Card Icon" class="filtered"/>
                     <div>Debit/Credit Card</div>
                     <input type="radio" name="payment-method" value="card" />
                   </div>
 
                   <!-- Cash on Delivery -->
                   <div class="col-md-3 payment-method d-flex flex-column justify-content-between align-items-center">
-                    <img src="../assets/icons/cash-on-delivery.svg" alt="Cash Icon" />
+                    <img src="../assets/icons/cash-on-delivery.svg" alt="Cash Icon" class="filtered"/>
                     <div>Cash on Delivery</div>
                     <input type="radio" name="payment-method" value="cod" />
                   </div>
 
                   <!-- Paypal -->
                   <div class="col-md-3 payment-method d-flex flex-column justify-content-between align-items-center">
-                    <img src="../assets/icons/paypal-payment-checkout.svg" alt="Paypal Icon" />
+                    <img src="../assets/icons/checkout-paypal.svg" alt="Paypal Icon" class="filtered" />
                     <div>Paypal</div>
                     <input type="radio" name="payment-method" value="paypal" />
                   </div>
 
                   <!-- Amazon Pay -->
                   <div class="col-md-3 payment-method d-flex flex-column justify-content-between align-items-center">
-                    <img src="../assets/icons/amazon-pay-checkout.svg" alt="Amazon Pay Icon" />
+                    <img src="../assets/icons/amazon-pay-checkout.svg" alt="Amazon Pay Icon" class="filtered"/>
                     <div>Amazon Pay</div>
                     <input type="radio" name="payment-method" value="amazonpay" />
                   </div>
