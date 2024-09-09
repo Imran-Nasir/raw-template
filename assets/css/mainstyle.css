@@ -1510,7 +1510,7 @@
   border-radius: 20px;
 }
 .rsth1-hero-section .hero-section h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: var(--secondary-font);
   font-size: 40px;
   line-height: 60px;
   font-weight: 600;
@@ -1748,14 +1748,17 @@
 /*  Cart Page */
 .cart-table th,
 .cart-table td {
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   text-align: left;
 }
 .cart-table th {
   color: #808080;
+  font-weight: 500;
+  font-family: var(--secondary-font);
 }
 .cart-table tr {
   vertical-align: middle;
+  color: var();
 }
 .qty-cart {
   border: 1px solid var(--light-white-color);
@@ -1797,7 +1800,8 @@
 }
 
 .card-title {
-  margin-bottom: 16px;
+  margin-bottom: 25px;
+  font-weight: 600 !important;
 }
 
 .input-group .form-control {
