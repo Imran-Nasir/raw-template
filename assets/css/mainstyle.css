@@ -556,8 +556,13 @@
   font-size: 15px;
   background-color: #3c7bf6;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 50%;
   color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rsth1-get-in-touch .info span {
@@ -817,6 +822,11 @@
   color: var(--secondry-color);
 }
 
+.rsth--checkout-page .payment-method .filtered{
+  filter: invert(55%) sepia(90%) saturate(2739%) hue-rotate(207deg)
+    brightness(100%) contrast(94%);
+}
+
 .rsth1--order-sum-content {
   padding: 40px;
   border-radius: 24px !important;
@@ -942,6 +952,21 @@
   background-color: #f5f5f5;
   border-radius: 16px;
   padding: 88px 64px;
+}
+@media only screen and (max-width:1200px){
+  .order-sum-item-img {
+    width: max-content;
+    padding: 10px 15px;
+  }
+  
+  .order-sum-item-image {
+    width: 40px;
+    height: 40px;
+  }
+
+.rsth1--order-sum-content {
+  padding: 20px !important;
+}
 }
 
 /*//////////////////////////////////////////////////////////footer started\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -1258,7 +1283,7 @@
   padding-top: 36px;
 }
 .hero-slide-item {
-  background: url(../images/home-page-banner.webp);
+  background: url(..../images/home-page-banner.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
