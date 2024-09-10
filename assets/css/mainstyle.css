@@ -1530,6 +1530,25 @@
 .rsth1-products-section .pagination {
   background-color: var(--bg-off-white);
 }
+
+.filter-custom-bg {
+  margin: 2px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .rsth1-products-section .sort-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 58%;
+    cursor: pointer;
+  }
+}
 /* Custom styling for the price slider */
 .price-slider {
   margin-top: 40px !important;
@@ -1682,7 +1701,7 @@
   padding: 0px !important;
 }
 .product-main-image {
-  width: 80%;
+  width: 75%;
   background: var(--bg-off-white);
   padding: 40px;
   border-radius: 20px;
