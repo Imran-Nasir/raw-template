@@ -9,7 +9,7 @@
   --primary-color: #3c7bf6;
   --secondry-color: #020428;
   --accent-color: #e58924;
-  --light-dark-color: #4D4D4D;
+  --light-dark-color: #4d4d4d;
   --white-color: #fff;
   --bg-off-white: #f5f5f5;
   --light-white-color: #e6e6e6;
@@ -445,7 +445,6 @@
 
 /* Responsive Styles */
 @media (max-width: 991px) {
-
   .navbar.fixed-top .navbar-collapse,
   .navbar.sticky-top .navbar-collapse {
     overflow-y: auto;
@@ -467,6 +466,9 @@
 
 /* **************** Header Section Ends ****************  */
 /* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.rsth1-hero-section {
+  margin-top: 30px;
+}
 .rsth1-hero-section .contact-banner {
   background-image: url("../images/contact-us/hero-section-bg.webp");
 }
@@ -481,11 +483,6 @@
 
 .rsth1-hero-section .checkout-banner {
   background-image: url("../images/checkout/checkout-banner-bg.webp");
-}
-
-.rsth1-hero-section {
-  padding-top: 0px;
-  padding-bottom: 50px;
 }
 
 .rsth1-hero-section .row {
@@ -504,15 +501,14 @@
   font-weight: 600;
 }
 
-
-.rsth1-hero-section .hero-section .breadcrumbs a{
+.rsth1-hero-section .hero-section .breadcrumbs a {
   font-family: var(--primary-font);
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
 }
 
-.rsth1-hero-section .hero-section .breadcrumbs span{
+.rsth1-hero-section .hero-section .breadcrumbs span {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 18px;
@@ -553,7 +549,7 @@
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 48px;
-  color: #020428
+  color: #020428;
 }
 
 .rsth1-get-in-touch .content .get-in-touch .text p {
@@ -618,9 +614,9 @@
 
 /*//////////////////////////////////////////////////////////Profile Page started\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
-.rsth1-profile-cards{
+.rsth1-profile-cards {
   padding-top: 24px;
-  padding-bottom:56px ;
+  padding-bottom: 56px;
 }
 
 .rsth1-profile-cards .card-content {
@@ -664,7 +660,8 @@
 }
 
 .rsth1-profile-cards .card-content:hover .card-icon img {
-  filter: invert(55%) sepia(90%) saturate(2739%) hue-rotate(207deg) brightness(100%) contrast(94%);
+  filter: invert(55%) sepia(90%) saturate(2739%) hue-rotate(207deg)
+    brightness(100%) contrast(94%);
 }
 
 .rsth1-profile-cards .card-content:hover .card-text .title {
@@ -675,8 +672,8 @@
   color: white;
 }
 
-.assist{  
-  color: #6D6D6D;
+.assist {
+  color: #6d6d6d;
   font-weight: 500;
   font-size: 24px;
   line-height: 20px;
@@ -722,7 +719,7 @@
   line-height: auto;
 }
 
-.account-details-content form .form-cols{
+.account-details-content form .form-cols {
   padding-top: 40px;
 }
 
@@ -732,31 +729,31 @@
   font-weight: 400;
   line-height: auto;
 }
-.account-details-content form input{
-  background: #FFFFFF;
+.account-details-content form input {
+  background: #ffffff;
   border-radius: 10px;
   border: 2px solid rgba(60, 123, 246, 0);
 }
-.account-details-content form input::placeholder{
-font-family: var(--primary-font);
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 11px;
-color: var(--secondry-color);
+.account-details-content form input::placeholder {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 11px;
+  color: var(--secondry-color);
 }
-.account-details-content form input:focus{
-  background: #FFFFFF;
+.account-details-content form input:focus {
+  background: #ffffff;
   border: 2px solid rgba(60, 123, 246, 0.5);
   border-radius: 10px;
   box-shadow: none;
 }
 
-.account-detail-cols{
+.account-detail-cols {
   padding-top: 40px;
 }
 
-.btn-update-info{
+.btn-update-info {
   margin-top: 40px;
 }
 
@@ -917,7 +914,8 @@ color: var(--secondry-color);
 }
 
 .rsth--checkout-page .payment-method .filtered {
-  filter: invert(55%) sepia(90%) saturate(2739%) hue-rotate(207deg) brightness(100%) contrast(94%);
+  filter: invert(55%) sepia(90%) saturate(2739%) hue-rotate(207deg)
+    brightness(100%) contrast(94%);
 }
 
 .rsth1--order-sum-content {
@@ -1241,15 +1239,9 @@ color: var(--secondry-color);
 .grey-clr {
   color: #000000b3;
 }
-<<<<<<< Updated upstream
-
-.main {
-  padding-top: 36px;
-=======
 .my-80px {
   margin-top: 80px;
   margin-bottom: 80px;
->>>>>>> Stashed changes
 }
 
 .hero-slide-item {
@@ -1538,16 +1530,9 @@ color: var(--secondry-color);
 .rsth1-products-section .pagination {
   background-color: var(--bg-off-white);
 }
-
 /* Custom styling for the price slider */
 .price-slider {
   margin-top: 40px !important;
-}
-
-#priceSlider .noUi-handle {
-  /* background-color: #007bff;
-  border: 2px solid white;
-  border-radius: 50%; */
 }
 
 #priceSlider .noUi-connect {
@@ -1558,7 +1543,26 @@ color: var(--secondry-color);
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
+.noUi-horizontal {
+  height: 6px !important;
+}
+.noUi-horizontal .noUi-handle {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 50%;
+  margin-top: -0.65rem;
+}
+.noUi-handle {
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 50%;
+  background: #fff;
+  cursor: default;
+}
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
 .page-navigation nav {
   display: flex;
   align-items: center;
@@ -2376,18 +2380,18 @@ color: var(--secondry-color);
   .rsth1-profile-cards .card-content .card-icon {
     padding: 20px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-icon img {
     width: 35px;
     height: 35px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-text .title {
     font-size: 26px;
     line-height: 35px;
   }
-  
-  .rsth1-profile-cards .card-content .card-text .text{
+
+  .rsth1-profile-cards .card-content .card-text .text {
     font-size: 24px;
     line-height: 28px;
   }
@@ -2440,20 +2444,15 @@ color: var(--secondry-color);
     line-height: 34px;
   }
 
-  .rsth1-hero-section .hero-section .breadcrumbs a{
-    font-size: 14px ;
+  .rsth1-hero-section .hero-section .breadcrumbs a {
+    font-size: 14px;
     line-height: 20px;
   }
 
-  .rsth1-hero-section .hero-section .breadcrumbs span{
-    font-size: 14px ;
+  .rsth1-hero-section .hero-section .breadcrumbs span {
+    font-size: 14px;
   }
 
-  .rsth1-hero-section {
-    padding-top: 0px;
-    padding-bottom: 24px;
-  }
-  
   .rsth1-get-in-touch {
     padding-top: 24px;
     padding-bottom: 60px;
@@ -2465,18 +2464,18 @@ color: var(--secondry-color);
   .rsth1-profile-cards .card-content .card-icon {
     padding: 23px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-icon img {
     width: 33px;
     height: 33px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-text .title {
     font-size: 28px;
     line-height: 35px;
   }
-  
-  .rsth1-profile-cards .card-content .card-text .text{
+
+  .rsth1-profile-cards .card-content .card-text .text {
     font-size: 24px;
     line-height: 28px;
   }
@@ -2498,15 +2497,15 @@ color: var(--secondry-color);
   .btn-update-pw {
     margin-top: 24px;
   }
-  
-  .profile-img-content{
+
+  .profile-img-content {
     top: -40px;
   }
   .profile-img-content .profile-img-edit-wrapper {
     top: 60px;
     right: -5px;
   }
-  .profile-img-content .ac-profile-img{
+  .profile-img-content .ac-profile-img {
     width: 90px;
     height: 90px;
     border-radius: 25px;
@@ -2521,7 +2520,7 @@ color: var(--secondry-color);
   .account-details-content label {
     font-size: 14px;
   }
-  .account-details-content form input::placeholder{
+  .account-details-content form input::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 11px;
@@ -2532,7 +2531,7 @@ color: var(--secondry-color);
     font-weight: 600;
     padding: 6px 0px;
   }
-  .btn-update-pw{
+  .btn-update-pw {
     font-size: 16px;
     font-weight: 600;
     padding: 6px 0px;
@@ -2589,59 +2588,63 @@ color: var(--secondry-color);
     padding: 32px 20px 39px;
   }
 
-  .main{
+  .main {
     padding-top: 0px;
   }
 
   .rsth1-hero-section .row {
     background-position: 80% 50%;
     height: 270px;
-    background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.748) -19.84%, rgba(0, 0, 0, 0.2464) 119.84%);
+    background-color: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.748) -19.84%,
+      rgba(0, 0, 0, 0.2464) 119.84%
+    );
     border-radius: 14px;
-    padding-bottom: 56px;;
+    padding-bottom: 56px;
   }
-  
-  .rsth1-hero-section .hero-section{
+
+  .rsth1-hero-section .hero-section {
     text-align: center;
   }
 
   .rsth1-get-in-touch .content .get-in-touch .text h2 {
     font-size: 32px;
   }
-  
+
   .rsth1-get-in-touch .info span {
     font-size: 16px;
   }
-  
+
   .contact-us-from form label {
     font-size: 14px;
     line-height: 16px;
   }
-  
+
   .rsth1-get-in-touch .contact-us-from input[type="submit"] {
     font-size: 20px;
   }
 
   .rsth1-profile-cards .card-content {
-    padding:20px ;
+    padding: 20px;
     gap: 20px;
   }
   .rsth1-profile-cards .card-content .card-icon {
     padding: 12px;
     border-radius: 12px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-icon img {
     width: 18px;
     height: 18px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-text .title {
     font-size: 16px;
     line-height: 24px;
   }
-  
-  .rsth1-profile-cards .card-content .card-text .text{
+
+  .rsth1-profile-cards .card-content .card-text .text {
     font-size: 14px;
     line-height: 18px;
   }
@@ -2673,7 +2676,6 @@ color: var(--secondry-color);
 }
 
 @media (max-width: 575px) {
-
   .rsth1--footer {
     padding: 40px 20px;
   }
@@ -2691,7 +2693,7 @@ color: var(--secondry-color);
   }
 
   .rsth1-profile-cards .card-content {
-    padding:12px ;
+    padding: 12px;
     gap: 10px;
   }
 
@@ -2699,16 +2701,17 @@ color: var(--secondry-color);
     padding: 8px;
     border-radius: 8px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-icon img {
     width: 14px;
     height: 14px;
   }
-  
+
   .rsth1-profile-cards .card-content .card-text .title {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
