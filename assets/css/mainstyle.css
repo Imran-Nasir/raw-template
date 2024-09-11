@@ -468,7 +468,7 @@
 /* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rsth1-hero-section {
   margin-top: 30px;
-  margin-bottom: 50px;;
+  margin-bottom: 50px;
 }
 .rsth1-hero-section .contact-banner {
   background-image: url("../images/contact-us/hero-section-bg.webp");
@@ -1218,7 +1218,9 @@
 .fs-14 {
   font-size: 14px;
 }
-
+.fs-16 {
+  font-size: 16px;
+}
 .f-size-24 {
   font-size: 24px;
 }
@@ -1456,34 +1458,34 @@
 }
 .banner-background-img,
 .banner-background-img-1 {
-    background-size: cover; 
-    background-position: center; 
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 767px) {
-    .banner-background-img {
-        background-image: url('../images/banner_image_4.webp'); 
-        background-size: cover; 
-        width: 100% !important;
-    }
+  .banner-background-img {
+    background-image: url("../images/banner_image_4.webp");
+    background-size: cover;
+    width: 100% !important;
+  }
 
-    .banner-background-img-1 {
-        background-image: url('../images/banner_image_3.webp'); 
-        background-size: cover; 
-        width: 100% !important;
-    }
+  .banner-background-img-1 {
+    background-image: url("../images/banner_image_3.webp");
+    background-size: cover;
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 768px) {
-    .banner-background-img {
-        background-image: url('../images/banner_image_4.webp'); 
-        background-size: contain; 
-    }
+  .banner-background-img {
+    background-image: url("../images/banner_image_4.webp");
+    background-size: contain;
+  }
 
-    .banner-background-img-1 {
-        background-image: url('../images/banner_image_3.webp'); 
-        background-size: contain; 
-    }
+  .banner-background-img-1 {
+    background-image: url("../images/banner_image_3.webp");
+    background-size: contain;
+  }
 }
 
 .home-blogs-row img {
@@ -1745,7 +1747,7 @@
   margin: 10px;
 }
 
-.thumb-img img{
+.thumb-img img {
   height: 100px;
 }
 
@@ -2018,6 +2020,22 @@
   padding-left: 10px;
 }
 
+.banner-image-bg {
+  background-color: var(--secondry-color);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-ad-vector {
+  position: absolute;
+  width: 150px !important;
+  bottom: -65px;
+}
+.vector2 {
+  width: auto !important;
+  top: 15px;
+  left: -15px;
+}
 /* Single Blog Page End*/
 /* 404 Page Css */
 .rsth1-404-error-section {
