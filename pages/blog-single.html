@@ -1,1258 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../assets/fontawesome-free-6.6.0-web/css/all.min.css"
-    />
-    <link rel="stylesheet" href="../assets/vendor/slick/slick.css" />
-    <link rel="stylesheet" href="../assets/css/mainstyle.css" />
-    <title>Home |Owner POS Theme Template</title>
-  </head>
 
-  <body>
-    <!-- ///////////////////////// Header Section /////////////////////// -->
-    <header>
-      <!-- Top Navigation Bar -->
-      <div
-        class="container-fluid rsth1--top-bar d-md-block d-none d-flex flex-row align-items-center"
-      >
-        <div class="container px-0">
-          <div class="row">
-            <!-- Empty column for larger screens -->
-            <div class="col-xl-2 col-lg-1 d-lg-block d-md-none p-0"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.6.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/slick/slick.css" />
+  <link rel="stylesheet" href="../assets/css/mainstyle.css" />
+  <title>Home |Owner POS Theme Template</title>
+</head>
 
-            <!-- Promotional Text -->
-            <div
-              class="col-xl-5 col-lg-6 col-md-7 p-0 d-flex justify-content-end align-items-center"
-            >
-              <nav
-                class="navbar rsth1--top-nav-center justify-content-end p-0 m-0"
-              >
-                <span class="navbar-text p-0">
-                  Free Returns - Standard Shipping Orders $99+.<a
-                    href="shop.html"
-                    >Shop Now</a
-                  >
-                </span>
-              </nav>
-            </div>
-
-            <!-- Currency, Language, and Social Links -->
-            <div
-              class="col-xl-5 col-lg-5 col-md-5 p-0 d-flex justify-content-end align-items-center"
-            >
-              <nav
-                class="navbar rsth1--top-nav-right justify-content-end align-items-center p-0 m-0"
-              >
-                <!-- Currency Dropdown -->
-                <div class="rsth1--top-nav-item align-items-center">
-                  <div class="dropdown-center d-flex align-items-center">
-                    <button
-                      class="btn dropdown-toggle text-white"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      USD
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">PKR</a></li>
-                      <li><a class="dropdown-item" href="#">EURO</a></li>
-                      <li><a class="dropdown-item" href="#">GBP</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- Language Dropdown -->
-                <div class="rsth1--top-nav-item rsth1--divider">
-                  <div class="dropdown-center d-flex">
-                    <button
-                      class="btn dropdown-toggle text-white"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      English
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Dutch</a></li>
-                      <li><a class="dropdown-item" href="#">French</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- Social Media Icons -->
-                <div
-                  class="rsth1--top-nav-item rsth1--top-nav-item-pr0 rsth1--divider d-flex align-items-center align-self-stretch"
-                >
-                  <i class="fa-brands fa-facebook-f text-white"></i>
-                  <i class="fa-brands fa-x-twitter text-white"></i>
-                  <i class="fa-brands fa-square-instagram text-white"></i>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Primary Navigation Bar -->
-      <div class="container-fluid rsth1--primary-bar-wrapper">
-        <div class="container d-md-block d-none px-0 rsth1--primary-bar">
-          <nav class="navbar navbar-expand-lg rsth1--primary-bar-row">
-            <div class="container-fluid px-0">
-              <!-- Main Navigation Menu -->
-              <div
-                class="navbar-collapse main-nav-wrapper d-flex flex-lg-nowrap flex-md-wrap"
-                id="main_nav"
-              >
-                <!-- Logo -->
-                <div class="main-nav-logo">
-                  <a href="../index.html"
-                    ><img src="../assets/images/logo.svg" alt="E-cart"
-                  /></a>
-                </div>
-
-                <div class="primary-navigation ps-4 rsth1--main-primary-ul">
-                  <ul
-                    class="navbar-nav mb-lg-0 w-100 d-flex justify-content-between align-items-center"
-                  >
-                    <li class="nav-item">
-                      <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <!-- Products Dropdown with Mega Menu -->
-                    <li class="nav-item dropdown has-megamenu">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        data-bs-toggle="dropdown"
-                        >Products</a
-                      >
-                      <div class="dropdown-menu megamenu" role="menu">
-                        <!-- Mega Menu Content -->
-                        <div class="container-fluid">
-                          <div class="row mega-menu--row p-lg-5 p-md-5">
-                            <div
-                              class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols px-0"
-                            >
-                              <h5>Electronics</h5>
-                              <div class="list-group">
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Mobiles</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Laptops</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Refrigerator</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Microwave Oven</a
-                                >
-                              </div>
-                            </div>
-                            <div
-                              class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start"
-                            >
-                              <h5>Furniture</h5>
-                              <div class="list-group">
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Tables</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Chair</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Wardrobe</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Couches</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Beds</a
-                                >
-                              </div>
-                            </div>
-                            <div
-                              class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start"
-                            >
-                              <h5>Groceries</h5>
-                              <div class="list-group">
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Vegetables</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Grains</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Fruits</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Dairy</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Snacks</a
-                                >
-                              </div>
-                            </div>
-                            <div
-                              class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start m-lg-0 mt-md-3"
-                            >
-                              <h5>Beauty</h5>
-                              <div class="list-group">
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Lipstick</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Eyeliner</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Brushes</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Foundation</a
-                                >
-                              </div>
-                            </div>
-                            <div
-                              class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start m-lg-0 mt-md-3"
-                            >
-                              <h5>Baby Products</h5>
-                              <div class="list-group">
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Baby Lotion</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Baby Oil</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Baby Powder</a
-                                >
-                              </div>
-                            </div>
-                            <div
-                              class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start m-lg-0 mt-md-3"
-                            >
-                              <h5>Toys</h5>
-                              <div class="list-group">
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >RC Toys</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Girls Toys</a
-                                >
-                                <a
-                                  class="list-group-item mega-menu--list-items px-0 py-2"
-                                  href=""
-                                  >Legos</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Search and Icons -->
-                <div
-                  class="primary-navigation rsth1--primary-col-right d-flex flex-row justify-content-end"
-                >
-                  <ul class="navbar-nav">
-                    <!-- Search Form -->
-                    <li class="nav-item">
-                      <form class="d-flex" role="search">
-                        <input
-                          class="form-control"
-                          type="search"
-                          placeholder="What are you looking for?"
-                          aria-label="Search"
-                        />
-                        <button class="btn" type="submit">
-                          <i class="fa fa-magnifying-glass"></i>
-                        </button>
-                      </form>
-                    </li>
-                    <!-- User Icons (Account, Wishlist, Cart) -->
-                    <li class="nav-item ms-4">
-                      <div
-                        class="rsth1--primary-bar-icons d-flex justify-content-between align-items-center pe-0 gap-4"
-                      >
-                        <!-- Account Icon -->
-                        <div
-                          class="position-relative d-inline-block cursor-pointer"
-                        >
-                          <img
-                            class="rsth1--primary-menu-myacc"
-                            src="../assets/icons/myacc_icon.svg"
-                            alt="My Account"
-                          />
-                        </div>
-                        <!-- Wishlist Icon and Mini Wishlist -->
-                        <div
-                          class="position-relative d-inline-block cursor-pointer"
-                        >
-                          <img
-                            class="rsth1--primary-menu-wishlist"
-                            id="mini-wishlist-icon"
-                            src="../assets/icons/wishlisticon.svg"
-                            alt="Wishlist"
-                          />
-                          <p
-                            class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                          >
-                            3
-                          </p>
-                          <!-- Mini Wishlist Content -->
-                          <div
-                            class="container shadow rsth1--mini-wishlist"
-                            id="mini-wishlist"
-                          >
-                            <div class="row">
-                              <div
-                                class="col-lg-12 rsth1--mini-cart-content d-flex flex-column"
-                              >
-                                <h4 class="mini-wishlist-title">Wishlist</h4>
-                                <hr class="p-0 m-0" />
-                                <div
-                                  class="mini-wishlist-items-list d-flex flex-column gap-4"
-                                >
-                                  <div class="mini-wishlist-items">
-                                    <div
-                                      class="container mini-wishlist--item-details p-0"
-                                    >
-                                      <div
-                                        class="row p-3 justify-content-evenly"
-                                      >
-                                        <div class="wishlist-item-img">
-                                          <img
-                                            class="mini-wishlist-item-image"
-                                            src="../assets/images/menu-cart-item.webp"
-                                            alt=""
-                                          />
-                                        </div>
-                                        <div
-                                          class="wishlist-items-info d-flex flex-column justify-content-evenly"
-                                        >
-                                          <h6 class="m-0">Iphone 15 Pro Max</h6>
-                                          <div
-                                            class="wishlist-item-price d-flex align-items-center gap-3"
-                                          >
-                                            <p class="p-0 m-0">$1200</p>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="item-price-dels d-flex flex-column justify-content-evenly align-items-center"
-                                        >
-                                          <i
-                                            class="fa-regular fa-trash-can text-danger"
-                                          ></i>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <hr class="pb-3 m-0" />
-                                <div
-                                  class="mini-wishlist-items-no d-flex justify-content-between pb-2"
-                                >
-                                  <p class="p-0 m-0">No. of Items:</p>
-                                  <p class="p-0 m-0">02</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Cart Icon and Mini Cart -->
-                        <div
-                          class="position-relative d-inline-block cursor-pointer"
-                        >
-                          <img
-                            class="rsth1--primary-menu-cart"
-                            id="mini-cart-icon"
-                            src="../assets/icons/cart_icon.svg"
-                            alt="Cart"
-                          />
-                          <p
-                            class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-                          >
-                            3
-                          </p>
-                          <!-- Mini Cart Content -->
-                          <div
-                            class="container shadow rsth1--mini-cart"
-                            id="mini-cart"
-                          >
-                            <div class="row">
-                              <div
-                                class="col-lg-12 rsth1--mini-cart-content d-flex flex-column"
-                              >
-                                <h4 class="mini-cart-title">Shopping Cart</h4>
-                                <hr class="p-0 m-0" />
-                                <div
-                                  class="mini-cart-items-list d-flex flex-column gap-4"
-                                >
-                                  <div class="mini-cart-items">
-                                    <div
-                                      class="container mini-cart--item-details p-0"
-                                    >
-                                      <div
-                                        class="row p-3 justify-content-evenly"
-                                      >
-                                        <div class="cart-item-img">
-                                          <img
-                                            class="mini-cart-item-image"
-                                            src="../assets/images/menu-cart-item.webp"
-                                            alt=""
-                                          />
-                                        </div>
-                                        <div
-                                          class="cart-items-info d-flex flex-column justify-content-evenly"
-                                        >
-                                          <h6 class="m-0">Iphone 15 Pro Max</h6>
-                                          <div
-                                            class="cart-item-quantity d-flex align-items-center gap-3"
-                                          >
-                                            <i class="fa-solid fa-minus"></i>
-                                            <p class="p-0 m-0">01</p>
-                                            <i class="fa-solid fa-plus"></i>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="item-price-dels d-flex flex-column justify-content-evenly align-items-center"
-                                        >
-                                          <p class="cart-item-price m-0">$70</p>
-                                          <i
-                                            class="fa-regular fa-trash-can text-danger"
-                                          ></i>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <hr class="pb-3 m-0" />
-                                <div
-                                  class="mini-cart-items-no d-flex justify-content-between pb-2"
-                                >
-                                  <p class="p-0 m-0">No. of Items</p>
-                                  <p class="p-0 m-0">02</p>
-                                </div>
-                                <div
-                                  class="mini-cart-total d-flex justify-content-between"
-                                >
-                                  <h4 class="p-0 m-0">Total</h4>
-                                  <h4 class="p-0 m-0">$1357.97</h4>
-                                </div>
-                                <div class="d-grid gap-3 mini-cart--btns">
-                                  <button
-                                    class="btn rsth1--mini-cart-btn-action"
-                                    type="button"
-                                  >
-                                    Checkout
-                                  </button>
-                                  <button
-                                    class="btn rsth1--mini-cart-btn-action"
-                                    type="button"
-                                  >
-                                    Go To Cart
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-
-      <!-- Mobile Menu (visible on small screens) -->
-      <div class="container rsth1--mob-menu d-md-none d-sm-block px-sm-0">
-        <div class="row m-0">
-          <!-- Mobile Logo -->
-          <div class="col-6 px-0">
-            <div class="rsth1--mob-menu-logo">
-              <img src="../assets/images/logo.svg" alt="E-cart Logo" />
-            </div>
-          </div>
-          <!-- Mobile Icons and Menu Toggle -->
-          <div
-            class="col-6 d-flex justify-content-end align-items-center gap-3 px-0"
-          >
-            <!-- Wishlist Icon -->
-            <div class="position-relative d-inline-block">
-              <img
-                class="rsth1--mob-menu-wishlist"
-                src="../assets/icons/wishlisticon.svg"
-                alt="Wishlist"
-              />
-              <p
-                class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              >
-                3
-              </p>
-            </div>
-            <!-- Cart Icon -->
-            <div class="position-relative d-inline-block">
-              <img
-                class="rsth1--mob-menu-cart"
-                src="../assets/icons/cart_icon.svg"
-                alt="Cart"
-              />
-              <p
-                class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-              >
-                3
-              </p>
-            </div>
-            <!-- Mobile Menu Overlay -->
-            <div id="myNav" class="rsth1--overlay">
-              <!-- Overlay Content (Search and Navigation) -->
-              <div class="overlay-top d-flex align-items-center gap-4 pt-4">
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control"
-                    type="search"
-                    placeholder="What are you looking for?"
-                    aria-label="Search"
-                  />
-                  <button class="btn" type="submit">
-                    <i class="fa fa-magnifying-glass"></i>
-                  </button>
-                </form>
-                <a
-                  href="javascript:void(0)"
-                  class="closebtn"
-                  onclick="closeNav()"
-                  >&times;</a
-                >
-              </div>
-              <div class="overlay-content text-center">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                  <div class="container-fluid">
-                    <div class="navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a
-                            class="nav-link active"
-                            aria-current="page"
-                            href="#"
-                            >Home</a
-                          >
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdownMenuLink"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            Products
-                          </a>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="navbarDropdownMenuLink"
-                          >
-                            <li class="dropdown-submenu">
-                              <a
-                                class="dropdown-item dropdown-toggle"
-                                href="#"
-                                id="innerDropdown"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                >Electronics</a
-                              >
-                              <ul
-                                class="dropdown-menu"
-                                aria-labelledby="innerDropdown"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Phones</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#">Laptops</a>
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >Accessories</a
-                                  >
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#">Furniture</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#">Groceries</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Blog</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <!-- Menu Toggle Button -->
-            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-              >&#9776;</span
-            >
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- /////////////////////////Header Section Ends /////////////////////// -->
-    <!-- ///////////////////////// Main Content Section /////////////////////// -->
-    <div class="main rsth--article-page">
-      <div class="container rsth1-hero-section">
-        <div class="row m-0 shop-banner">
-          <div
-            class="col-sm-12 d-flex justify-content-md-start justify-content-center just align-items-center"
-          >
-            <div class="hero-section">
-              <h1 class="text-white">Blog</h1>
-              <div class="breadcrumbs d-flex align-items-center gap-2">
-                <a
-                  class="text-white d-flex align-items-center gap-2 text-decoration-none text-dark"
-                  href="#"
-                  ><i class="fa-solid fa-house text-white"></i>Home</a
-                >
-                <span class="text-white d-flex align-items-center gap-2"
-                  ><i class="fa-solid fa-chevron-right text-white"></i
-                  >Blog</span
-                >
-                <span class="text-white d-flex align-items-center gap-2"
-                  ><i class="fa-solid fa-chevron-right text-white"></i>Blog
-                  details</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-main container mt-5 rsth1-blog-section">
+<body>
+  <!-- ///////////////////////// Header Section /////////////////////// -->
+  <header>
+    <!-- Top Navigation Bar -->
+    <div class="container-fluid rsth1--top-bar d-md-block d-none d-flex flex-row align-items-center">
+      <div class="container px-0">
         <div class="row">
-          <div class="col-md-9">
-            <img src="../assets/images/s-blog-image.png" class="w-100" alt="" />
-            <div class="blog-meta d-flex align-items-center mt-5 font-primary">
-              <div class="category me-3">
-                <i class="fa-solid fa-tag category-image-color"></i
-                ><span class="category-image-title">Food</span>
-              </div>
-              <div class="posted-date me-3">
-                <i class="fa-solid fa-calendar-days category-image-color"></i>
-                24 May 2024
-              </div>
-              <div class="comments">
-                <i class="fa-regular fa-message category-image-color"></i> 30
-                comments
-              </div>
-            </div>
-            <h2 class="mt-3 font-secondry">
-              Maecenas tempor urna sed quam mollis, a placerat dui fringill
-              Suspendisse.
-            </h2>
-            <div class="row author-row font-secondry mb-4 mt-4">
-              <div class="col">
-                <div class="row align-items-center wrap-row">
-                  <div class="col-md-4 col-5 mb-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="col author-name px-0">
-                    <h3>Jaydon Septimus</h3>
-                    <div class="d-flex">
-                      <span>4 April, 2021 </span> -
-                      <span> 6 min read</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-8 text-start text-md-end post-share-icons">
-                <h4>Share This Post</h4>
-                <div
-                  class="col-12 d-flex justify-content-start justify-content-md-end gap-2 post-share-icons"
-                >
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="blog-content font-secondry">
-              <p>
-                <strong
-                  >Maecenas lacinia felis nec placerat sollicitudin. Quisque
-                  placerat dolor at scelerisque imperdiet. Phasellus tristique
-                  felis dolor.</strong
-                >
-              </p>
-              <p>
-                Maecenas elementum in risus sed condimentum. Duis convallis ante
-                ac tempus maximus. Fusce malesuada sed velit ut dictum. Morbi
-                faucibus vitae orci at euismod. Integer auctor augue in erat
-                vehicula, quis fermentum ex finibus.
-              </p>
-              <p>
-                Mauris pretium elit a dui pulvinar, in ornare sapien euismod.
-                Nullam interdum nisl ante, id feugiat quam euismod commodo. Sed
-                ultrices lectus ut iaculis rhoncus. Aenean non dignissim justo,
-                at fermentum turpis. Sed molestie, ligula ut molestie ultrices,
-                tellus ligula viverra neque, malesuada consectetur diam sapien
-                volutpat risus. Quisque eget tortor lobortis, facilisis metus
-                eu, elementum est. Nunc sit amet erat quis ex convallis
-                suscipit. ur ridiculus mus.
-              </p>
-              <div class="row">
-                <div class="col-md-6">
-                  <img
-                    class="w-100"
-                    src="../assets/images/b-c-image.png"
-                    alt=""
-                  />
-                </div>
-                <div class="col-md-6">
-                  <img
-                    class="w-100"
-                    src="../assets/images/b-c-image2.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p class="font-secondry my-4">
-                Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate
-                quis vehicula ut, vestibulum ut mauris. Nullam non felis varius
-                dui rutrum rutrum in a nisi. Suspendisse elementum rutrum lorem
-                sed luctus. Proin iaculis euismod metus non sollicitudin. Duis
-                vel luctus lacus. Nullam faucibus iaculis convallis. In
-                ullamcorper nibh ipsum, eget lacinia eros pulvinar a. Integer
-                accumsan arcu nec faucibus ultricies.
-              </p>
-              <div class="banner-image">
-                <a href="#"
-                  ><img src="../assets/images/Bannar.png" alt="" class="w-100"
-                /></a>
-              </div>
-              <div class="comments my-5">
-                <h3 class="font-secondry">Leave a Commment</h3>
-                <form action="" class="row g-3 font-secondry mt-3">
-                  <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="inputEmail4"
-                      placeholder="Emerson Kenter"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="inputPassword4"
-                      placeholder="Jeannie_Kessler9@gmail.com"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <textarea
-                      class="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Write your comment here…"
-                    ></textarea>
-                  </div>
-                  <div class="mb-3 form-check col-12">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="exampleCheck1"
-                    />
-                    <label class="form-check-label" for="exampleCheck1"
-                      >Save my name and email in this browser for the next time
-                      I comment.</label
-                    >
-                  </div>
-                  <div class="col-12">
-                    <button
-                      type="submit"
-                      class="btn btn-outline-primary w-100 fw-bold"
-                    >
-                      Post Comment
-                    </button>
-                  </div>
-                </form>
-                <h3 class="font-secondry mt-5 mb-2">Comments</h3>
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <div class="comment d-flex font-secondry">
-                  <div class="image me-3">
-                    <img src="../assets/images/author-img.png" alt="" />
-                  </div>
-                  <div class="content d-flex flex-column">
-                    <div class="title fw-bold font-secondry">
-                      Ahmad Ekstrom Bothman -
-                      <span class="fw-normal font-primary">26 Apr, 2024</span>
-                    </div>
-                    <p class="font-primary">
-                      Lorem ipsum dolor sit amet consectetur. Diam sodales
-                      commodo sapien vestibulum sit ornare purus elementum eu.
-                      Tempus molestie ultricies sit amet tellus imperdiet
-                      feugiat. Urna purus id non ac volutpat lacus. Nibh integer
-                      ultrices ipsum massa morbi pulvinar.
-                    </p>
-                  </div>
-                </div>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-primary fw-bold" type="button">
-                    Load More
-                  </button>
-                </div>
-              </div>
-            </div>
+          <!-- Empty column for larger screens -->
+          <div class="col-xl-2 col-lg-1 d-lg-block d-md-none p-0"></div>
+
+          <!-- Promotional Text -->
+          <div class="col-xl-5 col-lg-6 col-md-7 p-0 d-flex justify-content-end align-items-center">
+            <nav class="navbar rsth1--top-nav-center justify-content-end p-0 m-0">
+              <span class="navbar-text p-0">
+                Free Returns - Standard Shipping Orders $99+.<a href="shop.html">Shop Now</a>
+              </span>
+            </nav>
           </div>
-          <div class="col-md-3 blog-sidebar">
-            <div class="search-box">
-              <input type="text" placeholder="Search Posts Here" />
-              <button class="search-button">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
-                </svg>
-              </button>
-            </div>
-            <h3 class="popular-tags-title">Popular Tags</h3>
-            <ul class="popular-tags">
-              <li class="tag-item">Electronics</li>
-              <li class="tag-item">Groceries</li>
-              <li class="tag-item">Toys</li>
-              <li class="tag-item">Vegetation</li>
-              <li class="tag-item">Bread</li>
-              <li class="tag-item">Drinks</li>
-              <li class="tag-item">Furniture</li>
-              <li class="tag-item">Beauty</li>
-              <li class="tag-item">Tyre</li>
-              <li class="tag-item">Mood</li>
-              <li class="tag-item">Sweets</li>
-              <li class="tag-item">Dinner</li>
-            </ul>
-            <hr class="my-4" />
-            <h3 class="recently-added-title">Recently Added</h3>
-            <ul class="recently-added-list">
-              <li class="recently-added-item">
-                <img
-                  src="../assets/images/sidebar-img.png"
-                  alt="Image 1"
-                  class="recently-added-image"
-                />
-                <div class="recently-added-content">
-                  <p class="recently-added-text">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <div class="calendar-icon">
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="recently-added-date">Apr 25, 2024</p>
-                  </div>
+
+          <!-- Currency, Language, and Social Links -->
+          <div class="col-xl-5 col-lg-5 col-md-5 p-0 d-flex justify-content-end align-items-center">
+            <nav class="navbar rsth1--top-nav-right justify-content-end align-items-center p-0 m-0">
+              <!-- Currency Dropdown -->
+              <div class="rsth1--top-nav-item align-items-center">
+                <div class="dropdown-center d-flex align-items-center">
+                  <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    USD
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">PKR</a></li>
+                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li class="recently-added-item">
-                <img
-                  src="../assets/images/sidebar-img.png"
-                  alt="Image 2"
-                  class="recently-added-image"
-                />
-                <div class="recently-added-content">
-                  <p class="recently-added-text">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <div class="calendar-icon">
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="recently-added-date">May 5, 2024</p>
-                  </div>
+              </div>
+
+              <!-- Language Dropdown -->
+              <div class="rsth1--top-nav-item rsth1--divider">
+                <div class="dropdown-center d-flex">
+                  <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    English
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Dutch</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li class="recently-added-item">
-                <img
-                  src="../assets/images/sidebar-img.png"
-                  alt="Image 3"
-                  class="recently-added-image"
-                />
-                <div class="recently-added-content">
-                  <p class="recently-added-text">
-                    Lorem ipsum dolor sit amet consectetur.
-                  </p>
-                  <div class="calendar-icon">
-                    <i class="fas fa-calendar-alt"></i>
-                    <p class="recently-added-date">Aug 18, 2024</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+              </div>
+
+              <!-- Social Media Icons -->
+              <div
+                class="rsth1--top-nav-item rsth1--top-nav-item-pr0 rsth1--divider d-flex align-items-center align-self-stretch">
+                <i class="fa-brands fa-facebook-f text-white"></i>
+                <i class="fa-brands fa-x-twitter text-white"></i>
+                <i class="fa-brands fa-square-instagram text-white"></i>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-    <!-- ///////////////////////// Main Content Section Ends /////////////////////// -->
-    <!-- ///////////////////////// Footer Section ///////////////////////// -->
-    <footer>
-      <div class="container-fluid rsth1--footer">
-        <div class="container px-sm-0">
-          <div class="row m-0">
-            <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
-              <div
-                class="footer-col-one d-flex flex-column justify-content-start align-items-start"
-              >
-                <!-- logo -->
-                <div class="f_logo">
-                  <a href="/index.html"
-                    ><img
-                      class="logo"
-                      src="../assets/images/footerlogo.svg"
-                      alt="E-cart"
-                  /></a>
-                </div>
-                <div class="description m-0">
-                  <p class="desc m-0">
-                    Lorem ipsum dolor sit amet consectetur. Nisl proin porttitor
-                    odio amet ut fringilla. Interdum eget proin enim tincidunt.
-                    Tortor vitae sed id aliquam felis non. Sed et cursus diam a
-                    odio.
-                  </p>
-                </div>
-                <div class="pay-methods d-flex p-0">
-                  <div class="pay-methods-container">
-                    <img
-                      src="../assets/images/mastercard.svg"
-                      alt="mastercard"
-                    />
-                  </div>
-                  <div class="pay-methods-container">
-                    <img src="../assets/images/visa.svg" alt="visa" />
-                  </div>
-                  <div class="pay-methods-container">
-                    <img src="../assets/images/paypal.svg" alt="paypal" />
-                  </div>
-                </div>
+
+    <!-- Primary Navigation Bar -->
+    <div class="container-fluid rsth1--primary-bar-wrapper">
+      <div class="container d-md-block d-none px-0 rsth1--primary-bar">
+        <nav class="navbar navbar-expand-lg rsth1--primary-bar-row">
+          <div class="container-fluid px-0">
+            <!-- Main Navigation Menu -->
+            <div class="navbar-collapse main-nav-wrapper d-flex flex-lg-nowrap flex-md-wrap" id="main_nav">
+              <!-- Logo -->
+              <div class="main-nav-logo">
+                <a href="../index.html"><img src="../assets/images/logo.svg" alt="E-cart" /></a>
               </div>
-            </div>
-            <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
-              <div class="quick-links-col d-flex flex-column w-auto">
-                <div>
-                  <p class="col-title m-0">Quick Links</p>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="/index.html">Home</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="shop.html">Products</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="blog.html">Blogs</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="about-us.html">About Us</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="contact.html">Contact Us</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="#">Term & Conditions</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="#">Privacy Policy</a>
-                </div>
-                <div class="quick-link">
-                  <a class="footer-links" href="#">Return Policy</a>
-                </div>
+
+              <div class="primary-navigation ps-4 rsth1--main-primary-ul">
+                <ul class="navbar-nav mb-lg-0 w-100 d-flex justify-content-between align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <!-- Products Dropdown with Mega Menu -->
+                  <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu megamenu" role="menu">
+                      <!-- Mega Menu Content -->
+                      <div class="container-fluid">
+                        <div class="row mega-menu--row p-lg-5 p-md-5">
+                          <div class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols px-0">
+                            <h5>Electronics</h5>
+                            <div class="list-group">
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Mobiles</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Laptops</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Refrigerator</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Microwave Oven</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start">
+                            <h5>Furniture</h5>
+                            <div class="list-group">
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Tables</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Chair</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Wardrobe</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Couches</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Beds</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start">
+                            <h5>Groceries</h5>
+                            <div class="list-group">
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Vegetables</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Grains</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Fruits</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Dairy</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Snacks</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start m-lg-0 mt-md-3">
+                            <h5>Beauty</h5>
+                            <div class="list-group">
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Lipstick</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Eyeliner</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Brushes</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Foundation</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start m-lg-0 mt-md-3">
+                            <h5>Baby Products</h5>
+                            <div class="list-group">
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Baby Lotion</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Baby Oil</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Baby Powder</a>
+                            </div>
+                          </div>
+                          <div class="col-lg-2 col-md-4 col-sm-12 mega-menu-cols ps-3 px-0 border-start m-lg-0 mt-md-3">
+                            <h5>Toys</h5>
+                            <div class="list-group">
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">RC Toys</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Girls Toys</a>
+                              <a class="list-group-item mega-menu--list-items px-0 py-2" href="">Legos</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
-              <div class="my-account-col d-flex flex-column gap-3">
-                <div>
-                  <p class="col-title m-0">Account</p>
-                </div>
-                <div class="account">
-                  <a class="footer-links" href="order.html">Order Tracking</a>
-                </div>
-                <div class="account">
-                  <a class="footer-links" href="checkout.html">Checkout</a>
-                </div>
-                <div class="account">
-                  <a class="footer-links" href="wishlist.html">Wishlist</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
-              <div class="contact-info-col d-flex flex-column">
-                <div class="info">
-                  <p class="col-title m-0">Contact Info</p>
-                </div>
-                <div class="info">
-                  <span><i class="fa-solid fa-location-dot"></i>Address</span>
-                  <p class="info-head m-0">
-                    Hermosa Beach, Los Angeles, California
-                  </p>
-                </div>
-                <div class="info">
-                  <span><i class="fa-solid fa-phone"></i>Phone</span>
-                  <p class="info-head m-0">+1 310 265 3265</p>
-                </div>
-                <div class="info">
-                  <span><i class="fa-solid fa-envelope"></i>Email</span>
-                  <p class="info-head m-0">redstar@gmail.com</p>
-                </div>
-                <div class="info">
-                  <span><i class="fa-solid fa-clock"></i>Working Days/Hrs</span>
-                  <p class="info-head m-0">Mon-Sun / 09:00 AM - 08:00 PM</p>
-                </div>
+
+              <!-- Search and Icons -->
+              <div class="primary-navigation rsth1--primary-col-right d-flex flex-row justify-content-end">
+                <ul class="navbar-nav">
+                  <!-- Search Form -->
+                  <li class="nav-item">
+                    <form class="d-flex" role="search">
+                      <input class="form-control" type="search" placeholder="What are you looking for?"
+                        aria-label="Search" />
+                      <button class="btn" type="submit">
+                        <i class="fa fa-magnifying-glass"></i>
+                      </button>
+                    </form>
+                  </li>
+                  <!-- User Icons (Account, Wishlist, Cart) -->
+                  <li class="nav-item ms-4">
+                    <div class="rsth1--primary-bar-icons d-flex justify-content-between align-items-center pe-0 gap-4">
+                      <!-- Account Icon -->
+                      <div class="position-relative d-inline-block cursor-pointer">
+                        <img class="rsth1--primary-menu-myacc" src="../assets/icons/myacc_icon.svg" alt="My Account" />
+                      </div>
+                      <!-- Wishlist Icon and Mini Wishlist -->
+                      <div class="position-relative d-inline-block cursor-pointer">
+                        <img class="rsth1--primary-menu-wishlist" id="mini-wishlist-icon"
+                          src="../assets/icons/wishlisticon.svg" alt="Wishlist" />
+                        <p
+                          class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          3
+                        </p>
+                        <!-- Mini Wishlist Content -->
+                        <div class="container shadow rsth1--mini-wishlist" id="mini-wishlist">
+                          <div class="row">
+                            <div class="col-lg-12 rsth1--mini-cart-content d-flex flex-column">
+                              <h4 class="mini-wishlist-title">Wishlist</h4>
+                              <hr class="p-0 m-0" />
+                              <div class="mini-wishlist-items-list d-flex flex-column gap-4">
+                                <div class="mini-wishlist-items">
+                                  <div class="container mini-wishlist--item-details p-0">
+                                    <div class="row p-3 justify-content-evenly">
+                                      <div class="wishlist-item-img">
+                                        <img class="mini-wishlist-item-image" src="../assets/images/menu-cart-item.webp"
+                                          alt="" />
+                                      </div>
+                                      <div class="wishlist-items-info d-flex flex-column justify-content-evenly">
+                                        <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                        <div class="wishlist-item-price d-flex align-items-center gap-3">
+                                          <p class="p-0 m-0">$1200</p>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="item-price-dels d-flex flex-column justify-content-evenly align-items-center">
+                                        <i class="fa-regular fa-trash-can text-danger"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <hr class="pb-3 m-0" />
+                              <div class="mini-wishlist-items-no d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">No. of Items:</p>
+                                <p class="p-0 m-0">02</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Cart Icon and Mini Cart -->
+                      <div class="position-relative d-inline-block cursor-pointer">
+                        <img class="rsth1--primary-menu-cart" id="mini-cart-icon" src="../assets/icons/cart_icon.svg"
+                          alt="Cart" />
+                        <p
+                          class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          3
+                        </p>
+                        <!-- Mini Cart Content -->
+                        <div class="container shadow rsth1--mini-cart" id="mini-cart">
+                          <div class="row">
+                            <div class="col-lg-12 rsth1--mini-cart-content d-flex flex-column">
+                              <h4 class="mini-cart-title">Shopping Cart</h4>
+                              <hr class="p-0 m-0" />
+                              <div class="mini-cart-items-list d-flex flex-column gap-4">
+                                <div class="mini-cart-items">
+                                  <div class="container mini-cart--item-details p-0">
+                                    <div class="row p-3 justify-content-evenly">
+                                      <div class="cart-item-img">
+                                        <img class="mini-cart-item-image" src="../assets/images/menu-cart-item.webp"
+                                          alt="" />
+                                      </div>
+                                      <div class="cart-items-info d-flex flex-column justify-content-evenly">
+                                        <h6 class="m-0">Iphone 15 Pro Max</h6>
+                                        <div class="cart-item-quantity d-flex align-items-center gap-3">
+                                          <i class="fa-solid fa-minus"></i>
+                                          <p class="p-0 m-0">01</p>
+                                          <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="item-price-dels d-flex flex-column justify-content-evenly align-items-center">
+                                        <p class="cart-item-price m-0">$70</p>
+                                        <i class="fa-regular fa-trash-can text-danger"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr class="pb-3 m-0" />
+                              <div class="mini-cart-items-no d-flex justify-content-between pb-2">
+                                <p class="p-0 m-0">No. of Items</p>
+                                <p class="p-0 m-0">02</p>
+                              </div>
+                              <div class="mini-cart-total d-flex justify-content-between">
+                                <h4 class="p-0 m-0">Total</h4>
+                                <h4 class="p-0 m-0">$1357.97</h4>
+                              </div>
+                              <div class="d-grid gap-3 mini-cart--btns">
+                                <button class="btn rsth1--mini-cart-btn-action" type="button">
+                                  Checkout
+                                </button>
+                                <button class="btn rsth1--mini-cart-btn-action" type="button">
+                                  Go To Cart
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="row m-0 rsth1--copyright">
-            <div
-              class="col-md-6 d-flex justify-content-md-start align-items-center justify-content-center p-0"
-            >
-              <p class="copy-right text-md-start text-center">
-                © 2024 All rights reserved. Made by
-                <a href="https://redstartechs.com/" target="_blank"
-                  >Red Star Technologies</a
-                >
-              </p>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (visible on small screens) -->
+    <div class="container rsth1--mob-menu d-md-none d-sm-block px-sm-0">
+      <div class="row m-0">
+        <!-- Mobile Logo -->
+        <div class="col-6 px-0">
+          <div class="rsth1--mob-menu-logo">
+            <img src="../assets/images/logo.svg" alt="E-cart Logo" />
+          </div>
+        </div>
+        <!-- Mobile Icons and Menu Toggle -->
+        <div class="col-6 d-flex justify-content-end align-items-center gap-3 px-0">
+          <!-- Wishlist Icon -->
+          <div class="position-relative d-inline-block">
+            <img class="rsth1--mob-menu-wishlist" src="../assets/icons/wishlisticon.svg" alt="Wishlist" />
+            <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+            </p>
+          </div>
+          <!-- Cart Icon -->
+          <div class="position-relative d-inline-block">
+            <img class="rsth1--mob-menu-cart" src="../assets/icons/cart_icon.svg" alt="Cart" />
+            <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+            </p>
+          </div>
+          <!-- Mobile Menu Overlay -->
+          <div id="myNav" class="rsth1--overlay">
+            <!-- Overlay Content (Search and Navigation) -->
+            <div class="overlay-top d-flex align-items-center gap-4 pt-4">
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search" />
+                <button class="btn" type="submit">
+                  <i class="fa fa-magnifying-glass"></i>
+                </button>
+              </form>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             </div>
-            <div
-              class="col-md-6 d-flex justify-content-md-end align-items-center justify-content-center p-0 gap-3"
-            >
-              <div class="socail-links">
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-              </div>
-              <div class="socail-links">
-                <a href="https://www.twitter.com/" target="_blank"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-              </div>
-              <div class="socail-links">
-                <a href="https://www.linkedin.com/" target="_blank"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </div>
-              <div class="socail-links">
-                <a href="https://www.instagram.com/" target="_blank"
-                  ><i class="fa-brands fa-square-instagram"></i
-                ></a>
-              </div>
+            <div class="overlay-content text-center">
+              <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <div class="navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" id="innerDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">Electronics</a>
+                            <ul class="dropdown-menu" aria-labelledby="innerDropdown">
+                              <li>
+                                <a class="dropdown-item" href="#">Phones</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Laptops</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Accessories</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Furniture</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Groceries</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <!-- Menu Toggle Button -->
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /////////////////////////Header Section Ends /////////////////////// -->
+  <!-- ///////////////////////// Main Content Section /////////////////////// -->
+  <div class="main rsth--article-page">
+    <div class="container rsth1-hero-section">
+      <div class="row m-0 shop-banner">
+        <div class="col-sm-12 d-flex justify-content-md-start justify-content-center just align-items-center">
+          <div class="hero-section">
+            <h1 class="text-white">Blog</h1>
+            <div class="breadcrumbs d-flex align-items-center gap-2">
+              <a class="text-white d-flex align-items-center gap-2 text-decoration-none text-dark" href="#"><i
+                  class="fa-solid fa-house text-white"></i>Home</a>
+              <span class="text-white d-flex align-items-center gap-2"><i
+                  class="fa-solid fa-chevron-right text-white"></i>Blog</span>
+              <span class="text-white d-flex align-items-center gap-2"><i
+                  class="fa-solid fa-chevron-right text-white"></i>Blog
+                details</span>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- ///////////////////////// Footer Section Ends ///////////////////////// -->
-    <!-- Footer Scripts -->
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/vendor/jquery.min.js"></script>
-    <script src="../assets/vendor/slick/slick.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-  </body>
+    </div>
+    <div class="content-main container mt-5 rsth1-blog-section">
+      <div class="row">
+        <div class="col-md-9">
+          <img src="../assets/images/sb-featured-img.webp" class="w-100 " alt="" />
+          <div class="blog-meta d-flex align-items-center mt-5 font-primary">
+            <div class="category me-3">
+              <i class="fa-solid fa-tag category-image-color"></i><span class="category-image-title">Food</span>
+            </div>
+            <div class="posted-date me-3">
+              <i class="fa-solid fa-calendar-days category-image-color"></i>
+              24 May 2024
+            </div>
+            <div class="comments">
+              <i class="fa-regular fa-message category-image-color"></i> 30
+              comments
+            </div>
+          </div>
+          <h2 class="mt-3 font-secondry">
+            Maecenas tempor urna sed quam mollis, a placerat dui fringill
+            Suspendisse.
+          </h2>
+          <div class="row author-row font-secondry mb-4 mt-4">
+            <div class="col">
+              <div class="row align-items-center wrap-row">
+                <div class="col-md-4 col-5 mb-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="col author-name px-0">
+                  <h3>Jaydon Septimus</h3>
+                  <div class="d-flex">
+                    <span>4 April, 2021 </span> -
+                    <span> 6 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 text-start text-md-end post-share-icons">
+              <h4>Share This Post</h4>
+              <div class="col-12 d-flex justify-content-start justify-content-md-end gap-2 post-share-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="blog-content font-secondry">
+            <p>
+              <strong>Maecenas lacinia felis nec placerat sollicitudin. Quisque
+                placerat dolor at scelerisque imperdiet. Phasellus tristique
+                felis dolor.</strong>
+            </p>
+            <p>
+              Maecenas elementum in risus sed condimentum. Duis convallis ante
+              ac tempus maximus. Fusce malesuada sed velit ut dictum. Morbi
+              faucibus vitae orci at euismod. Integer auctor augue in erat
+              vehicula, quis fermentum ex finibus.
+            </p>
+            <p>
+              Mauris pretium elit a dui pulvinar, in ornare sapien euismod.
+              Nullam interdum nisl ante, id feugiat quam euismod commodo. Sed
+              ultrices lectus ut iaculis rhoncus. Aenean non dignissim justo,
+              at fermentum turpis. Sed molestie, ligula ut molestie ultrices,
+              tellus ligula viverra neque, malesuada consectetur diam sapien
+              volutpat risus. Quisque eget tortor lobortis, facilisis metus
+              eu, elementum est. Nunc sit amet erat quis ex convallis
+              suscipit. ur ridiculus mus.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <img class="w-100" src="../assets/images/b-c-image1.webp" alt="" />
+              </div>
+              <div class="col-md-6">
+                <img class="w-100" src="../assets/images/b-c-image2.webp" alt="" />
+              </div>
+            </div>
+            <p class="font-secondry my-4">
+              Sed dictum non nulla eu imperdiet. Duis elit libero, vulputate
+              quis vehicula ut, vestibulum ut mauris. Nullam non felis varius
+              dui rutrum rutrum in a nisi. Suspendisse elementum rutrum lorem
+              sed luctus. Proin iaculis euismod metus non sollicitudin. Duis
+              vel luctus lacus. Nullam faucibus iaculis convallis. In
+              ullamcorper nibh ipsum, eget lacinia eros pulvinar a. Integer
+              accumsan arcu nec faucibus ultricies.
+            </p>
+            <div class="banner-image">
+              <a href="#"><img src="../assets/images/Bannar.png" alt="" class="w-100" /></a>
+            </div>
+            <div class="comments my-5">
+              <h3 class="font-secondry">Leave a Commment</h3>
+              <form action="" class="row g-3 font-secondry mt-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Emerson Kenter" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4"
+                    placeholder="Jeannie_Kessler9@gmail.com" />
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Write your comment here…"></textarea>
+                </div>
+                <div class="mb-3 form-check col-12">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                  <label class="form-check-label" for="exampleCheck1">Save my name and email in this browser for the
+                    next time
+                    I comment.</label>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-outline-primary w-100 fw-bold">
+                    Post Comment
+                  </button>
+                </div>
+              </form>
+              <h3 class="font-secondry mt-5 mb-2">Comments</h3>
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="comment d-flex font-secondry">
+                <div class="image me-3">
+                  <img src="../assets/images/author-img.webp" alt="" />
+                </div>
+                <div class="content d-flex flex-column">
+                  <div class="title fw-bold font-secondry">
+                    Ahmad Ekstrom Bothman -
+                    <span class="fw-normal font-primary">26 Apr, 2024</span>
+                  </div>
+                  <p class="font-primary">
+                    Lorem ipsum dolor sit amet consectetur. Diam sodales
+                    commodo sapien vestibulum sit ornare purus elementum eu.
+                    Tempus molestie ultricies sit amet tellus imperdiet
+                    feugiat. Urna purus id non ac volutpat lacus. Nibh integer
+                    ultrices ipsum massa morbi pulvinar.
+                  </p>
+                </div>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-outline-primary fw-bold" type="button">
+                  Load More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 blog-sidebar">
+          <div class="search-box">
+            <input type="text" placeholder="Search Posts Here" />
+            <button class="search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+          </div>
+          <h3 class="popular-tags-title">Popular Tags</h3>
+          <ul class="popular-tags">
+            <li class="tag-item">Electronics</li>
+            <li class="tag-item">Groceries</li>
+            <li class="tag-item">Toys</li>
+            <li class="tag-item">Vegetation</li>
+            <li class="tag-item">Bread</li>
+            <li class="tag-item">Drinks</li>
+            <li class="tag-item">Furniture</li>
+            <li class="tag-item">Beauty</li>
+            <li class="tag-item">Tyre</li>
+            <li class="tag-item">Mood</li>
+            <li class="tag-item">Sweets</li>
+            <li class="tag-item">Dinner</li>
+          </ul>
+          <hr class="my-4" />
+          <h3 class="recently-added-title">Recently Added</h3>
+          <ul class="recently-added-list">
+            <li class="recently-added-item">
+              <img src="../assets/images/sbp-recently-added1.webp" alt="Image 1" class="recently-added-image" />
+              <div class="recently-added-content">
+                <p class="recently-added-text">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <div class="calendar-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p class="recently-added-date">Apr 25, 2024</p>
+                </div>
+              </div>
+            </li>
+            <li class="recently-added-item">
+              <img src="../assets/images/sbp-recently-added2.webp" alt="Image 2" class="recently-added-image" />
+              <div class="recently-added-content">
+                <p class="recently-added-text">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <div class="calendar-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p class="recently-added-date">May 5, 2024</p>
+                </div>
+              </div>
+            </li>
+            <li class="recently-added-item">
+              <img src="../assets/images/sbp-recently-added3.webp" alt="Image 3" class="recently-added-image" />
+              <div class="recently-added-content">
+                <p class="recently-added-text">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+                <div class="calendar-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                  <p class="recently-added-date">Aug 18, 2024</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ///////////////////////// Main Content Section Ends /////////////////////// -->
+  <!-- ///////////////////////// Footer Section ///////////////////////// -->
+  <footer>
+    <div class="container-fluid rsth1--footer">
+      <div class="container px-sm-0">
+        <div class="row m-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+            <div class="footer-col-one d-flex flex-column justify-content-start align-items-start">
+              <!-- logo -->
+              <div class="f_logo">
+                <a href="/index.html"><img class="logo" src="../assets/images/footerlogo.svg" alt="E-cart" /></a>
+              </div>
+              <div class="description m-0">
+                <p class="desc m-0">
+                  Lorem ipsum dolor sit amet consectetur. Nisl proin porttitor
+                  odio amet ut fringilla. Interdum eget proin enim tincidunt.
+                  Tortor vitae sed id aliquam felis non. Sed et cursus diam a
+                  odio.
+                </p>
+              </div>
+              <div class="pay-methods d-flex p-0">
+                <div class="pay-methods-container">
+                  <img src="../assets/images/mastercard.svg" alt="mastercard" />
+                </div>
+                <div class="pay-methods-container">
+                  <img src="../assets/images/visa.svg" alt="visa" />
+                </div>
+                <div class="pay-methods-container">
+                  <img src="../assets/images/paypal.svg" alt="paypal" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+            <div class="quick-links-col d-flex flex-column w-auto">
+              <div>
+                <p class="col-title m-0">Quick Links</p>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="/index.html">Home</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="shop.html">Products</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="blog.html">Blogs</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="about-us.html">About Us</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="contact.html">Contact Us</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="#">Term & Conditions</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="#">Privacy Policy</a>
+              </div>
+              <div class="quick-link">
+                <a class="footer-links" href="#">Return Policy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+            <div class="my-account-col d-flex flex-column gap-3">
+              <div>
+                <p class="col-title m-0">Account</p>
+              </div>
+              <div class="account">
+                <a class="footer-links" href="order.html">Order Tracking</a>
+              </div>
+              <div class="account">
+                <a class="footer-links" href="checkout.html">Checkout</a>
+              </div>
+              <div class="account">
+                <a class="footer-links" href="wishlist.html">Wishlist</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+            <div class="contact-info-col d-flex flex-column">
+              <div class="info">
+                <p class="col-title m-0">Contact Info</p>
+              </div>
+              <div class="info">
+                <span><i class="fa-solid fa-location-dot"></i>Address</span>
+                <p class="info-head m-0">
+                  Hermosa Beach, Los Angeles, California
+                </p>
+              </div>
+              <div class="info">
+                <span><i class="fa-solid fa-phone"></i>Phone</span>
+                <p class="info-head m-0">+1 310 265 3265</p>
+              </div>
+              <div class="info">
+                <span><i class="fa-solid fa-envelope"></i>Email</span>
+                <p class="info-head m-0">redstar@gmail.com</p>
+              </div>
+              <div class="info">
+                <span><i class="fa-solid fa-clock"></i>Working Days/Hrs</span>
+                <p class="info-head m-0">Mon-Sun / 09:00 AM - 08:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0 rsth1--copyright">
+          <div class="col-md-6 d-flex justify-content-md-start align-items-center justify-content-center p-0">
+            <p class="copy-right text-md-start text-center">
+              © 2024 All rights reserved. Made by
+              <a href="https://redstartechs.com/" target="_blank">Red Star Technologies</a>
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-md-end align-items-center justify-content-center p-0 gap-3">
+            <div class="socail-links">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="socail-links">
+              <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="socail-links">
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="socail-links">
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ///////////////////////// Footer Section Ends ///////////////////////// -->
+  <!-- Footer Scripts -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.min.js"></script>
+  <script src="../assets/vendor/slick/slick.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
 </html>

@@ -468,6 +468,7 @@
 /* ///////////////////////////////////////////////////////// Hero Section \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .rsth1-hero-section {
   margin-top: 30px;
+  margin-bottom: 50px;;
 }
 .rsth1-hero-section .contact-banner {
   background-image: url("../images/contact-us/hero-section-bg.webp");
@@ -1348,6 +1349,7 @@
   box-shadow: 0 2px 60px 0 rgba(0, 0, 0, 0.14);
   border: 1px solid rgba(0, 0, 0, 0.12);
   padding: 20px 0px;
+  transition: ease-in-out 0.5s;
 }
 
 .product-meta h3 a {
@@ -1356,10 +1358,12 @@
 
 .product-card:hover .add-to-cart {
   visibility: visible;
+  transition: ease-in-out 1s;
 }
 
 .product-card:hover .wishlist-corner {
   visibility: visible;
+  transition: ease-in-out 1s;
 }
 
 .sale-price {
@@ -1458,13 +1462,13 @@
 
 @media (max-width: 767px) {
     .banner-background-img {
-        background-image: url('../images/banner_image_4.png'); 
+        background-image: url('../images/banner_image_4.webp'); 
         background-size: cover; 
         width: 100% !important;
     }
 
     .banner-background-img-1 {
-        background-image: url('../images/banner_image_3.png'); 
+        background-image: url('../images/banner_image_3.webp'); 
         background-size: cover; 
         width: 100% !important;
     }
@@ -1472,12 +1476,12 @@
 
 @media (min-width: 768px) {
     .banner-background-img {
-        background-image: url('../images/banner_image_4.png'); 
+        background-image: url('../images/banner_image_4.webp'); 
         background-size: contain; 
     }
 
     .banner-background-img-1 {
-        background-image: url('../images/banner_image_3.png'); 
+        background-image: url('../images/banner_image_3.webp'); 
         background-size: contain; 
     }
 }
@@ -1496,7 +1500,7 @@
 }
 
 .slick-slide .inner {
-  margin: 0 15px;
+  margin: 0 100px;
 }
 
 .app-icons {
@@ -1513,7 +1517,7 @@
 
 /* Shop Page */
 .rsth1-hero-section .shop-banner {
-  background-image: url("../images/banner_image.png");
+  background-image: url("../images/banner_image.webp");
 }
 
 .rsth1-products-section .sort-section {
@@ -1739,6 +1743,10 @@
   border-radius: 20px;
   padding: 20px;
   margin: 10px;
+}
+
+.thumb-img img{
+  height: 100px;
 }
 
 .single-regular-price {

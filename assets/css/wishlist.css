@@ -20,7 +20,7 @@ margin: 0;
 
 /* hero section  */
 .rsth1-hero-section .row{
-    background-image: url('../images/wishlist/desktop-hero-bg.png');
+    background-image: url('../images/banner_image.webp');
     background-size: cover;
     background-position: center;    
     background-repeat: no-repeat;
