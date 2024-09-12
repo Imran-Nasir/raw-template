@@ -56,6 +56,7 @@ margin: 0;
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
+    font-family: var(--primary-font);
   }
   
   /* mobile responsive mobile devices */
@@ -343,6 +344,7 @@ margin: 0;
 }
 
 .rsth1-card-section .meta {
+    font-family: var(--primary-font);
     display: flex;
     align-items: center;
     margin-bottom: 10px;
