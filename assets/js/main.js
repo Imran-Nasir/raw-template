@@ -26,15 +26,34 @@ jQuery(document).ready(function ($) {
     buttons: false,
   });
 });
+
 $("#filter-image").on("click", function () {
   var $sidebar = $("#sidebar");
   var $content = $("#content");
-
+  var $s_archive = $(".shop-archive");
+  var $s_filters = $(".shop-filters");
   // Toggle the visibility of the sidebar and adjust the content width
   $sidebar.toggleClass("d-none col-md-3 col-lg-3 col-xl-3");
   $content.toggleClass(
     "col-md-9 col-lg-9 col-xl-9 col-md-12 col-lg-12 col-xl-12"
   );
+  $s_archive.toggleClass(
+    "col-md-4 col-md-3"
+  );
+  $s_filters.toggleClass(
+    "d-block d-none"
+  );
+});
+
+$(".filter-button-1").on("click", function () {
+  var $blog_sidebar = $(".blog-sidebar");
+  var $blog_content = $(".blog-content");
+  var $blog_archive = $(".blog-archive");
+  // Toggle the visibility of the sidebar and adjust the content width
+  $blog_sidebar.toggleClass("d-none col-lg-3");
+  $blog_content.toggleClass("col-lg-9 col-lg-12");
+  $blog_archive.toggleClass("col-md-6 col-sm-6 col-md-4 col-sm-4");
+
 });
 
 $(document).ready(function () {

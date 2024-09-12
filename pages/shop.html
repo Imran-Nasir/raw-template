@@ -587,11 +587,21 @@
           <div class="row filters-row p-3 rounded justify-content-between align-items-center">
             <div class="col-md-10">
               <div class="row">
-                <div class="col-md-2 mt-1 font-primary">
-                  <img src="../assets/icons/shop-filter-icon.svg" alt="" id="filter-image"  class="cursor-pointer"/>
-                  <span>Filter</span>
+                <div class="col-md-2 mt-1 font-primary d-flex justify-content-between align-items-center">
+                  <div class="filters-col">
+                    <img src="../assets/icons/shop-filter-icon.svg" alt="" id="filter-image"  class="cursor-pointer"/>
+                    <span>Filter</span>
+                  </div>
+                  <div class="mbl-sort-col d-md-none d-block w-50">
+                    <div class="sort-section mt-3 ">
+                      <span class="sort-label"><b class="m-0">Sort By</b></span>
+                      <select class="sort-select">
+                        <option value="latest">Latest</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-10 d-flex align-items-center flex-wrap">
+                <div class="col-md-10 d-flex align-items-center flex-wrap d-block shop-filters">
                   <p class="m-0 me-3">Active Filters:</p>
                   <div class="active-filter me-2 mt-1 font-primary f-size-16 fw-semibold filter-custom-bg">
                     Electronics Devices
@@ -608,18 +618,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2 text-end f-size-15 font-primary">
+            <div class="col-md-2 text-end f-size-15 font-primary d-md-block d-none">
               <span class="fw-bold">100</span> Results Found
             </div>
           </div>
-          <div class="sort-section mt-3">
+          <div class="sort-section mt-3 d-md-block d-none">
             <span class="sort-label"><b>Sort By</b></span>
             <select class="sort-select">
               <option value="latest">Latest</option>
             </select>
           </div>
           <div class="row mt-4" id="products-row">
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img1.webp" alt="" class="product-image"  /></a>
@@ -660,7 +670,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img2.webp" alt="" class="product-image"  /></a>
@@ -701,7 +711,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img3.webp" alt="" class="product-image"  /></a>
@@ -742,7 +752,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img4.webp" alt="" class="product-image"  /></a>
@@ -783,7 +793,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img5.webp" alt="" class="product-image"  /></a>
@@ -824,7 +834,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img6.webp" alt="" class="product-image"  /></a>
@@ -865,7 +875,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img7.webp" alt="" class="product-image"  /></a>
@@ -906,7 +916,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img8.webp" alt="" class="product-image"  /></a>
@@ -947,7 +957,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 shop-archive">
               <div class="card border-0 product-card mb-3">
                 <div class="p-image-container text-center p-5">
                   <a href="pages/product.html"><img src="../assets/images/shop-archive-img9.webp" alt="" class="product-image"  /></a>
@@ -989,6 +999,18 @@
               </div>
             </div>
             
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-4">
+              <div class="form-inline ml-3 d-md-none d-block  d-flex justify-content-end">
+                <label for="page-number">Per Page:</label>
+                <select class="form-control ml-2" id="page-number">
+                  <option value="7" selected>07</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="page-navigation">
@@ -1035,7 +1057,7 @@
                     </a>
                   </li>
                 </ul>
-                <div class="form-inline ml-3">
+                <div class="form-inline ml-3 d-md-block d-none ">
                   <label for="page-number">Per Page:</label>
                   <select class="form-control ml-2" id="page-number">
                     <option value="7" selected>07</option>
@@ -1043,7 +1065,7 @@
                     <option value="20">20</option>
                   </select>
                 </div>
-                <div class="btn-continue-shopping">
+                <div class="btn-continue-shopping d-md-block d-none">
                   <button class="btn btn-primary">Continue Shopping</button>
                 </div>
               </nav>
