@@ -3033,6 +3033,9 @@
   .product-main-image {
     width: 100%;
   }
+  .rsth1--copyright{
+    border-bottom:none !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -3050,7 +3053,9 @@
 
   .rsth1--copyright {
     padding: 10px 20px;
+    border-bottom: none !important;
   }
+
 
   .rsth1-profile-cards .card-content {
     padding: 12px;

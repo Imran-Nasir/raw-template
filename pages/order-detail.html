@@ -428,30 +428,33 @@
   <!-- TABLE SECTION -->
   <div class="container rsth1-order-detail-section">
     <div class="row mt-4">
-      <div class="order-detail-section-backgound d-flex justify-content-between align-items-center">
-        <div class="rsth1-order-step text-center">
-          <div class="rsth1-order-step-icon rsth1-order-step-icon-active">
-            <i class="fas fa-check"></i>
-          </div>
-          <div class="rsth1-order-step-text">Order Received</div>
+      <div class="progress-container">
+        <div class="progress-line">
+          <div class="progress-line-filled"></div>
         </div>
-        <div class="rsth1-order-step text-center">
-          <div class="rsth1-order-step-icon rsth1-order-step-icon-active">
-            <b>2</b>
-          </div>
-          <div class="rsth1-order-step-text">Processing</div>
+        <div class="progress-step active text-start" id="step1">
+          <span class="dot text-center">
+            <p class="get-tick">1</p>
+          </span>
+          <div class="label">Shipping</div>
         </div>
-        <div class="rsth1-order-step text-center">
-          <div class="rsth1-order-step-icon rsth1-order-step-icon-3">
-            <b>3</b>
-          </div>
-          <div class="rsth1-order-step-text">On the way</div>
+        <div class="progress-step text-center" id="step2">
+          <span class="dot">
+            <p class="get-tick">2</p>
+          </span>
+          <div class="label">Payment</div>
         </div>
-        <div class="rsth1-order-step text-center">
-          <div class="rsth1-order-step-icon rsth1-order-step-icon-4">
-            <b>4</b>
-          </div>
-          <div class="rsth1-order-step-text">Delivered</div>
+        <div class="progress-step text-center" id="step3">
+          <span class="dot text-center">
+            <p class="get-tick">3</p>
+          </span>
+          <div class="label">Confirmation</div>
+        </div>
+        <div class="progress-step text-end" id="step3">
+          <span class="dot text-center">
+            <p class="get-tick">3</p>
+          </span>
+          <div class="label">Confirmation</div>
         </div>
       </div>
     </div>
