@@ -424,30 +424,59 @@
           <div class="product-gallery">
             <div class="product-thumbnails">
               <div class="thumb-img">
-                <img  src="../assets/images/p-gal-img1.webp" alt="Product 1" />
+                <a href="#" class="selected" data-full="../assets/images/p-gal-l-img1.webp"><img
+                    src="../assets/images/p-gal-s-img1.webp" /></a>
               </div>
               <div class="thumb-img">
-                <img  src="../assets/images/p-gal-img2.webp" alt="Product 2" />
+                <a href="#" data-full="../assets/images/p-gal-l-img2.webp"><img
+                    src="../assets/images/p-gal-s-img2.webp" /></a>
               </div>
               <div class="thumb-img">
-                <img  src="../assets/images/p-gal-img3.webp" alt="Product 3" />
+                <a href="#" data-full="../assets/images/p-gal-l-img3.webp"><img
+                    src="../assets/images/p-gal-s-img3.webp" /></a>
               </div>
               <div class="thumb-img">
-                <img  src="../assets/images/p-gal-img4.webp" alt="Product 3" />
+                <a href="#" data-full="../assets/images/p-gal-l-img4.webp"><img
+                    src="../assets/images/p-gal-s-img4.webp" /></a>
               </div>
             </div>
             <div class="product-main-image d-flex align-items-center justify-content-center">
-              <div>
-                <img src="../assets/images/product-image.webp" alt="Main Product 1" />
+              <div class="full">
+                <img src="../assets/images/p-gal-l-img1.webp" type="button" data-bs-toggle="modal"
+                data-bs-target="#view-img-lg"/>
               </div>
-              <div>
-                <img src="../assets/images/product-image.webp" alt="Main Product 2" />
-              </div>
-              <div>
-                <img src="../assets/images/product-image.webp" alt="Main Product 3" />
-              </div>
-              <div>
-                <img src="../assets/images/product-image.webp" alt="Main Product 3" />
+            </div>
+            <div class="modal fade" id="view-img-lg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-wrapper container">
+                <div class="modal-content position-relative">
+                  <i href="#" class="fa-solid fa-xmark close-model text-white" data-bs-dismiss="modal"></i>
+                  <div class="product-gallery">
+                    <div class="product-thumbnails">
+                      <div class="thumb-img">
+                        <a href="#" class="selected" data-full="../assets/images/p-gal-l-img1.webp"><img
+                            src="../assets/images/p-gal-s-img1.webp" /></a>
+                      </div>
+                      <div class="thumb-img">
+                        <a href="#" data-full="../assets/images/p-gal-l-img2.webp"><img
+                            src="../assets/images/p-gal-s-img2.webp" /></a>
+                      </div>
+                      <div class="thumb-img">
+                        <a href="#" data-full="../assets/images/p-gal-l-img3.webp"><img
+                            src="../assets/images/p-gal-s-img3.webp" /></a>
+                      </div>
+                      <div class="thumb-img">
+                        <a href="#" data-full="../assets/images/p-gal-l-img4.webp"><img
+                            src="../assets/images/p-gal-s-img4.webp" /></a>
+                      </div>
+                    </div>
+                    <div class="product-main-image d-flex align-items-center justify-content-center">
+                      <div class="full">
+                        <img src="../assets/images/p-gal-l-img1.webp" type="button" data-bs-toggle="modal"
+                        data-bs-target="#view-img-lg"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -457,7 +486,8 @@
             <div class="col-lg-2 col-sm-2 col-2">
               <p class="brand quick-view-prod-brand pe-2 m-0">LG</p>
             </div>
-            <div  class="quick-view-review-stars col-4 d-flex justify-content-center align-items-center gap-lg-2 gap-md-1">
+            <div
+              class="quick-view-review-stars col-4 d-flex justify-content-center align-items-center gap-lg-2 gap-md-1">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -528,202 +558,219 @@
         </div>
       </div>
     </div>
-    <div class="container product-description font-primary">
-      <h3 class="font-secondry">Description</h3>
-      <hr />
-      <p class="mt-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, nostrud ipsum consectetur sed do, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Any Product
-        types that You want - Simple, Configurable Downloadable/Digital
-        Products, Virtual Products Inventory Management with Backordered items
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
-      </p>
-    </div>
-    <div class="related-products container my-5">
-      <div class="row align-items-center">
-        <div class="col-md-6 left-primary-border">
-          <h4 class="font-secondry m-0">Related Products</h4>
-        </div>
-        <div class="col-md-6 text-end">
-          <h5 class="m-0 font-primary cursor-pointer">
-            View all <i class="fa-solid fa-arrow-right"></i>
-          </h5>
-        </div>
+  </div>
+  <div class="container product-description font-primary">
+    <h3 class="font-secondry">Description</h3>
+    <hr />
+    <p class="mt-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, nostrud ipsum consectetur sed do, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Any Product
+      types that You want - Simple, Configurable Downloadable/Digital
+      Products, Virtual Products Inventory Management with Backordered items
+      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+      ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <div class="related-products container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 left-primary-border">
+        <h4 class="font-secondry m-0">Related Products</h4>
       </div>
-      <hr class="mb-4" />
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card border-0 product-card mb-3">
-            <div class="p-image-container text-center p-5">
-              <a href="pages/product.html"><img src="../assets/images/product-archive-img5.webp" alt="" class="product-image"  /></a>
-              <div class="dicount-badge">-35%</div>
-              <div class="wishlist-corner">
-                <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
-                <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
-              </div>
-            </div>
-            <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
-              <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img src="../assets/icons/add-to-cart.svg" alt="" />
-              <h4 class="m-0 font-primary">Add to Cart</h4></a>
-            </div>
-            <div class="product-meta text-center">
-              <div class="product-name">
-                <h3 class="font-primary">
-                  <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
-                </h3>
-              </div>
-              <div class="product-price">
-                <span class="sale-price font-primary">$260</span>
-                <span class="regular-price font-primary">$360</span>
-              </div>
-              <div class="reviews d-flex align-items-center justify-content-center">
-                <div class="review-stars">
-                  <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-                <div class="review-text">
-                  <h5 class="font-primary m-0">(40)</h5>
-                </div>
-              </div>
+      <div class="col-md-6 text-end">
+        <h5 class="m-0 font-primary cursor-pointer">
+          View all <i class="fa-solid fa-arrow-right"></i>
+        </h5>
+      </div>
+    </div>
+    <hr class="mb-4" />
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card border-0 product-card mb-3">
+          <div class="p-image-container text-center p-5">
+            <a href="pages/product.html"><img src="../assets/images/product-archive-img5.webp" alt=""
+                class="product-image" /></a>
+            <div class="dicount-badge">-35%</div>
+            <div class="wishlist-corner">
+              <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" />
+              <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card border-0 product-card mb-3">
-            <div class="p-image-container text-center p-5">
-              <a href="pages/product.html"><img src="../assets/images/product-archive-img6.webp" alt="" class="product-image"  /></a>
-              <div class="dicount-badge">-35%</div>
-              <div class="wishlist-corner">
-                <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
-                <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
-              </div>
-            </div>
-            <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
-              <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img src="../assets/icons/add-to-cart.svg" alt="" />
-              <h4 class="m-0 font-primary">Add to Cart</h4></a>
-            </div>
-            <div class="product-meta text-center">
-              <div class="product-name">
-                <h3 class="font-primary">
-                  <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
-                </h3>
-              </div>
-              <div class="product-price">
-                <span class="sale-price font-primary">$260</span>
-                <span class="regular-price font-primary">$360</span>
-              </div>
-              <div class="reviews d-flex align-items-center justify-content-center">
-                <div class="review-stars">
-                  <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-                <div class="review-text">
-                  <h5 class="font-primary m-0">(40)</h5>
-                </div>
-              </div>
-            </div>
+          <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
+            <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img
+                src="../assets/icons/add-to-cart.svg" alt="" />
+              <h4 class="m-0 font-primary">Add to Cart</h4>
+            </a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card border-0 product-card mb-3">
-            <div class="p-image-container text-center p-5">
-              <a href="pages/product.html"><img src="../assets/images/product-archive-img7.webp" alt="" class="product-image"  /></a>
-              <div class="dicount-badge">-35%</div>
-              <div class="wishlist-corner">
-                <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
-                <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
-              </div>
+          <div class="product-meta text-center">
+            <div class="product-name">
+              <h3 class="font-primary">
+                <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
+              </h3>
             </div>
-            <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
-              <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img src="../assets/icons/add-to-cart.svg" alt="" />
-              <h4 class="m-0 font-primary">Add to Cart</h4></a>
+            <div class="product-price">
+              <span class="sale-price font-primary">$260</span>
+              <span class="regular-price font-primary">$360</span>
             </div>
-            <div class="product-meta text-center">
-              <div class="product-name">
-                <h3 class="font-primary">
-                  <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
-                </h3>
-              </div>
-              <div class="product-price">
-                <span class="sale-price font-primary">$260</span>
-                <span class="regular-price font-primary">$360</span>
-              </div>
-              <div class="reviews d-flex align-items-center justify-content-center">
-                <div class="review-stars">
-                  <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-                <div class="review-text">
-                  <h5 class="font-primary m-0">(40)</h5>
+            <div class="reviews d-flex align-items-center justify-content-center">
+              <div class="review-stars">
+                <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card border-0 product-card mb-3">
-            <div class="p-image-container text-center p-5">
-              <a href="pages/product.html"><img src="../assets/images/product-archive-img8.webp" alt="" class="product-image"  /></a>
-              <div class="dicount-badge">-35%</div>
-              <div class="wishlist-corner">
-                <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
-                <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
-              </div>
-            </div>
-            <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
-              <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img src="../assets/icons/add-to-cart.svg" alt="" />
-              <h4 class="m-0 font-primary">Add to Cart</h4></a>
-            </div>
-            <div class="product-meta text-center">
-              <div class="product-name">
-                <h3 class="font-primary">
-                  <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
-                </h3>
-              </div>
-              <div class="product-price">
-                <span class="sale-price font-primary">$260</span>
-                <span class="regular-price font-primary">$360</span>
-              </div>
-              <div class="reviews d-flex align-items-center justify-content-center">
-                <div class="review-stars">
-                  <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-                <div class="review-text">
-                  <h5 class="font-primary m-0">(40)</h5>
-                </div>
+              <div class="review-text">
+                <h5 class="font-primary m-0">(40)</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-md-3">
+        <div class="card border-0 product-card mb-3">
+          <div class="p-image-container text-center p-5">
+            <a href="pages/product.html"><img src="../assets/images/product-archive-img6.webp" alt=""
+                class="product-image" /></a>
+            <div class="dicount-badge">-35%</div>
+            <div class="wishlist-corner">
+              <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" />
+              <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
+            <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img
+                src="../assets/icons/add-to-cart.svg" alt="" />
+              <h4 class="m-0 font-primary">Add to Cart</h4>
+            </a>
+          </div>
+          <div class="product-meta text-center">
+            <div class="product-name">
+              <h3 class="font-primary">
+                <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
+              </h3>
+            </div>
+            <div class="product-price">
+              <span class="sale-price font-primary">$260</span>
+              <span class="regular-price font-primary">$360</span>
+            </div>
+            <div class="reviews d-flex align-items-center justify-content-center">
+              <div class="review-stars">
+                <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="review-text">
+                <h5 class="font-primary m-0">(40)</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 product-card mb-3">
+          <div class="p-image-container text-center p-5">
+            <a href="pages/product.html"><img src="../assets/images/product-archive-img7.webp" alt=""
+                class="product-image" /></a>
+            <div class="dicount-badge">-35%</div>
+            <div class="wishlist-corner">
+              <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" />
+              <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
+            <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img
+                src="../assets/icons/add-to-cart.svg" alt="" />
+              <h4 class="m-0 font-primary">Add to Cart</h4>
+            </a>
+          </div>
+          <div class="product-meta text-center">
+            <div class="product-name">
+              <h3 class="font-primary">
+                <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
+              </h3>
+            </div>
+            <div class="product-price">
+              <span class="sale-price font-primary">$260</span>
+              <span class="regular-price font-primary">$360</span>
+            </div>
+            <div class="reviews d-flex align-items-center justify-content-center">
+              <div class="review-stars">
+                <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="review-text">
+                <h5 class="font-primary m-0">(40)</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 product-card mb-3">
+          <div class="p-image-container text-center p-5">
+            <a href="pages/product.html"><img src="../assets/images/product-archive-img8.webp" alt=""
+                class="product-image" /></a>
+            <div class="dicount-badge">-35%</div>
+            <div class="wishlist-corner">
+              <img src="../assets/icons/quick-view.svg" alt="" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" />
+              <a href="wishlist.html"><img src="../assets/icons/add-to-wishlist.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="add-to-cart d-flex align-items-center justify-content-center py-2 px-5 text-white">
+            <a href="cart.html" class="text-decoration-none text-white d-flex align-items-center"><img
+                src="../assets/icons/add-to-cart.svg" alt="" />
+              <h4 class="m-0 font-primary">Add to Cart</h4>
+            </a>
+          </div>
+          <div class="product-meta text-center">
+            <div class="product-name">
+              <h3 class="font-primary">
+                <a href="product.html" class="font-primary text-decoration-none text-dark">Game Controller</a>
+              </h3>
+            </div>
+            <div class="product-price">
+              <span class="sale-price font-primary">$260</span>
+              <span class="regular-price font-primary">$360</span>
+            </div>
+            <div class="reviews d-flex align-items-center justify-content-center">
+              <div class="review-stars">
+                <div class="quick-view-review-stars d-flex justify-content-center align-items-center gap-lg-1 gap-md-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="review-text">
+                <h5 class="font-primary m-0">(40)</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
   </div>
   <!-- ///////////////////////// Main Content Ends /////////////////////// -->
   <!-- ///////////////////////// Footer Section ///////////////////////// -->
@@ -857,7 +904,7 @@
     </div>
   </footer>
   <!-- ///////////////////////// Footer Section Ends ///////////////////////// -->
-   <!-- Product Quick View Modal -->
+  <!-- Product Quick View Modal -->
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-wrapper container">
@@ -871,27 +918,31 @@
           </a>
           <div class="row">
             <div class="col-md-7">
-              <div class="product-gallery d-flex flex-column">
+               <div class="product-gallery d-flex flex-column">
                 <div class="quick-product-main-img d-flex flex-column align-items-center justify-content-center">
-                  <div>
-                    <img src="../assets/images/product-image.webp" alt="Main Product 1" class="quickview-img-selected" />
+                  <div class="full">
+                    <a href=""><img src="../assets/images/p-gal-l-img1.webp" class="quickview-img-selected"/></a>
                   </div>
                 </div>
                 <div class="quick-product-thumbs">
                   <div class="quick-view-thumb-img">
-                    <img src="../assets/images/p-gal-img1.webp" alt="Product 1" />
+                    <a href="#" class="selected" data-full="../assets/images/p-gal-l-img1.webp"><img
+                        src="../assets/images/p-gal-s-img1.webp" /></a>
                   </div>
                   <div class="quick-view-thumb-img">
-                    <img src="../assets/images/p-gal-img2.webp" alt="Product 2" />
+                    <a href="#" data-full="../assets/images/p-gal-l-img2.webp"><img
+                        src="../assets/images/p-gal-s-img2.webp" /></a>
                   </div>
                   <div class="quick-view-thumb-img">
-                    <img src="../assets/images/p-gal-img3.webp" alt="Product 3" />
+                    <a href="#" data-full="../assets/images/p-gal-l-img3.webp"><img
+                        src="../assets/images/p-gal-s-img3.webp" /></a>
                   </div>
                   <div class="quick-view-thumb-img">
-                    <img src="../assets/images/p-gal-img4.webp" alt="Product 3" />
+                    <a href="#" data-full="../assets/images/p-gal-l-img4.webp"><img
+                        src="../assets/images/p-gal-s-img4.webp" /></a>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
             <div class="col-md-5 font-primary">
               <div class="row rating-container align-items-center">
@@ -972,11 +1023,18 @@
       </div>
     </div>
   </div>
+  
   <!-- Product Quick View Modal End -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <script src="fancybox/jquery.fancybox.js"></script>
   <script src="../assets/vendor/jquery.min.js"></script>
   <script src="../assets/vendor/slick/slick.min.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script>
+   
+  </script>
 </body>
 
 </html>
