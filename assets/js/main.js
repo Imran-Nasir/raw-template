@@ -57,7 +57,7 @@ $(".filter-button-1").on("click", function () {
 });
 $(document).ready(function () {
 
-  $('a').click(function () {
+  $('.thmb-s-img').click(function () {
     event.preventDefault();
     var largeImage = $(this).attr('data-full');
     $('.selected').removeClass();
@@ -73,6 +73,7 @@ $(document).ready(function () {
   });
 
 }); 
+
 // $(document).ready(function () {
 //   // When the main image is clicked
 //   $("#main-img-trigger").click(function (event) {

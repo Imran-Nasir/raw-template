@@ -3019,6 +3019,20 @@
   .rsth1--footer .info-head {
     font-size: 20px;
   }
+  .product-gallery {
+    display: flex;
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+  .product-thumbnails {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .product-main-image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {

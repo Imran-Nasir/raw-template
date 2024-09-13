@@ -1363,24 +1363,62 @@
           </a>
           <div class="row">
             <div class="col-md-7">
-              <div class="product-gallery  d-flex flex-column">
-                <div class="quick-product-main-img d-flex flex-column align-items-center justify-content-center">
-                  <div>
-                    <img src="assets/images/product-image.webp" alt="Main Product 1" class="quickview-img-selected" />
+              <div class="product-gallery">
+                <div class="product-thumbnails">
+                  <div class="thumb-img">
+                    <a href="#" class="selected thmb-s-img" data-full="../assets/images/p-gal-l-img1.webp" ><img
+                        src="../assets/images/p-gal-s-img1.webp" /></a>
+                  </div>
+                  <div class="thumb-img">
+                    <a href="#" data-full="../assets/images/p-gal-l-img2.webp" class="thmb-s-img"><img
+                        src="../assets/images/p-gal-s-img2.webp" /></a>
+                  </div>
+                  <div class="thumb-img">
+                    <a href="#" data-full="../assets/images/p-gal-l-img3.webp" class="thmb-s-img"><img
+                        src="../assets/images/p-gal-s-img3.webp" /></a>
+                  </div>
+                  <div class="thumb-img">
+                    <a href="#" data-full="../assets/images/p-gal-l-img4.webp" class="thmb-s-img"><img
+                        src="../assets/images/p-gal-s-img4.webp" /></a>
                   </div>
                 </div>
-                <div class="quick-product-thumbs">
-                  <div class="quick-view-thumb-img">
-                    <img src="assets/images/p-gal-img1.webp" alt="Product 1" />
+                <div class="product-main-image d-flex align-items-center justify-content-center">
+                  <div class="full">
+                    <img src="../assets/images/p-gal-l-img1.webp" type="button" data-bs-toggle="modal"
+                    data-bs-target="#view-img-lg"/>
                   </div>
-                  <div class="quick-view-thumb-img">
-                    <img src="assets/images/p-gal-img2.webp" alt="Product 2" />
-                  </div>
-                  <div class="quick-view-thumb-img">
-                    <img src="assets/images/p-gal-img3.webp" alt="Product 3" />
-                  </div>
-                  <div class="quick-view-thumb-img">
-                    <img src="assets/images/p-gal-img4.webp" alt="Product 3" />
+                </div>
+                <div class="modal fade" id="view-img-lg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-wrapper container">
+                    <div class="modal-content position-relative">
+                      <i href="#" class="fa-solid fa-xmark close-model text-white" data-bs-dismiss="modal"></i>
+                      <div class="product-gallery">
+                        <div class="product-thumbnails">
+                          <div class="thumb-img">
+                            <a href="#" class="selected" data-full="../assets/images/p-gal-l-img1.webp"><img
+                                src="../assets/images/p-gal-s-img1.webp" /></a>
+                          </div>
+                          <div class="thumb-img">
+                            <a href="#" data-full="../assets/images/p-gal-l-img2.webp"><img
+                                src="../assets/images/p-gal-s-img2.webp" /></a>
+                          </div>
+                          <div class="thumb-img">
+                            <a href="#" data-full="../assets/images/p-gal-l-img3.webp"><img
+                                src="../assets/images/p-gal-s-img3.webp" /></a>
+                          </div>
+                          <div class="thumb-img">
+                            <a href="#" data-full="../assets/images/p-gal-l-img4.webp"><img
+                                src="../assets/images/p-gal-s-img4.webp" /></a>
+                          </div>
+                        </div>
+                        <div class="product-main-image d-flex align-items-center justify-content-center">
+                          <div class="full">
+                            <img src="../assets/images/p-gal-l-img1.webp" type="button" data-bs-toggle="modal"
+                            data-bs-target="#view-img-lg"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
