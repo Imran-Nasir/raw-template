@@ -417,36 +417,36 @@
     </div>
     <div class="container mt-5 rsth1--checkout-steps px-0">
       <!-- Progress Bar -->
-      <div class="progress-container">
-        <div class="progress-line">
-          <div class="progress-line-filled"></div>
+      <div class="progress-container ">
+        <div class="progress-line px-3">
+          <div class="progress-line-filled "></div>
         </div>
         <div class="progress-step active text-start" id="step1">
           <span class="dot text-center">
-            <p class="get-tick">1</p>
+            <p class="get-tick text-white">1</p>
           </span>
           <div class="label">Shipping</div>
         </div>
         <div class="progress-step text-center" id="step2">
           <span class="dot">
-            <p class="get-tick">2</p>
+            <p class="get-tick text-white">2</p>
           </span>
           <div class="label">Payment</div>
         </div>
         <div class="progress-step text-end" id="step3">
           <span class="dot text-center">
-            <p class="get-tick">3</p>
+            <p class="get-tick text-white">3</p>
           </span>
           <div class="label">Confirmation</div>
         </div>
       </div>
 
       <!-- Form Steps -->
-      <form action="" id="checkout-form">
+      <form action="" class="check-out--form" id="checkout-form">
         <div class="form-step" id="form-step-1">
           <div class="container py-5">
             <div class="row ">
-              <div class="col-lg-7 col-md-12">
+              <div class="col-lg-7 col-md-12 px-0">
                 <h2 class="mb-4">Billing Information</h2>
                 <div class="mb-3">
                   <label for="emailPhone" class="form-label">Email or mobile phone number</label>
@@ -454,7 +454,7 @@
                 </div>
                 <div class="form-check mb-4">
                   <input class="form-check-input" type="checkbox" id="newsOffersCheck" />
-                  <label class="form-check-label" for="newsOffersCheck">
+                  <label class="form-check-label optional-checkbox" for="newsOffersCheck">
                     Email me with news & offers
                   </label>
                 </div>
@@ -480,8 +480,8 @@
                   <label for="address" class="form-label">Address</label>
                   <input type="text" class="form-control" id="address" placeholder="None" />
                 </div>
-                <div class="mb-3 add-address">
-                  <i class="fas fa-plus"></i> Add apartment, suite, etc.
+                <div class="mb-3 ">
+                  <i class="fas fa-plus"></i> <span class="add-address">Add apartment, suite, etc.</span>
                 </div>
                 <div class="row">
                   <div class="col-md-6 mb-3">
@@ -499,11 +499,11 @@
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="saveInfoCheck" />
-                  <label class="form-check-label" for="saveInfoCheck">
+                  <label class="form-check-label optional-checkbox" for="saveInfoCheck">
                     Save this information for next time
                   </label>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 mt-5">
                   <h2 class="mb-4">Shipping Method</h2>
                   <select class="form-select" id="shippingMethod">
                     <option value="standard">
@@ -516,7 +516,7 @@
                     <option value="pickup">In-Store Pickup - Free</option>
                   </select>
                 </div>
-                <div class="col-12 mb-2">
+                <div class="col-12 mb-2 mt-5">
                   <h2 class="mb-4">Billing Address</h2>
                   <div class="form-check border p-3">
                     <input class="form-check-input" type="radio" name="billingAddress" id="sameAsShipping" value="same"
@@ -589,12 +589,12 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="col-12 pt-5">
-                  <button class="btn w-100 theme--btn" id="next1">
+                  <button class="btn w-100 theme--btn proceed--btn" id="next1">
                     Proceed
                   </button>
                 </div>
                 <div class="col-12 pt-3">
-                  <button class="btn w-100 theme--btn">Back</button>
+                  <button class="btn w-100 theme--btn proceed--btn">Back</button>
                 </div>
               </div>
               <div class="col-lg-5"></div>
@@ -697,7 +697,7 @@
                               <div class="order-sum-items-info d-flex flex-column justify-content-evenly">
                                 <h6 class="m-0">Iphone 15 Pro Max</h6>
                                 <div class="order-sum-item-quantity d-flex align-items-center gap-3">
-                                  <h6 class="m-0">Electronic accessories</h6>
+                                  <p class="m-0">Electronic accessories</p>
                                 </div>
                               </div>
                               <div class="item-price-dels d-flex flex-column justify-content-evenly align-items-center">

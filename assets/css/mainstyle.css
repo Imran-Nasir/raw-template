@@ -604,6 +604,7 @@
   padding-top: 18px;
   padding-bottom: 18px;
   border-radius: 10px;
+  font-size: 20px;
 }
 
 .rsth1-get-in-touch .contact-us-from input[type="submit"]:hover {
@@ -861,16 +862,16 @@
 
 .progress-step.completed .dot {
   content: "\2713";
-  /* Unicode tick symbol */
   transform: rotate(45deg);
-  font-family: "FontAwesome", sans-serif;
   font-size: 16px;
   line-height: 30px;
 }
 
 .progress-step .label {
+  font-family: var(--primary-color);
+  font-weight: 600;
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 18px;
   color: #6c757d;
 }
 
@@ -883,19 +884,16 @@
   left: 0;
   z-index: -1;
   border-top: 2px dashed #ddd;
-  /* Dashed line */
 }
 
 .progress-line-filled {
   background-color: #007bff;
-  /* Bootstrap primary color */
   height: 2px;
   position: absolute;
   width: 0%;
   top: -1px;
   transition: width 0.3s ease;
   border-top: 2px solid #007bff;
-  /* Solid line to fill over dashed */
 }
 
 .rsth1--checkout-steps h2 {
@@ -912,6 +910,47 @@
   font-weight: 400;
   line-height: 22px;
   color: var(--secondry-color);
+}
+
+.check-out--form input::placeholder{
+font-family: var(--primary-color);
+font-weight: 400;
+font-size: 18px;
+line-height: 17px;
+color: var(--secondry-color);
+}
+
+.check-out--form .add-address{
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(44, 49, 59, 0.7);
+}
+
+.check-out--form .form-check-label{
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 17px;
+  color: var(--secondry-color);
+}
+
+.check-out--form .optional-checkbox{
+  font-family: var(--primary-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(44, 49, 59, 0.7);
+}
+.check-out--form .form-select{
+font-family: var(--primary-font);
+font-weight: 400;
+font-size: 18px;
+line-height: 17px;
+color: #2C313B;
 }
 
 .rsth--checkout-page .payment-method .filtered {
@@ -958,14 +997,32 @@
   width: 60%;
 }
 
-.item-price-dels {
-  width: max-content;
+.order-sum-items-info h6{
+font-family: var(--secondary-font);
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: var(--secondry-color);
+}
+.order-sum-items-info p{
+font-family: var(--secondary-font);
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: var(--secondry-color);
 }
 
-.order-sum-items-info h6 {
-  font-family: var(--secondary-font);
-  font-size: 16px;
-  font-weight: 400;
+.order-sum-item-price{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+color: var(--primary-color);
+}
+
+.item-price-dels {
+  width: max-content;
 }
 
 .order-sum-item-quantity i,
@@ -2110,6 +2167,10 @@
   top: 15px;
   left: -15px;
 }
+.blog-comment-form input::placeholder{
+  color: #666666;
+
+}
 /* Single Blog Page End*/
 /* 404 Page Css */
 .rsth1-404-error-section {
@@ -2758,7 +2819,33 @@
     padding-top: 56px;
     padding-bottom: 48px;
   }
+  .rsth1--checkout-steps label {
+    font-size: 16px;
+    line-height: 13px;
+  }
+  .check-out--form .form-check-label{
+    font-size: 16px;
+    line-height: 13px;
+  }
+  .check-out--form .optional-checkbox{
+    font-size: 16px;
+    line-height: 13px;
+  }
+  .check-out--form input::placeholder{
+    font-size: 16px;
+    line-height: 13px;
+  }   
+  .rsth1--order-sum-content {
+    padding: 38px 32px !important;
+  } 
+  .proceed--btn{
+    font-size: 20px;
+  }
+  .order-sum-title {
+    font-size: 24px
 }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .rsth1--top-bar .navbar-text {
     font-size: 12px;
@@ -2967,7 +3054,23 @@
   .btn-update-pw {
     font-size: 14px;
   }
-
+  .order-sum-title {
+    font-size: 19px;
+  }
+  .order-sum-items-info h6 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .rsth1--order-sum-content .pricing-heading,
+  .order-sum-sub-total .subtotal, 
+  .order-sum-discount .discount,
+  .order-sum-shipping .shipping {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .order-sum-total h4 {
+    font-size: 18px;
+}
   .rsth1-products-section .filters-row {
     background-color: #ffffff00;
     padding: 0px !important;

@@ -10,6 +10,7 @@ $(document).ready(function () {
     }
   });
 });
+
 jQuery(document).ready(function ($) {
   $(".slick.marquee").slick({
     speed: 3000,
@@ -56,7 +57,6 @@ $(".filter-button-1").on("click", function () {
 
 });
 $(document).ready(function () {
-
   $('.thmb-s-img').click(function () {
     event.preventDefault();
     var largeImage = $(this).attr('data-full');
@@ -252,16 +252,13 @@ if (confirmPasswordField) {
   });
 }
 
-// -----multi step form code
 $(document).ready(function () {
   let currentStep = 1;
 
-  // Update the progress bar
   function updateProgressBar(step) {
     $(".progress-step").removeClass("active");
     $(`#step${step}`).addClass("active");
 
-    // Mark the previous step as completed and change number to tick
     for (let i = 1; i < step; i++) {
       $(`#step${i}`).addClass("completed").find(".get-tick").text("✔");
     }
@@ -270,12 +267,35 @@ $(document).ready(function () {
     $(".progress-line-filled").css("width", widthPercentage + "%");
   }
 
-  // Next Step
+  // Function to scroll to the top of the page
+  function scrollToTop() {
+    let scrollValue;
+
+    // Get the screen width
+    let screenWidth = $(window).width();
+
+    // Set different scroll values based on screen width
+    if (screenWidth >= 991) {
+        // Large screens (desktops)
+        scrollValue = 650; // Adjust this value for desktops
+    } else if (screenWidth >= 768) {
+        // Medium screens (tablets)
+        scrollValue = 560; 
+    } else {
+        // Small screens (mobile)
+        scrollValue = 480; // Adjust this value for mobiles
+    }
+
+    // Perform the scroll
+    $("html, body").animate({ scrollTop: scrollValue }, "fast");
+}
+
   $("#next1").click(function () {
     $("#form-step-1").addClass("d-none");
     $("#form-step-2").removeClass("d-none");
     currentStep = 2;
     updateProgressBar(currentStep);
+    scrollToTop(); // Scroll to top when going to the next step
   });
 
   $("#next2").click(function () {
@@ -283,6 +303,7 @@ $(document).ready(function () {
     $("#form-step-3").removeClass("d-none");
     currentStep = 3;
     updateProgressBar(currentStep);
+    scrollToTop(); // Scroll to top when going to the next step
   });
 
   // Previous Step
@@ -291,6 +312,7 @@ $(document).ready(function () {
     $("#form-step-1").removeClass("d-none");
     currentStep = 1;
     updateProgressBar(currentStep);
+    scrollToTop(); // Scroll to top when going to the previous step
   });
 
   $("#prev3").click(function () {
@@ -298,6 +320,7 @@ $(document).ready(function () {
     $("#form-step-2").removeClass("d-none");
     currentStep = 2;
     updateProgressBar(currentStep);
+    scrollToTop(); // Scroll to top when going to the previous step
   });
 });
 
@@ -375,3 +398,28 @@ $("#filter-image").on("click", function () {
   //   $(this).removeClass("col-md-4").addClass("col-md-3");
   // });
 });
+
+// magnefic popup
+$(document).ready(function(){
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom', 
+    gallery:{
+        enabled:true
+      },
+  
+    zoom: {
+      enabled: true, 
+  
+      duration: 300, // duration of the effect, in milliseconds
+      easing: 'ease-in-out', // CSS transition easing function
+  
+      opener: function(openerElement) {
+  
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+  
+  });
+  
+  });
