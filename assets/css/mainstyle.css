@@ -1305,7 +1305,12 @@
   margin-top: 80px;
   margin-bottom: 80px;
 }
-
+@media (max-width: 1024px) {
+  .my-80px {
+    margin-top: 80px; 
+    margin-bottom: 20px; 
+  }
+}
 .hero-slide-item {
   background: url(../images/home-page-banner.webp);
   background-position: center;
@@ -1893,7 +1898,11 @@
   font-weight: 700;
   font-size: 32px;
 }
-
+@media (max-width: 767px) {
+  .single-regular-price {
+    font-size: 23px; 
+  }
+}
 .single-sale-price {
   text-decoration: line-through;
   color: gray;
