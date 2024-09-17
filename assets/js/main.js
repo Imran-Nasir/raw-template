@@ -387,16 +387,11 @@ $("#filter-image").on("click", function () {
   var $content = $("#content");
   var $productRow = document.querySelector(".products-row");
 
-  // Toggle the visibility of the sidebar and adjust the content width
   $sidebar.toggleClass("d-none col-md-3 col-lg-3 col-xl-3");
   $content.toggleClass(
     "col-md-9 col-lg-9 col-xl-9 col-md-12 col-lg-12 col-xl-12"
   );
   console.log($productRow);
-  // Change the class of all containers within #products-row from col-md-4 to col-md-3
-  // .each(function () {
-  //   $(this).removeClass("col-md-4").addClass("col-md-3");
-  // });
 });
 
 // magnefic popup
@@ -423,3 +418,16 @@ $(document).ready(function(){
   });
   
   });
+
+
+  //shop pagination
+  $(document).ready(function() {
+    $(".pg-items, .pg-item-active").on("click", function(event) {
+      event.preventDefault();        
+        // Remove the active class from all pagination items and reset them to .pg-items
+        $(".pg-item").removeClass("pg-item-active").addClass("pg-items");
+        
+        // Toggle the clicked pagination item between .pg-items and .pg-item-active
+        $(this).toggleClass("pg-items pg-item-active");
+    });
+});

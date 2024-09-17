@@ -438,7 +438,7 @@
             <!-- iPhone 15 Pro Max -->
             <tr>
               <td>
-                <img src="../assets/images/wishlist/15-pro-max.png" alt="iPhone 15 Pro Max" class="img-fluid" />
+                <img src="../assets/images/wishlist/15-pro-max.webp" alt="iPhone 15 Pro Max" class="img-fluid" />
                 <span>iPhone 15 Pro Max</span>
               </td>
               <td>14/04/2024</td>
@@ -449,7 +449,7 @@
                   <button class="btn text-muted p-0 me-3 btn-minus" type="button">
                     <i class="fa-solid fa-minus"></i>
                   </button>
-                  <span class="fw-bold fs-5 qty-value">5</span>
+                  <span class=" qty-value">5</span>
                   <button class="btn text-dark p-0 ms-3 btn-plus" type="button">
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -467,7 +467,7 @@
             <!-- Game Controller -->
             <tr>
               <td>
-                <img src="../assets/images/wishlist/game-control.png" class="img-fluid" />
+                <img src="../assets/images/wishlist/game-control.webp" class="img-fluid" />
                 <span>Game Controller</span>
               </td>
               <td>24/06/2024</td>
@@ -478,7 +478,7 @@
                   <button class="btn text-muted p-0 me-3 btn-minus" type="button">
                     <i class="fa-solid fa-minus"></i>
                   </button>
-                  <span class="fw-bold fs-5 qty-value">5</span>
+                  <span class=" qty-value">5</span>
                   <button class="btn text-dark p-0 ms-3 btn-plus" type="button">
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -494,9 +494,9 @@
               </td>
             </tr>
             <!-- LG OLED TV -->
-            <tr>
+            <tr class="last-row">
               <td>
-                <img src="../assets/images/wishlist/tv.png" alt="LG OLED TV" class="img-fluid" />
+                <img src="../assets/images/wishlist/tv.webp" alt="LG OLED TV" class="img-fluid" />
                 <span>LG OLED TV</span>
               </td>
               <td>08/10/2024</td>
@@ -507,7 +507,7 @@
                   <button class="btn text-muted p-0 me-3 btn-minus" type="button">
                     <i class="fa-solid fa-minus"></i>
                   </button>
-                  <span class="fw-bold fs-5 qty-value">5</span>
+                  <span class="qty-value">5</span>
                   <button class="btn text-dark p-0 ms-3 btn-plus" type="button">
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -534,33 +534,50 @@
               <span aria-hidden="true">&laquo;</span> Back
             </a>
           </li>
-          <li class="page-item active">
-            <a class="page-link" href="#">1</a>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-1 pg-item-active" href="">1</a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item"><a class="page-link" href="#">6</a></li>
-          <li class="page-item"><a class="page-link" href="#">7</a></li>
-          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-2 pg-items" href="">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-3 pg-items" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-4 pg-items" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-5 pg-items" href="#">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-6 pg-items" href="#">6</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-7 pg-items" href="#">7</a>
+          </li>
           <li class="page-item disabled">
             <a class="page-link" href="#">...</a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">25</a></li>
+          <li class="page-item">
+            <a class="page-link pg-item pg-item-25 pg-items" href="#">25</a>
+          </li>
           <li class="page-item">
             <a class="page-link next-button" href="#" aria-label="Next">
               Next <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
         </ul>
-        <div class="form-inline ml-3">
-          <label for="page-number">Per Page:</label>
-          <select class="form-control ml-2" id="page-number">
-            <option value="7" selected>07</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-          </select>
+        <div class="form-inline ml-3 d-flex flex-row">
+          <div>
+            <label for="page-number" class="pg-per-page">Per Page:</label>
+          </div>
+          <div>
+            <select class="form-control ml-2" id="page-number">
+              <option value="7" selected>07</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+            </select>
+          </div>
         </div>
       </nav>
     </div>

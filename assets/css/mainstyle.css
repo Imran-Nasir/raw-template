@@ -1693,7 +1693,27 @@
 .rsth1-products-section .filters-row {
   background-color: #f2f4f5;
 }
-
+.accordion-button{
+font-family: var(--secondary-font);
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: var(--secondry-color);
+}
+.shop-sub-cat{
+font-family: var(--primary-font);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: var(--secondry-color);
+}
+.shop-sub-cat span{
+font-family: var(--primary-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #808080;
+}
 .filter-title{
 font-weight: 400;
 font-size: 18px;
@@ -1783,11 +1803,18 @@ color: #5F6C72;
 .pg-items{
   border: 1px solid rgba(199, 205, 209, 0.78);
   border-radius: 6px;
+  color: #313131;
 }
 .pg-item-active{
 background: var(--primary-color);
 border-radius: 6px;
 color: #fff;
+}
+.pg-per-page{
+font-family: var(--primary-font);
+font-weight: 400;
+font-size: 16px;
+color: #000000;
 }
 .pagination {
   margin: 0;
@@ -2738,7 +2765,7 @@ color: rgba(2, 4, 40, 0.5);
   .rsth1--footer .my-account-col {
     padding-left: 20px;
   }
-
+/*  */
   .rsth1-hero-section .row {
     background-position: 80% 50%;
     height: 270px;
