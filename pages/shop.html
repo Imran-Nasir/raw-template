@@ -402,7 +402,7 @@
   <!-- ///////////////////////// Main Content Section /////////////////////// -->
   <div class="main rsth--shop-page">
     <div class="container rsth1-hero-section">
-      <div class="row m-0 shop-banner">
+      <div class="row m-0 shop-banner align-items-md-center align-items-end">
         <div class="col-sm-12 d-flex justify-content-md-start justify-content-center just align-items-center">
           <div class="hero-section">
             <h1 class="text-white">Our Products</h1>
@@ -590,7 +590,7 @@
                 <div class="col-md-2 mt-1 font-primary d-flex justify-content-between align-items-center">
                   <div class="filters-col">
                     <img src="../assets/icons/shop-filter-icon.svg" alt="" id="filter-image"  class="cursor-pointer"/>
-                    <span>Filter</span>
+                    <span class="filter-title">Filter</span>
                   </div>
                   <div class="mbl-sort-col d-md-none d-block w-50">
                     <div class="sort-section mt-3 ">
@@ -602,18 +602,18 @@
                   </div>
                 </div>
                 <div class="col-md-10 d-flex align-items-center flex-wrap d-block shop-filters">
-                  <p class="m-0 me-3">Active Filters:</p>
+                  <p class="m-0 me-3 active-filter-title">Active Filters:</p>
                   <div class="active-filter me-2 mt-1 font-primary f-size-16 fw-semibold filter-custom-bg">
                     Electronics Devices
-                    <span class="f-size-10"><i class="fa-solid fa-x"></i></span>
+                    <span class="f-size-10"><i class="fa-solid fa-x filter-close"></i></span>
                   </div>
                   <div class="active-filter me-2 mt-1 font-primary f-size-16 fw-semibold filter-custom-bg">
                     50-1500
-                    <span class="f-size-10"><i class="fa-solid fa-x"></i></span>
+                    <span class="f-size-10"><i class="fa-solid fa-x filter-close"></i></span>
                   </div>
                   <div class="active-filter me-2 mt-1 font-primary f-size-16 fw-semibold filter-custom-bg">
                     Apple
-                    <span class="f-size-10"><i class="fa-solid fa-x"></i></span>
+                    <span class="f-size-10"><i class="fa-solid fa-x filter-close"></i></span>
                   </div>
                 </div>
               </div>
@@ -622,7 +622,7 @@
               <span class="fw-bold">100</span> Results Found
             </div>
           </div>
-          <div class="sort-section mt-3 d-md-block d-none">
+          <div class="sort-section mt-3 d-md-block d-none text-end">
             <span class="sort-label"><b>Sort By</b></span>
             <select class="sort-select">
               <option value="latest">Latest</option>
@@ -1021,35 +1021,35 @@
                       <span aria-hidden="true">&laquo;</span> Back
                     </a>
                   </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
+                  <li class="page-item">
+                    <a class="page-link  pg-item-active" href="#">1</a>
+                  </li>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">2</a>
+                  </li>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">3</a>
+                  </li>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">4</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link pg-items" href="#">5</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">6</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">4</a>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">7</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">5</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">6</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">7</a>
-                  </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">8</a>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">8</a>
                   </li>
                   <li class="page-item disabled">
                     <a class="page-link" href="#">...</a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">25</a>
+                  <li class="page-item ">
+                    <a class="page-link pg-items" href="#">25</a>
                   </li>
                   <li class="page-item">
                     <a class="page-link next-button" href="#" aria-label="Next">
@@ -1057,17 +1057,21 @@
                     </a>
                   </li>
                 </ul>
-                <div class="form-inline ml-3 d-md-block d-none ">
-                  <label for="page-number">Per Page:</label>
-                  <select class="form-control ml-2" id="page-number">
-                    <option value="7" selected>07</option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                  </select>
+                <div class="form-inline ml-3 d-flex flex-row">
+                  <div>
+                    <label for="page-number">Per Page:</label>
+                  </div>
+                  <div>
+                    <select class="form-control ml-2" id="page-number">
+                      <option value="7" selected>07</option>
+                      <option value="10">10</option>
+                      <option value="20">20</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="btn-continue-shopping d-md-block d-none">
+                <!-- <div class="btn-continue-shopping d-md-block d-none">
                   <button class="btn btn-primary">Continue Shopping</button>
-                </div>
+                </div> -->
               </nav>
             </div>
           </div>
