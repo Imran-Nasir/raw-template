@@ -248,8 +248,8 @@
 }
 
 .rsth1-our-mission-card-section .read-more {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 18px !important;
+  font-weight: 600 !important;
   color: var(--primary-color);
   text-decoration: none;
   margin-bottom: 40px;
@@ -293,7 +293,8 @@
     padding: 10px;
   }
   .rsth1-our-mission-card-section .card img {
-    height: 70px;
+    height: 30px;
+    width: auto;
   }
   .rsth1-our-mission-card-section .card h2 {
     font-size: 18px;
