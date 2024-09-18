@@ -206,10 +206,18 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .rsth1-order-detail-section .custom-spaceing {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 1200px) {
   .btn-custom-width {
     width: 100%;
   }
+  .rsth1-order-detail-section .custom-spaceing {
+    margin-right: 0px;
+  }
 }
+
+
