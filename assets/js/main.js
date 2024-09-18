@@ -253,21 +253,42 @@ if (confirmPasswordField) {
 }
 
 $(document).ready(function () {
-  let currentStep = 1;
-
-  function updateProgressBar(step) {
-    $(".progress-step").removeClass("active");
-    $(`#step${step}`).addClass("active");
-
-    for (let i = 1; i < step; i++) {
-      $(`#step${i}`).addClass("completed").find(".get-tick").text("✔");
+  let currentStep = 1; // By default, start at the first step
+  
+    // Function to update the progress bar
+    function updateProgressBar(step) {
+      // Remove active and bold style from all steps
+      $(".progress-step").removeClass("active");
+      $(".p-bar-label").css("font-weight", "normal");
+  
+      // Add active class to the current step
+      $(`#step${step}`).addClass("active");
+  
+      // Add bold font to the label in the current step
+      $(`#step${step}`).find(".p-bar-label").css("font-weight", "600");
+  
+      // Mark previous steps as completed and add check icon
+      for (let i = 0; i < step; i++) {
+        $(`#step${i}`).addClass("completed").find(".get-tick").html('<i class="fas fa-check"></i>');
+      }
+  
+      // Update progress line width based on step
+      let widthPercentage = (step - 1) * 50;
+      $(".progress-line-filled").css("width", widthPercentage + "%");
+      if(widthPercentage==100){
+        $(".progress-line-filled").css("width", widthPercentage - 3.75 + "%");
+      }
     }
+  
+    // Initialize the progress bar by applying semi-bold to the first step's label
+    $(`#step${currentStep}`).find(".p-bar-label").css("font-weight", "600");
+  
+    // Call the updateProgressBar function as needed when steps change
+    // updateProgressBar(currentStep);
 
-    let widthPercentage = (step - 1) * 50;
-    $(".progress-line-filled").css("width", widthPercentage + "%");
-  }
+  
+  
 
-  // Function to scroll to the top of the page
   function scrollToTop() {
     let scrollValue;
 
