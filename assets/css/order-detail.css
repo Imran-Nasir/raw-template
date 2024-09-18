@@ -1,213 +1,214 @@
-    @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-    * {
-    padding: 0;
-    margin: 0;
-    }
-    :root {
-    --primary-color: #3c7bf6;
-    --secondry-color: #020428;
-    --accent-color: #e58924;
-    --white-color: #fff;
-    --light-white-color: #E6E6E6;
-    --light-white-2-color: #F5F5F5;
-    --dark-silver-color: #808080;
-    --dark-silver-2-color: #999999;
-    --primary-font: "League Spartan", sans-serif;
-    --secondary-font: "Rubik", sans-serif;
-    }
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: #3c7bf6;
+  --secondry-color: #020428;
+  --accent-color: #e58924;
+  --white-color: #fff;
+  --light-white-color: #e6e6e6;
+  --light-white-2-color: #f5f5f5;
+  --dark-silver-color: #808080;
+  --dark-silver-2-color: #999999;
+  --primary-font: "League Spartan", sans-serif;
+  --secondary-font: "Rubik", sans-serif;
+}
 
-    /* hero section  */        
-    .rsth1-hero-section .row{
-        background-image: url('../images/order-detail/od-hero-banner.webp');
-        background-size: cover;
-        background-position: center;    
-        background-repeat: no-repeat;
-        height: 400px;
-        padding-left: 84px;
-        border-radius: 20px;
-    }
-    
-    .rsth1-hero-section .hero-section h1{
-        font-family: var(--secondary-font);
-        font-size: 40px;
-        line-height: 60px;
-        font-weight: 600;
-    }
-    
-    .rsth1-hero-section .hero-section .breadcrumbs a{
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 20px;
-        font-family: var(--primary-font);
-      }
+/* hero section  */
+.rsth1-hero-section .row {
+  background-image: url("../images/order-detail/od-hero-banner.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-left: 84px;
+  border-radius: 20px;
+}
 
-      .rsth1-hero-section .hero-section .breadcrumbs a{
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 20px;
-        font-family: var(--primary-font);
-      }
-      
-    .rsth1-hero-section .hero-section .breadcrumbs span{
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 20px;
-    }
+.rsth1-hero-section .hero-section h1 {
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+}
 
-    /* mobile responsive mobile devices */
-    @media only screen and (max-width: 768px) {
-    .rsth1-hero-section .row {
-        background-image: url('../images/order-detail/mobile-hero-bg.png');
-        background-size: cover; 
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 400px; 
-        padding-left: 20px;  
-        border-radius: 20px;
-    }
-    
-    .rsth1-hero-section .hero-section h1 {
-        font-size: 24px; 
-        line-height: 36px; 
-        display: flex;
-        flex-wrap: wrap; 
-    }
-    
-    .rsth1-hero-section .hero-section .breadcrumbs a {
-        font-size: 12px;
-        line-height: 18px; 
-    }
-    
-    .rsth1-hero-section .hero-section .breadcrumbs span {
-        font-size: 12px; 
-        line-height: 18px; 
-    }
-    }  
-    /* hero section ended */
+.rsth1-hero-section .hero-section .breadcrumbs a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: var(--primary-font);
+}
 
-    /* TABLE SECTION */
-    .rsth1-order-step-text{
-        font-size: 18px;
-        font-family: var(--secondary-font);
-        font-weight: 500;
-    } 
-    .order-detail-section-backgound{
-        background-image: url('../images/order-detail/process-bg.png');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    .rsth1-order-step-icon {
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: var(--white-color);
-        font-size: 24px;
-        line-height: 60px;
-        margin: 0 auto;
-        padding: 0; 
-    }
-    .rsth1-order-step-icon.rsth1-order-step-icon-active {
-        background-image: url('../images/order-detail/box-bg.png'); 
-    }
+.rsth1-hero-section .hero-section .breadcrumbs a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: var(--primary-font);
+}
 
-    .rsth1-order-step-icon-2 {
-        background-image: url('../images/order-detail/box-bg.png'); 
-        color: var(--white-color);
-    }
+.rsth1-hero-section .hero-section .breadcrumbs span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+.order-product-image {
+  background-color: var(--light-white-2-color);
+  padding: 15px;
+  border-radius: 14px;
+}
+/* mobile responsive mobile devices */
+@media only screen and (max-width: 768px) {
+  .rsth1-hero-section .row {
+    background-image: url("../images/order-detail/mobile-hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
 
-    .rsth1-order-step-icon-3 {
-        background-image: url('../images/order-detail/box-bg-white.png'); 
-        color: var(--secondry-color);
-        background-size: contain;
-    }
+  .rsth1-hero-section .hero-section h1 {
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .rsth1-order-step-icon-4 {
-        background-image: url('../images/order-detail/box-bg-white.png'); 
-        color: var(--secondry-color);
-        background-size: contain;  
-    }
-    .rsth1-order-detail-section .custom-heading-order{
-        font-size: 24px;
-        font-family: var(--secondary-font);
-        font-weight: 600;
-        margin-bottom: 20px;    
-    }
-    .rsth1-order-detail-section .table-border{
-        border: 1px solid var(--light-white-color) !important;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 15px;
-     }
-    .rsth1-order-detail-section .custom-thead th {
-        background-color: var(--light-white-2-color) !important;
-        color: var(--dark-silver-color) !important;
-        font-family: var(--secondary-font);
-        font-size: 14px;
-        font-weight: 500;
-    }
+  .rsth1-hero-section .hero-section .breadcrumbs a {
+    font-size: 12px;
+    line-height: 18px;
+  }
 
-    .rsth1-order-detail-section .custom-spaceing{
-        margin-right: 50px;
-    }
+  .rsth1-hero-section .hero-section .breadcrumbs span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+/* hero section ended */
 
-    .rsth1-order-detail-section .mb-3 .font-weight-semibold {
-        font-weight: 700;
-        color: var(--primary-color) !important; 
-        
-    } 
-    .rsth1-order-detail-section .td-custom-padding{
-        padding-top: 40px;
-    }
-    .rsth1-order-detail-section td{
-        font-family: var(--primary-font);
-        font-size: 18px;
-    }
-    .rsth1-order-detail-section .text-right{
-        text-align: end;
-        margin-bottom: 20px;
-    }
-    .rsth1-order-detail-section .custom-spaceing-bg-color{
-        background-color: var(--light-white-2-color);
-        padding: 20px;
-    }
-    .rsth1-order-detail-section .custom-billing-address{
-        font-family: var(--secondary-font);
-        font-size: 16px;
-        color: var(--dark-silver-2-color);
-    }
-    .rsth1-order-detail-section .custom-billing-address-p{
-        font-family: var(--secondary-font);
-        font-size: 16px;
-        color: var(--dark-silver-2-color);
-   
-    }
-    /* Making it responsive using Bootstrap */
-    @media (max-width: 576px) {
-        .order-detail-section-backgound {
-            flex-direction: row;
-        }
+/* TABLE SECTION */
+.rsth1-order-step-text {
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+.order-detail-section-backgound {
+  background-image: url("../images/order-detail/process-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.rsth1-order-step-icon {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  font-size: 24px;
+  line-height: 60px;
+  margin: 0 auto;
+  padding: 0;
+}
+.rsth1-order-step-icon.rsth1-order-step-icon-active {
+  background-image: url("../images/order-detail/box-bg.png");
+}
 
-        .rsth1-order-step-text{
-            font-size: 12px;
-        } 
-        
-        .rsth1-order-step {
-            margin-bottom: 15px;
-        }
-        .rsth1-order-detail-bg {
-            background-image: url('../images/order-detail/');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+.rsth1-order-step-icon-2 {
+  background-image: url("../images/order-detail/box-bg.png");
+  color: var(--white-color);
+}
 
-    }
+.rsth1-order-step-icon-3 {
+  background-image: url("../images/order-detail/box-bg-white.png");
+  color: var(--secondry-color);
+  background-size: contain;
+}
 
-    @media (max-width: 1200px) {
-    .btn-custom-width {
-        width: 100%;
-    }
+.rsth1-order-step-icon-4 {
+  background-image: url("../images/order-detail/box-bg-white.png");
+  color: var(--secondry-color);
+  background-size: contain;
+}
+.rsth1-order-detail-section .custom-heading-order {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.rsth1-order-detail-section .table-border {
+  border: 1px solid var(--light-white-color) !important;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+}
+.rsth1-order-detail-section .custom-thead th {
+  background-color: var(--light-white-2-color) !important;
+  color: var(--dark-silver-color) !important;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rsth1-order-detail-section .custom-spaceing {
+  margin-right: 50px;
+}
+
+.rsth1-order-detail-section .mb-3 .font-weight-semibold {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+.rsth1-order-detail-section .td-custom-padding {
+  padding-top: 40px;
+}
+.rsth1-order-detail-section td {
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+.rsth1-order-detail-section .text-right {
+  text-align: end;
+  margin-bottom: 20px;
+}
+.rsth1-order-detail-section .custom-spaceing-bg-color {
+  background-color: var(--light-white-2-color);
+  padding: 20px;
+}
+.rsth1-order-detail-section .custom-billing-address {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  color: var(--dark-silver-2-color);
+}
+.rsth1-order-detail-section .custom-billing-address-p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  color: var(--dark-silver-2-color);
+}
+/* Making it responsive using Bootstrap */
+@media (max-width: 576px) {
+  .order-detail-section-backgound {
+    flex-direction: row;
+  }
+
+  .rsth1-order-step-text {
+    font-size: 12px;
+  }
+
+  .rsth1-order-step {
+    margin-bottom: 15px;
+  }
+  .rsth1-order-detail-bg {
+    background-image: url("../images/order-detail/");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn-custom-width {
+    width: 100%;
+  }
 }

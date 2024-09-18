@@ -167,7 +167,7 @@
 }
 @media (max-width: 768px) {
   .rsth1-blog-section .recently-added-list {
-      padding-right: 0 !important;  
+    padding-right: 0 !important;
   }
 }
 .rsth1-blog-section .recently-added-image {
@@ -342,12 +342,15 @@
   color: var(--secondry-color);
   padding: 0px 30px;
   border-radius: 5px;
-  width: 15%;
   display: flex;
   z-index: 1;
   justify-content: center;
+  flex-direction: column;
 }
-
+.rsth1-card-section .date span {
+  font-weight: 400;
+  text-transform: uppercase;
+}
 .rsth1-card-section .meta {
   font-family: var(--primary-font);
   display: flex;
