@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 5 version
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   padding: 0;
@@ -120,8 +113,6 @@
 }
 .rsth1-tabel-section .text-center {
   text-align: start;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: var(--secondary-font);
   font-size: 20px;
@@ -136,16 +127,9 @@
 }
 
 .rsth1-tabel-section .orders-history {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rsth1-tabel-section .orders-history table {
@@ -179,17 +163,10 @@
 }
 
 .rsth1-tabel-section .page-navigation nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 100px;
   margin-top: 40px;
   padding: 10px;
@@ -205,12 +182,8 @@
 }
 
 .rsth1-tabel-section .form-inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .rsth1-tabel-section .form-inline label {
@@ -234,13 +207,8 @@
 /* Responsive mobile devices */
 @media (max-width: 768px) {
   .rsth1-tabel-section .page-navigation nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
@@ -258,9 +226,7 @@
   }
 
   .rsth1-tabel-section .form-inline {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin-right: 10px;
   }
 
@@ -271,8 +237,6 @@
 
   .rsth1-tabel-section .back-button,
   .rsth1-tabel-section .next-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     color: var(--silver-color) !important;
     border: 2px solid var(--silver-color) !important;
@@ -283,17 +247,12 @@
 /* Responsive tablet devices */
 @media (max-width: 992px) {
   .rsth1-tabel-section .page-navigation nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .rsth1-tabel-section .form-inline {
     margin-left: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
