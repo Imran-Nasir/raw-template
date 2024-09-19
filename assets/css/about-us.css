@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   padding: 0;
@@ -86,9 +93,15 @@
 
 /* about-us section */
 .rsth1-about-us-section .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rsth1-about-us-section .about-us-text-section {
@@ -155,7 +168,10 @@
 /* Tablet styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .rsth1-about-us-section .col-md-6 {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .rsth1-about-us-section .about-us-text-section {
@@ -211,9 +227,16 @@
 
 /* our mkission card section */
 .rsth1-our-mission-card-section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: self-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: self-start;
+      -ms-flex-align: self-start;
+          align-items: self-start;
   padding: 20px;
   border-radius: 10px;
   border: 1px solid var(--light-white-3-color);
@@ -224,7 +247,8 @@
 .rsth1-our-mission-card-section .card img {
   width: auto;
   height: 40px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
@@ -268,14 +292,20 @@
 /* Tablet styles */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .rsth1-our-mission-card-section .card {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 15px;
   }
   .rsth1-our-mission-card-section .card img {
     width: auto;
     height: 10%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .rsth1-our-mission-card-section .card h2 {
     font-size: 20px;
@@ -288,8 +318,13 @@
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
   .rsth1-our-mission-card-section .card {
-    flex-direction: column;
-    align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding: 10px;
   }
   .rsth1-our-mission-card-section .card img {
@@ -314,7 +349,8 @@
 .rsth1-our-detail-man-card-section .left-side {
   padding: 100px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--light-white-2-color);
 }
 
@@ -406,12 +442,21 @@
     width: 100%;
   }
   .rsth1-our-detail-man-card-section .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .rsth1-our-detail-man-card-section .col-md-4 {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 60.333333%;
   }
 }
@@ -423,8 +468,12 @@
 }
 
 .rsth1-carousel-section .col-md-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .rsth1-carousel-section .carousel-heading {
@@ -474,7 +523,8 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%);
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .carousel-control-prev,
@@ -498,11 +548,16 @@
   .rsth1-carousel-section .row .col-md-3 .card img {
     width: 100%;
     height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .rsth1-carousel-section .col-md-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

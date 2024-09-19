@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 5 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   padding: 0;
@@ -98,10 +105,14 @@
   padding: 30px;
   border-radius: 5px;
   margin-bottom: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
 
 .rsth1-blog-section .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-bottom: 20px;
@@ -133,8 +144,11 @@
 .rsth1-blog-section .popular-tags {
   list-style: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .rsth1-blog-section .tag-item {
@@ -160,8 +174,12 @@
 }
 
 .rsth1-blog-section .recently-added-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px !important;
   cursor: pointer;
 }
@@ -173,13 +191,16 @@
 .rsth1-blog-section .recently-added-image {
   width: 60px;
   height: 60px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 5px;
   margin-right: 10px;
 }
 
 .rsth1-blog-section .recently-added-content {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .rsth1-blog-section .recently-added-text {
@@ -190,8 +211,12 @@
 }
 
 .rsth1-blog-section .calendar-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 400;
   color: var(--primary-color);
 }
@@ -209,13 +234,19 @@
 }
 
 .rsth1-blog-section .filter-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: var(--light-white-3-color);
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
   border-radius: 5px;
   font-family: var(--secondary-font);
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: inherit;
 }
 
@@ -261,11 +292,18 @@
 }
 
 .rsth1-blog-section .sort-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .rsth1-blog-section .sort-label {
@@ -300,7 +338,8 @@
   margin-bottom: 20px;
 }
 .rsth1-card-section .card-img-top {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 
@@ -342,10 +381,17 @@
   color: var(--secondry-color);
   padding: 0px 30px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   z-index: 1;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .rsth1-card-section .date span {
   font-weight: 400;
@@ -353,10 +399,16 @@
 }
 .rsth1-card-section .meta {
   font-family: var(--primary-font);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 77%;
   font-weight: 400;
   color: var(--light-silver-color);
@@ -377,10 +429,16 @@
     padding: 10px;
   }
   .rsth1-card-section .meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 10px;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 100%;
     font-weight: 400;
     font-size: 11px;
@@ -422,8 +480,12 @@
   .rsth1-blog-section .result-count {
     font-weight: 400;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
@@ -440,27 +502,45 @@
   }
   .rsth1-blog-section .filter-button-1,
   .rsth1-blog-section .filter-button-2 {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .rsth1-blog-section .filter-section {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .rsth1-blog-section .result-count {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-top: 10px;
     margin-left: 19px;
     margin-bottom: 10px;
   }
   .rsth1-blog-section .sort-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 20px;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 
   .rsth1-blog-section .sort-label {
