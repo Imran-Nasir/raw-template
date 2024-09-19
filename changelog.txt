@@ -1,0 +1,10 @@
+===================Changelog===========================
+**Version 1.0.0 - Initial Release**
+Initial launch of the HTML theme.
+Fully responsive design for all screen sizes (mobile, tablet, desktop).
+Integrated with Bootstrap,jQuery,Slick Slider,Swiper Js.
+Includes 15 unique pages and templates.
+Built with modern HTML5, CSS3, and JavaScript (ES6).
+Customizable [sections or features] such as header, footer, sliders, and forms.
+Browser compatibility: Chrome, Firefox, Safari, Edge, and IE11+.
+Optimized for fast loading speed and SEO-ready.
