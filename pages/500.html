@@ -15,7 +15,7 @@
   <header>
     <!-- Top Navigation Bar -->
     <div class="container-fluid rsth1--top-bar d-md-block d-none d-flex flex-row align-items-center">
-      <div class="container px-0">
+      <div class="container">
         <div class="row">
           <!-- Empty column for larger screens -->
           <div class="col-xl-2 col-lg-1 d-lg-block d-md-none p-0"></div>
@@ -30,7 +30,7 @@
           </div>
 
           <!-- Currency, Language, and Social Links -->
-          <div class="col-xl-5 col-lg-5 col-md-5 p-0 d-flex justify-content-end align-items-center">
+          <div class="col-xl-5 col-lg-5 col-md-5  d-flex justify-content-end align-items-center">
             <nav class="navbar rsth1--top-nav-right justify-content-end align-items-center p-0 m-0">
               <!-- Currency Dropdown -->
               <div class="rsth1--top-nav-item align-items-center">
@@ -64,9 +64,12 @@
               <!-- Social Media Icons -->
               <div
                 class="rsth1--top-nav-item rsth1--top-nav-item-pr0 rsth1--divider d-flex align-items-center align-self-stretch">
-                <i class="fa-brands fa-facebook-f text-white"></i>
-                <i class="fa-brands fa-x-twitter text-white"></i>
-                <i class="fa-brands fa-square-instagram text-white"></i>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f text-white"></i></a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter text-white"></i></a>
+                <a href="#">
+                  <i class="fa-brands fa-square-instagram text-white"></i></a>
               </div>
             </nav>
           </div>
@@ -76,7 +79,7 @@
 
     <!-- Primary Navigation Bar -->
     <div class="container-fluid rsth1--primary-bar-wrapper">
-      <div class="container d-md-block d-none px-0 rsth1--primary-bar">
+      <div class="container d-md-block d-none  rsth1--primary-bar">
         <nav class="navbar navbar-expand-lg rsth1--primary-bar-row">
           <div class="container-fluid px-0">
             <!-- Main Navigation Menu -->
@@ -88,7 +91,7 @@
 
               <div class="primary-navigation ps-4 rsth1--main-primary-ul">
                 <ul class="navbar-nav mb-lg-0 w-100 d-flex justify-content-between align-items-center">
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link" href="../index.html">Home</a>
                   </li>
                   <!-- Products Dropdown with Mega Menu -->
@@ -162,7 +165,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="about-us.html">About Us</a>
                   </li>
-                  <li class="nav-item ">
+                  <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
@@ -186,7 +189,19 @@
                     <div class="rsth1--primary-bar-icons d-flex justify-content-between align-items-center pe-0 gap-4">
                       <!-- Account Icon -->
                       <div class="position-relative d-inline-block cursor-pointer">
-                        <img class="rsth1--primary-menu-myacc" src="../assets/icons/myacc_icon.svg" alt="My Account" />
+                        <img class="rsth1--primary-menu-myacc dropdown-toggle" src="../assets/icons/myacc_icon.svg"
+                          alt="My Account" type="button" data-bs-toggle="dropdown" aria-expanded="false" />
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="profile.html"><i class="fa-solid fa-user"></i>
+                              Profile</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa-solid fa-right-from-bracket"></i>
+                              Logout</a>
+                          </li>
+                        </ul>
                       </div>
                       <!-- Wishlist Icon and Mini Wishlist -->
                       <div class="position-relative d-inline-block cursor-pointer">
@@ -283,12 +298,14 @@
                                 <h4 class="p-0 m-0">$1357.97</h4>
                               </div>
                               <div class="d-grid gap-3 mini-cart--btns">
-                                <button class="btn rsth1--mini-cart-btn-action" type="button">
-                                  Checkout
-                                </button>
-                                <button class="btn rsth1--mini-cart-btn-action" type="button">
-                                  Go To Cart
-                                </button>
+                                <a href="checkout.html"><button class="btn rsth1--mini-cart-btn-action w-100"
+                                    type="button">
+                                    Checkout
+                                  </button></a>
+                                <a href="cart.html"><button class="btn rsth1--mini-cart-btn-action w-100"
+                                    type="button">
+                                    Go To Cart
+                                  </button></a>
                               </div>
                             </div>
                           </div>
@@ -310,29 +327,32 @@
         <!-- Mobile Logo -->
         <div class="col-6 px-0">
           <div class="rsth1--mob-menu-logo">
-            <img src="../assets/images/logo.svg" alt="E-cart Logo" />
+            <a href="../index.html"><img src="../assets/images/logo.svg" alt="E-cart Logo" /></a>
           </div>
         </div>
         <!-- Mobile Icons and Menu Toggle -->
         <div class="col-6 d-flex justify-content-end align-items-center gap-3 px-0">
           <!-- Wishlist Icon -->
           <div class="position-relative d-inline-block">
-            <img class="rsth1--mob-menu-wishlist" src="../assets/icons/wishlisticon.svg" alt="Wishlist" />
-            <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              3
-            </p>
+            <a href="wishlist.html"><img class="rsth1--mob-menu-wishlist" src="../assets/icons/wishlisticon.svg"
+                alt="Wishlist" />
+              <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </p>
+            </a>
           </div>
           <!-- Cart Icon -->
           <div class="position-relative d-inline-block">
-            <img class="rsth1--mob-menu-cart" src="../assets/icons/cart_icon.svg" alt="Cart" />
-            <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              3
-            </p>
+            <a href="cart.html"><img class="rsth1--mob-menu-cart" src="../assets/icons/cart_icon.svg" alt="Cart" />
+              <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </p>
+            </a>
           </div>
           <!-- Mobile Menu Overlay -->
           <div id="myNav" class="rsth1--overlay">
             <!-- Overlay Content (Search and Navigation) -->
-            <div class="overlay-top d-flex align-items-center gap-4 pt-4">
+            <div class="overlay-top d-flex align-items-center gap-4 pt-4 px-3">
               <form class="d-flex" role="search">
                 <input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search" />
                 <button class="btn" type="submit">
@@ -347,11 +367,11 @@
                   <div class="navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdownMenuLink"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -379,10 +399,13 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -404,9 +427,9 @@
   <!-- ///////////////////////// Footer Section ///////////////////////// -->
   <footer>
     <div class="container-fluid rsth1--footer">
-      <div class="container px-sm-0">
-        <div class="row m-0">
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+      <div class="container">
+        <div class="row m-0 px-md-auto px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="footer-col-one d-flex flex-column justify-content-start align-items-start">
               <!-- logo -->
               <div class="f_logo">
@@ -433,7 +456,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="quick-links-col d-flex flex-column w-auto">
               <div>
                 <p class="col-title m-0">Quick Links</p>
@@ -464,7 +487,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="my-account-col d-flex flex-column gap-3">
               <div>
                 <p class="col-title m-0">Account</p>
@@ -480,7 +503,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="contact-info-col d-flex flex-column">
               <div class="info">
                 <p class="col-title m-0">Contact Info</p>
@@ -524,7 +547,7 @@
               <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div class="socail-links">
-              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
           </div>
         </div>

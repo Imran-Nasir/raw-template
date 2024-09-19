@@ -208,17 +208,12 @@ jQuery(document).ready(function ($) {
 $("#mobile_code").intlTelInput({
   initialCountry: "pk",
   separateDialCode: true,
-  // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
 });
 
 $(document).ready(function () {
-  // Loop through each input field and corresponding eye icon
   $(".eye-hide-seek").each(function () {
     $(this).click(function () {
-      // Get the corresponding password field (sibling of the clicked eye icon)
       var passwordField = $(this).siblings(".acc-detail-password-field");
-
-      // Toggle the password field type between "password" and "text"
       if (passwordField.attr("type") === "password") {
         passwordField.attr("type", "text"); // Show password
         $(this).removeClass("fa-eye").addClass("fa-eye-slash"); // Change to eye icon

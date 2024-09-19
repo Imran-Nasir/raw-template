@@ -18,7 +18,7 @@
   <header>
     <!-- Top Navigation Bar -->
     <div class="container-fluid rsth1--top-bar d-md-block d-none d-flex flex-row align-items-center">
-      <div class="container px-0">
+      <div class="container">
         <div class="row">
           <!-- Empty column for larger screens -->
           <div class="col-xl-2 col-lg-1 d-lg-block d-md-none p-0"></div>
@@ -33,7 +33,7 @@
           </div>
 
           <!-- Currency, Language, and Social Links -->
-          <div class="col-xl-5 col-lg-5 col-md-5 p-0 d-flex justify-content-end align-items-center">
+          <div class="col-xl-5 col-lg-5 col-md-5  d-flex justify-content-end align-items-center">
             <nav class="navbar rsth1--top-nav-right justify-content-end align-items-center p-0 m-0">
               <!-- Currency Dropdown -->
               <div class="rsth1--top-nav-item align-items-center">
@@ -67,9 +67,12 @@
               <!-- Social Media Icons -->
               <div
                 class="rsth1--top-nav-item rsth1--top-nav-item-pr0 rsth1--divider d-flex align-items-center align-self-stretch">
-                <i class="fa-brands fa-facebook-f text-white"></i>
-                <i class="fa-brands fa-x-twitter text-white"></i>
-                <i class="fa-brands fa-square-instagram text-white"></i>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f text-white"></i></a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter text-white"></i></a>
+                <a href="#">
+                  <i class="fa-brands fa-square-instagram text-white"></i></a>
               </div>
             </nav>
           </div>
@@ -79,7 +82,7 @@
 
     <!-- Primary Navigation Bar -->
     <div class="container-fluid rsth1--primary-bar-wrapper">
-      <div class="container d-md-block d-none px-0 rsth1--primary-bar">
+      <div class="container d-md-block d-none  rsth1--primary-bar">
         <nav class="navbar navbar-expand-lg rsth1--primary-bar-row">
           <div class="container-fluid px-0">
             <!-- Main Navigation Menu -->
@@ -189,7 +192,19 @@
                     <div class="rsth1--primary-bar-icons d-flex justify-content-between align-items-center pe-0 gap-4">
                       <!-- Account Icon -->
                       <div class="position-relative d-inline-block cursor-pointer">
-                        <img class="rsth1--primary-menu-myacc" src="../assets/icons/myacc_icon.svg" alt="My Account" />
+                        <img class="rsth1--primary-menu-myacc dropdown-toggle" src="../assets/icons/myacc_icon.svg"
+                          alt="My Account" type="button" data-bs-toggle="dropdown" aria-expanded="false" />
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="profile.html"><i class="fa-solid fa-user"></i>
+                              Profile</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <i class="fa-solid fa-right-from-bracket"></i>
+                              Logout</a>
+                          </li>
+                        </ul>
                       </div>
                       <!-- Wishlist Icon and Mini Wishlist -->
                       <div class="position-relative d-inline-block cursor-pointer">
@@ -286,12 +301,14 @@
                                 <h4 class="p-0 m-0">$1357.97</h4>
                               </div>
                               <div class="d-grid gap-3 mini-cart--btns">
-                                <button class="btn rsth1--mini-cart-btn-action" type="button">
-                                  Checkout
-                                </button>
-                                <button class="btn rsth1--mini-cart-btn-action" type="button">
-                                  Go To Cart
-                                </button>
+                                <a href="checkout.html"><button class="btn rsth1--mini-cart-btn-action w-100"
+                                    type="button">
+                                    Checkout
+                                  </button></a>
+                                <a href="cart.html"><button class="btn rsth1--mini-cart-btn-action w-100"
+                                    type="button">
+                                    Go To Cart
+                                  </button></a>
                               </div>
                             </div>
                           </div>
@@ -313,29 +330,32 @@
         <!-- Mobile Logo -->
         <div class="col-6 px-0">
           <div class="rsth1--mob-menu-logo">
-            <img src="../assets/images/logo.svg" alt="E-cart Logo" />
+            <a href="../index.html"><img src="../assets/images/logo.svg" alt="E-cart Logo" /></a>
           </div>
         </div>
         <!-- Mobile Icons and Menu Toggle -->
         <div class="col-6 d-flex justify-content-end align-items-center gap-3 px-0">
           <!-- Wishlist Icon -->
           <div class="position-relative d-inline-block">
-            <img class="rsth1--mob-menu-wishlist" src="../assets/icons/wishlisticon.svg" alt="Wishlist" />
-            <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              3
-            </p>
+            <a href="wishlist.html"><img class="rsth1--mob-menu-wishlist" src="../assets/icons/wishlisticon.svg"
+                alt="Wishlist" />
+              <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </p>
+            </a>
           </div>
           <!-- Cart Icon -->
           <div class="position-relative d-inline-block">
-            <img class="rsth1--mob-menu-cart" src="../assets/icons/cart_icon.svg" alt="Cart" />
-            <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              3
-            </p>
+            <a href="cart.html"><img class="rsth1--mob-menu-cart" src="../assets/icons/cart_icon.svg" alt="Cart" />
+              <p class="rsth1--bubble position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                3
+              </p>
+            </a>
           </div>
           <!-- Mobile Menu Overlay -->
           <div id="myNav" class="rsth1--overlay">
             <!-- Overlay Content (Search and Navigation) -->
-            <div class="overlay-top d-flex align-items-center gap-4 pt-4">
+            <div class="overlay-top d-flex align-items-center gap-4 pt-4 px-3">
               <form class="d-flex" role="search">
                 <input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search" />
                 <button class="btn" type="submit">
@@ -350,11 +370,11 @@
                   <div class="navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdownMenuLink"
+                          role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Products
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -382,10 +402,13 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                       </li>
                     </ul>
                   </div>
@@ -402,7 +425,7 @@
   <!-- /////////////////////////Header Section Ends /////////////////////// -->
   <!-- ///////////////////////// Main Content  /////////////////////// -->
   <div class="main rsth--product-page">
-    <div class="container rsth1-hero-section px-md-0 px-3">
+    <div class="container rsth1-hero-section ">
       <div class="row m-0 shop-banner align-items-md-center align-items-end">
         <div class="col-sm-12 d-flex justify-content-md-start justify-content-center just align-items-center">
           <div class="hero-section">
@@ -421,7 +444,7 @@
         </div>
       </div>
     </div>
-    <div class="container product-details py-50px  px-md-0 px-3">
+    <div class="container product-details py-50px ">
       <div class="row flex-lg-row flex-column align-items-center justify-content-center position-relative ">
         <a href="wishlist.html">
           <div class="quick-add-to-wishlist position-absolute d-flex align-items-center single-wishlist-icon">
@@ -489,554 +512,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="container">
-  
-            <h1>Simple Image Gallery with magnific-popup.js</h1>
-            
-              <p><section class="img-gallery-magnific">
-                <div class="magnific-img">
-                  <a class="image-popup-vertical-fit" href="../assets/images/p-gal-l-img1.webp" title="9.jpg">
-                    <img src="../assets/images/p-gal-l-img1.webp" alt="9.jpg" />
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="magnific-img">
-                  <a class="image-popup-vertical-fit" href="../assets/images/p-gal-l-img2.webp" title="14.jpg">
-                    <img src="../assets/images/p-gal-l-img2.webp" alt="14.jpg" />
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="magnific-img">
-                  <a class="image-popup-vertical-fit" href="../assets/images/p-gal-l-img3.webp" title="15.jpg">
-                    <img src="../assets/images/p-gal-l-img3.webp" alt="15.jpg" />
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="magnific-img">
-                  <a class="image-popup-vertical-fit" href="../assets/images/p-gal-l-img4.webp" title="16.jpg">
-                    <img src="../assets/images/p-gal-l-img4.webp" alt="16.jpg" />
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </section>
-              <div class="clear"></div>
-            </p>
-          
-          </div> -->
-          <style>
-            .magnific-img img {
-              width: 100%;
-              height: auto;
-            }
-
-            .mfp-bottom-bar,
-            * {
-              font-family: "Abel", sans-serif;
-            }
-
-            .magnific-img {
-              display: inline-block;
-              width: 32.3%;
-            }
-
-            a.image-popup-vertical-fit {
-              cursor: -webkit-zoom-in;
-            }
-
-            .mfp-with-zoom .mfp-container,
-            .mfp-with-zoom.mfp-bg {
-              opacity: 0;
-              -webkit-backface-visibility: hidden;
-              /* ideally, transition speed should match zoom duration */
-              -webkit-transition: all 0.3s ease-out;
-              -moz-transition: all 0.3s ease-out;
-              -o-transition: all 0.3s ease-out;
-              transition: all 0.3s ease-out;
-            }
-
-            .mfp-with-zoom.mfp-ready .mfp-container {
-              opacity: 1;
-            }
-
-            .mfp-with-zoom.mfp-ready.mfp-bg {
-              opacity: 0.98;
-            }
-
-            .mfp-with-zoom.mfp-removing .mfp-container,
-            .mfp-with-zoom.mfp-removing.mfp-bg {
-              opacity: 0;
-            }
-
-            .mfp-arrow-left:before {
-              border-right: none !important;
-            }
-
-            .mfp-arrow-right:before {
-              border-left: none !important;
-            }
-
-            button.mfp-arrow,
-            .mfp-counter {
-              opacity: 0 !important;
-              transition: opacity 200ms ease-in, opacity 2000ms ease-out;
-            }
-
-            .mfp-container:hover button.mfp-arrow,
-            .mfp-container:hover .mfp-counter {
-              opacity: 1 !important;
-            }
-
-            /* Magnific Popup CSS */
-            .mfp-bg {
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              z-index: 1042;
-              overflow: hidden;
-              position: fixed;
-              background: #0b0b0b;
-              opacity: 0.8;
-            }
-
-            .mfp-wrap {
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              z-index: 1043;
-              position: fixed;
-              outline: none !important;
-              -webkit-backface-visibility: hidden;
-            }
-
-            .mfp-container {
-              text-align: center;
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              left: 0;
-              top: 0;
-              padding: 0 8px;
-              box-sizing: border-box;
-            }
-
-            .mfp-container:before {
-              content: "";
-              display: inline-block;
-              height: 100%;
-              vertical-align: middle;
-            }
-
-            .mfp-align-top .mfp-container:before {
-              display: none;
-            }
-
-            .mfp-content {
-              position: relative;
-              display: inline-block;
-              vertical-align: middle;
-              margin: 0 auto;
-              text-align: left;
-              z-index: 1045;
-            }
-
-            .mfp-inline-holder .mfp-content,
-            .mfp-ajax-holder .mfp-content {
-              width: 100%;
-              cursor: auto;
-            }
-
-            .mfp-ajax-cur {
-              cursor: progress;
-            }
-
-            .mfp-zoom-out-cur,
-            .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-              cursor: -moz-zoom-out;
-              cursor: -webkit-zoom-out;
-              cursor: zoom-out;
-            }
-
-            .mfp-zoom {
-              cursor: pointer;
-              cursor: -webkit-zoom-in;
-              cursor: -moz-zoom-in;
-              cursor: zoom-in;
-            }
-
-            .mfp-auto-cursor .mfp-content {
-              cursor: auto;
-            }
-
-            .mfp-close,
-            .mfp-arrow,
-            .mfp-preloader,
-            .mfp-counter {
-              -webkit-user-select: none;
-              -moz-user-select: none;
-              user-select: none;
-            }
-
-            .mfp-loading.mfp-figure {
-              display: none;
-            }
-
-            .mfp-hide {
-              display: none !important;
-            }
-
-            .mfp-preloader {
-              color: #ccc;
-              position: absolute;
-              top: 50%;
-              width: auto;
-              text-align: center;
-              margin-top: -0.8em;
-              left: 8px;
-              right: 8px;
-              z-index: 1044;
-            }
-
-            .mfp-preloader a {
-              color: #ccc;
-            }
-
-            .mfp-preloader a:hover {
-              color: #fff;
-            }
-
-            .mfp-s-ready .mfp-preloader {
-              display: none;
-            }
-
-            .mfp-s-error .mfp-content {
-              display: none;
-            }
-
-            button.mfp-close,
-            button.mfp-arrow {
-              overflow: visible;
-              cursor: pointer;
-              background: transparent;
-              border: 0;
-              -webkit-appearance: none;
-              display: block;
-              outline: none;
-              padding: 0;
-              z-index: 1046;
-              box-shadow: none;
-              touch-action: manipulation;
-            }
-
-            button::-moz-focus-inner {
-              padding: 0;
-              border: 0;
-            }
-
-            .mfp-close {
-              width: 44px;
-              height: 44px;
-              line-height: 44px;
-              position: absolute;
-              right: 0;
-              top: 0;
-              text-decoration: none;
-              text-align: center;
-              opacity: 0.65;
-              padding: 0 0 18px 10px;
-              color: #fff;
-              font-style: normal;
-              font-size: 28px;
-              font-family: Arial, Baskerville, monospace;
-            }
-
-            .mfp-close:hover,
-            .mfp-close:focus {
-              opacity: 1;
-            }
-
-            .mfp-close:active {
-              top: 1px;
-            }
-
-            .mfp-close-btn-in .mfp-close {
-              color: #333;
-            }
-
-            .mfp-image-holder .mfp-close,
-            .mfp-iframe-holder .mfp-close {
-              color: #fff;
-              right: -6px;
-              text-align: right;
-              padding-right: 6px;
-              width: 100%;
-            }
-
-            .mfp-counter {
-              position: absolute;
-              top: 0;
-              right: 0;
-              color: #ccc;
-              font-size: 12px;
-              line-height: 18px;
-              white-space: nowrap;
-            }
-
-            .mfp-arrow {
-              position: absolute;
-              opacity: 0.65;
-              margin: 0;
-              top: 50%;
-              margin-top: -55px;
-              padding: 0;
-              width: 90px;
-              height: 110px;
-              -webkit-tap-highlight-color: transparent;
-            }
-
-            .mfp-arrow:active {
-              margin-top: -54px;
-            }
-
-            .mfp-arrow:hover,
-            .mfp-arrow:focus {
-              opacity: 1;
-            }
-
-            .mfp-arrow:before,
-            .mfp-arrow:after {
-              content: "";
-              display: block;
-              width: 0;
-              height: 0;
-              position: absolute;
-              left: 0;
-              top: 0;
-              margin-top: 35px;
-              margin-left: 35px;
-              border: medium inset transparent;
-            }
-
-            .mfp-arrow:after {
-              border-top-width: 13px;
-              border-bottom-width: 13px;
-              top: 8px;
-            }
-
-            .mfp-arrow:before {
-              border-top-width: 21px;
-              border-bottom-width: 21px;
-              opacity: 0.7;
-            }
-
-            .mfp-arrow-left {
-              left: 0;
-            }
-
-            .mfp-arrow-left:after {
-              border-right: 17px solid #fff;
-              margin-left: 31px;
-            }
-
-            .mfp-arrow-left:before {
-              margin-left: 25px;
-              border-right: 27px solid #3f3f3f;
-            }
-
-            .mfp-arrow-right {
-              right: 0;
-            }
-
-            .mfp-arrow-right:after {
-              border-left: 17px solid #fff;
-              margin-left: 39px;
-            }
-
-            .mfp-arrow-right:before {
-              border-left: 27px solid #3f3f3f;
-            }
-
-            .mfp-iframe-holder {
-              padding-top: 40px;
-              padding-bottom: 40px;
-            }
-
-            .mfp-iframe-holder .mfp-content {
-              line-height: 0;
-              width: 100%;
-              max-width: 900px;
-            }
-
-            .mfp-iframe-holder .mfp-close {
-              top: -40px;
-            }
-
-            .mfp-iframe-scaler {
-              width: 100%;
-              height: 0;
-              overflow: hidden;
-              padding-top: 56.25%;
-            }
-
-            .mfp-iframe-scaler iframe {
-              position: absolute;
-              display: block;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-              background: #000;
-            }
-
-            /* Main image in popup */
-            img.mfp-img {
-              width: auto;
-              max-width: 100%;
-              height: auto;
-              display: block;
-              line-height: 0;
-              box-sizing: border-box;
-              padding: 40px 0 40px;
-              margin: 0 auto;
-            }
-
-            /* The shadow behind the image */
-            .mfp-figure {
-              line-height: 0;
-            }
-
-            .mfp-figure:after {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 40px;
-              bottom: 40px;
-              display: block;
-              right: 0;
-              width: auto;
-              height: auto;
-              z-index: -1;
-              box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-              background: #444;
-            }
-
-            .mfp-figure small {
-              color: #bdbdbd;
-              display: block;
-              font-size: 12px;
-              line-height: 14px;
-            }
-
-            .mfp-figure figure {
-              margin: 0;
-            }
-
-            .mfp-bottom-bar {
-              margin-top: -36px;
-              position: absolute;
-              top: 100%;
-              left: 0;
-              width: 100%;
-              cursor: auto;
-            }
-
-            .mfp-title {
-              text-align: left;
-              line-height: 18px;
-              color: #f3f3f3;
-              word-wrap: break-word;
-              padding-right: 36px;
-            }
-
-            .mfp-image-holder .mfp-content {
-              max-width: 100%;
-            }
-
-            .mfp-gallery .mfp-image-holder .mfp-figure {
-              cursor: pointer;
-            }
-
-            @media screen and (max-width: 800px) and (orientation: landscape),
-            screen and (max-height: 300px) {
-
-              /**
-                  * Remove all paddings around the image on small screen
-                  */
-              .mfp-img-mobile .mfp-image-holder {
-                padding-left: 0;
-                padding-right: 0;
-              }
-
-              .mfp-img-mobile img.mfp-img {
-                padding: 0;
-              }
-
-              .mfp-img-mobile .mfp-figure:after {
-                top: 0;
-                bottom: 0;
-              }
-
-              .mfp-img-mobile .mfp-figure small {
-                display: inline;
-                margin-left: 5px;
-              }
-
-              .mfp-img-mobile .mfp-bottom-bar {
-                background: rgba(0, 0, 0, 0.6);
-                bottom: 0;
-                margin: 0;
-                top: auto;
-                padding: 3px 5px;
-                position: fixed;
-                box-sizing: border-box;
-              }
-
-              .mfp-img-mobile .mfp-bottom-bar:empty {
-                padding: 0;
-              }
-
-              .mfp-img-mobile .mfp-counter {
-                right: 5px;
-                top: 3px;
-              }
-
-              .mfp-img-mobile .mfp-close {
-                top: 0;
-                right: 0;
-                width: 35px;
-                height: 35px;
-                line-height: 35px;
-                background: rgba(0, 0, 0, 0.6);
-                position: fixed;
-                text-align: center;
-                padding: 0;
-              }
-            }
-
-            @media all and (max-width: 900px) {
-              .mfp-arrow {
-                -webkit-transform: scale(0.75);
-                transform: scale(0.75);
-              }
-
-              .mfp-arrow-left {
-                -webkit-transform-origin: 0;
-                transform-origin: 0;
-              }
-
-              .mfp-arrow-right {
-                -webkit-transform-origin: 100%;
-                transform-origin: 100%;
-              }
-
-              .mfp-container {
-                padding-left: 6px;
-                padding-right: 6px;
-              }
-            }
-          </style>
         </div>
         <div class="col-lg-5 font-primary">
           <div class="rating-container row px-0 mt-4 mt-lg-0 pb-2 pb-lg-0">
@@ -1116,7 +591,7 @@
         </div>
       </div>
     </div>
-    <div class="container product-description font-primary py-50px px-md-0 px-3">
+    <div class="container product-description font-primary py-50px ">
       <h3 class="font-secondry s-prod-sec-heading">Description</h3>
       <hr />
       <p class="mt-4 color-black-shade mb-0">
@@ -1133,7 +608,7 @@
         ut aliquip ex ea commodo consequat.
       </p>
     </div>
-    <div class="related-products container py-50px px-md-0 px-3">
+    <div class="related-products container py-50px">
       <div class="row align-items-center">
         <div class="col-6 ">
           <h4 class="font-secondry m-0 s-prod-sec-heading">Related Products</h4>
@@ -1338,9 +813,9 @@
   <!-- ///////////////////////// Footer Section ///////////////////////// -->
   <footer>
     <div class="container-fluid rsth1--footer">
-      <div class="container px-sm-0">
-        <div class="row m-0">
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+      <div class="container">
+        <div class="row m-0 px-md-auto px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="footer-col-one d-flex flex-column justify-content-start align-items-start">
               <!-- logo -->
               <div class="f_logo">
@@ -1367,7 +842,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="quick-links-col d-flex flex-column w-auto">
               <div>
                 <p class="col-title m-0">Quick Links</p>
@@ -1398,7 +873,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="my-account-col d-flex flex-column gap-3">
               <div>
                 <p class="col-title m-0">Account</p>
@@ -1414,7 +889,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 py-md-0 py-sm-4 px-0">
+          <div class="col-md-3 col-sm-12 py-md-0 py-4 px-0">
             <div class="contact-info-col d-flex flex-column">
               <div class="info">
                 <p class="col-title m-0">Contact Info</p>
