@@ -88,7 +88,7 @@
 /* hero section ended */
 
 /* wishlist table */
-.container-fluid .rsth1-wishlist-section-border {
+.rsth1-wishlist-section .rsth1-wishlist-section-border {
   border: 1px solid var(--light-white-color);
   border-radius: 10px;
 }
@@ -208,7 +208,6 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 100px;
   margin-top: 40px;
   padding: 10px;
   background-color: var(--light-white-2-color);

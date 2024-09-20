@@ -149,7 +149,6 @@
 .rsth1-about-us-section .img-fluid {
   width: 90%;
   height: auto;
-  margin: 20px 0;
 }
 
 /* Tablet styles */
@@ -217,7 +216,6 @@
   padding: 20px;
   border-radius: 10px;
   border: 1px solid var(--light-white-3-color);
-  margin-bottom: 20px;
   background-color: var(--light-white-2-color);
 }
 
@@ -307,8 +305,7 @@
 
 /* Our detail man card section */
 .rsth1-our-detail-man-card-section {
-  margin: 40px auto;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .rsth1-our-detail-man-card-section .left-side {
@@ -418,10 +415,6 @@
 /* Our detail man card section ended */
 
 /* carousel section */
-.rsth1-carousel-section {
-  padding: 50px 0;
-}
-
 .rsth1-carousel-section .col-md-3 {
   display: flex;
   justify-content: center;

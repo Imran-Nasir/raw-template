@@ -61,7 +61,7 @@
 /* mobile responsive mobile devices */
 @media only screen and (max-width: 768px) {
   .rsth1-hero-section .row {
-    background-image: url("../images/order-detail/mobile-hero-bg.png");
+    /* background-image: url("../images/order-detail/mobile-hero-bg.png"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -172,7 +172,6 @@
 }
 .rsth1-order-detail-section .text-right {
   text-align: end;
-  margin-bottom: 20px;
 }
 .rsth1-order-detail-section .custom-spaceing-bg-color {
   background-color: var(--light-white-2-color);
@@ -200,11 +199,6 @@
 
   .rsth1-order-step {
     margin-bottom: 15px;
-  }
-  .rsth1-order-detail-bg {
-    background-image: url("../images/order-detail/");
-    background-position: center;
-    background-repeat: no-repeat;
   }
   .rsth1-order-detail-section .custom-spaceing {
     margin-right: 0px;
