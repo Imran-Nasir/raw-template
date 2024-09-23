@@ -245,7 +245,6 @@
 
 .rsth1-blog-section .result-count {
   font-weight: 400;
-  width: 100%;
   text-align: end !important;
   font-family: var(--primary-font);
   font-weight: 500;
@@ -413,7 +412,6 @@
 
   .rsth1-blog-section .result-count {
     font-weight: 400;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
   }

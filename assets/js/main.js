@@ -28,9 +28,9 @@ $(".filter-button-1").on("click", function () {
   var $blog_content = $(".blog-content");
   var $blog_archive = $(".blog-archive");
   // Toggle the visibility of the sidebar and adjust the content width
-  $blog_sidebar.toggleClass("d-none col-lg-3");
+  $blog_sidebar.toggleClass("col-lg-3 d-none");
   $blog_content.toggleClass("col-lg-9 col-lg-12");
-  $blog_archive.toggleClass("col-md-6 col-sm-6 col-md-4 col-sm-4");
+  $blog_archive.toggleClass("col-md-6 col-sm-6 col-md-4 col-sm-6");
 });
 $(document).ready(function () {
   $(".thmb-s-img").click(function () {
