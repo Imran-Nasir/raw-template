@@ -330,6 +330,8 @@
   padding-right: 60px;
 }
 
+
+
 .rsth1-our-detail-man-card-section .small-heading {
   font-size: 22px;
   font-weight: 600;
@@ -402,11 +404,11 @@
     position: static;
     width: 100%;
   }
-  .rsth1-our-detail-man-card-section .row {
+  /* .rsth1-our-detail-man-card-section .row {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   .rsth1-our-detail-man-card-section .col-md-4 {
     flex: 0 0 auto;
     width: 60.333333%;

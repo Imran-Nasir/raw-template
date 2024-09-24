@@ -2691,6 +2691,136 @@
 
 /* 500 Page CSS Ends */
 
+/* about  */
+.our-detail--section .left--side{
+background: #F5F5F5;
+border-radius: 24px;
+padding: 90px 175px 90px 64px;
+width: 70%; 
+}
+.our-detail--section .right--side{
+  width: 37%; 
+  margin-left: -8%;
+}
+.our-detail--section .left--side .small-heading{
+font-family: var(--primary-font);
+font-weight: 500;
+font-size: 22px;
+line-height: 25px;
+letter-spacing: 0.01em;
+text-transform: capitalize;
+color: var(--secondry-color);
+padding-bottom: 22px;
+}
+.our-detail--section .left--side .two-color-heading{
+font-family: var(--secondary-font);
+font-weight: 500;
+font-size: 40px;
+line-height: 43px;
+letter-spacing: 0.01em;
+color: var(--secondry-color);
+padding-bottom: 40px;
+}
+.our-detail--section .left--side .paragraph{
+font-family: var(--primary-font);
+font-weight: 400;
+font-size: 22px;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: #9C9C9C;
+}
+
+@media only screen and (max-width: 1399px) {
+  .our-detail--section .left--side{
+    border-radius: 20px;
+    padding: 70px 150px 70px 54px;
+    }
+    .our-detail--section .left--side .small-heading{
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 18px;
+    }
+    .our-detail--section .left--side .two-color-heading{
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 28px;
+    }
+    .our-detail--section .left--side .paragraph{
+    font-size: 18px;
+    color: #9C9C9C;
+}
+}
+
+@media only screen and (max-width: 1199px) {
+  .our-detail--section .left--side{
+    border-radius: 20px;
+    padding: 60px 100px 60px 44px;
+    }
+    .our-detail--section .left--side .small-heading{
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 18px;
+    }
+    .our-detail--section .left--side .two-color-heading{
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 28px;
+    }
+    .our-detail--section .left--side .paragraph{
+    font-size: 18px;
+    color: #9C9C9C;
+}
+}
+
+@media only screen and (max-width: 991px) {
+  .our-detail--section .row{
+    flex-direction: column-reverse !important;
+  }
+  
+  .our-detail--section .left--side{
+    width: 100%;
+    border-radius: 20px;
+    padding: 50px 70px 50px 32px;
+    }
+  .our-detail--section .right--side{
+    width: 90%;
+    margin-left: 0%;
+    margin-bottom: -40%;
+    z-index: -10;
+    }
+  .our-detail--section .right--side img{
+    width: 100%;
+    height: 650px;
+    }
+    .our-detail--section .left--side .small-heading{
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 16px;
+    }
+    .our-detail--section .left--side .two-color-heading{
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 20px;
+    }
+    .our-detail--section .left--side .paragraph{
+    font-size: 16px;
+    color: #9C9C9C;
+}
+}
+
+@media only screen and (max-width: 776px) {
+  .our-detail--section .left--side{
+    width: 100%;
+    border-radius: 20px;
+    padding: 24px 15px 40px 15px;
+    }
+  .our-detail--section .right--side{
+    width: 100%;
+    margin-bottom: -65%;
+    }
+  }
+
+
 /* Css For view product modal */
 .quick-view-product-details {
   padding: 44px 80px;
