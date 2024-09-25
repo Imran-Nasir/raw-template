@@ -19,7 +19,7 @@
 }
 
 /* hero section  */
-.rsth1-hero-section .row {
+/* .rsth1-hero-section .row {
   background-image: url("../images/order/order-hero-banner.webp");
   background-size: cover;
   background-position: center;
@@ -54,11 +54,11 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-}
+} */
 
 /* mobile responsive mobile devices */
-@media only screen and (max-width: 768px) {
-  .rsth1-hero-section .row {
+/* @media only screen and (max-width: 768px) { */
+  /* .rsth1-hero-section .row {
     background-image: url("../images/order/order-hero-banner.webp");
     background-size: cover;
     background-position: center;
@@ -66,8 +66,8 @@
     height: 400px;
     padding-left: 20px;
     border-radius: 20px;
-  }
-
+  } */
+/* 
   .rsth1-hero-section .hero-section h1 {
     font-size: 24px;
     line-height: 36px;
@@ -82,7 +82,7 @@
     font-size: 14px;
     line-height: 18px;
   }
-}
+} */
 /* hero section ended */
 
 /* tabel section */

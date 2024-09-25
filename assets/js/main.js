@@ -306,6 +306,7 @@ jQuery(document).ready(function ($) {
     $(".clients-slider").slick({
       dots: false,
       arrows: false,
+      autoplay: true,
       infinite: true,
       speed: 3000,
       slidesToShow: 4,
@@ -317,7 +318,7 @@ jQuery(document).ready(function ($) {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
         {
